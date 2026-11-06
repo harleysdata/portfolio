@@ -1,0 +1,11 @@
+Issue Key,Summary,Epic Name,Reach,Impact,Confidence,Effort,RICE
+OB-11,Daily three-way reconciliation,Offboarding,3000.0,2.0,0.9,3.0,1800
+OB-14,Experiment flag on intake form,Analytics,900.0,1.0,1.0,1.0,900
+OB-4,Validate cost centre and manager at submission,Smart intake,900.0,2.0,0.9,2.0,810
+OB-3,Required fields by role type,Smart intake,900.0,3.0,0.8,3.0,720
+OB-8,Start-date risk alert,Readiness tracker,900.0,2.0,0.8,2.0,720
+OB-2,Pre-fill intake from the Fieldglass work order,Smart intake,900.0,2.0,0.8,3.0,480
+OB-6,Hiring manager readiness view,Readiness tracker,900.0,2.0,0.8,5.0,288
+OB-10,Disable access on work order end,Offboarding,300.0,3.0,0.9,5.0,162
+OB-7,Supplier portal view,Readiness tracker,600.0,1.0,0.5,8.0,38
+OB-13,Onboarding funnel dashboard,Analytics,50.0,2.0,0.9,3.0,30

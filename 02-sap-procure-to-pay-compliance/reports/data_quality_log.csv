@@ -1,0 +1,4 @@
+rule,rows_affected,detail
+raw events,1595923,"251,734 PO lines"
+timestamp outside 2018-01 to 2019-01,327,"earliest 1948-01-26, latest 2020-04-09; excluded from timing metrics, kept for counts"
+"same step, same minute, same user",180755,"kept: timestamps are to the minute, so these are usually split deliveries or invoices posted together, not duplicates"

@@ -1,0 +1,6 @@
+rule,rows_affected,detail
+raw rows,141712,"24,918 incidents, 36 columns"
+invalid incident_state,5,state '-100' is not a ServiceNow state; rows dropped
+incidents with no resolved_at,1556,"kept for SLA counts, excluded from resolution-time metrics"
+dropped sparse columns,0,"caused_by, vendor, cmdb_ci, rfc, problem_id are >98% empty"
+clean event rows,141707,"24,918 incidents"

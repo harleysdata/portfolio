@@ -1,0 +1,433 @@
+{
+  "mart_kpis": [
+    {
+      "incidents": 24918,
+      "sla_attainment": 0.6342,
+      "sla_breaches": 9115,
+      "reassigned_share": 0.4563,
+      "reopen_rate": 0.011,
+      "missing_resolution_time": 1556
+    }
+  ],
+  "mart_sla_by_priority": [
+    {
+      "priority": "1 - Critical",
+      "incidents": 270,
+      "sla_attainment": 0.0185,
+      "avg_reassignments": 1.16
+    },
+    {
+      "priority": "2 - High",
+      "incidents": 408,
+      "sla_attainment": 0.0049,
+      "avg_reassignments": 1.46
+    },
+    {
+      "priority": "3 - Moderate",
+      "incidents": 23466,
+      "sla_attainment": 0.6454,
+      "avg_reassignments": 0.93
+    },
+    {
+      "priority": "4 - Low",
+      "incidents": 774,
+      "sla_attainment": 0.8411,
+      "avg_reassignments": 0.81
+    }
+  ],
+  "mart_reassignment_impact": [
+    {
+      "reassign_band": "0",
+      "incidents": 13549,
+      "sla_attainment": 0.7839,
+      "pct_of_incidents": 54.4
+    },
+    {
+      "reassign_band": "1",
+      "incidents": 6238,
+      "sla_attainment": 0.5707,
+      "pct_of_incidents": 25.0
+    },
+    {
+      "reassign_band": "2",
+      "incidents": 2283,
+      "sla_attainment": 0.3986,
+      "pct_of_incidents": 9.2
+    },
+    {
+      "reassign_band": "3-4",
+      "incidents": 1929,
+      "sla_attainment": 0.3012,
+      "pct_of_incidents": 7.7
+    },
+    {
+      "reassign_band": "5+",
+      "incidents": 919,
+      "sla_attainment": 0.1425,
+      "pct_of_incidents": 3.7
+    }
+  ],
+  "mart_reassignment_within_priority": [
+    {
+      "priority": "1 - Critical",
+      "reassign_band": "0",
+      "incidents": 112,
+      "sla_attainment": 0.0357
+    },
+    {
+      "priority": "1 - Critical",
+      "reassign_band": "1",
+      "incidents": 83,
+      "sla_attainment": 0.012
+    },
+    {
+      "priority": "1 - Critical",
+      "reassign_band": "2",
+      "incidents": 48,
+      "sla_attainment": 0.0
+    },
+    {
+      "priority": "2 - High",
+      "reassign_band": "0",
+      "incidents": 153,
+      "sla_attainment": 0.0065
+    },
+    {
+      "priority": "2 - High",
+      "reassign_band": "1",
+      "incidents": 118,
+      "sla_attainment": 0.0085
+    },
+    {
+      "priority": "2 - High",
+      "reassign_band": "2",
+      "incidents": 61,
+      "sla_attainment": 0.0
+    },
+    {
+      "priority": "2 - High",
+      "reassign_band": "3-4",
+      "incidents": 47,
+      "sla_attainment": 0.0
+    },
+    {
+      "priority": "3 - Moderate",
+      "reassign_band": "0",
+      "incidents": 12803,
+      "sla_attainment": 0.7958
+    },
+    {
+      "priority": "3 - Moderate",
+      "reassign_band": "1",
+      "incidents": 5873,
+      "sla_attainment": 0.5823
+    },
+    {
+      "priority": "3 - Moderate",
+      "reassign_band": "2",
+      "incidents": 2121,
+      "sla_attainment": 0.4121
+    },
+    {
+      "priority": "3 - Moderate",
+      "reassign_band": "3-4",
+      "incidents": 1817,
+      "sla_attainment": 0.2999
+    },
+    {
+      "priority": "3 - Moderate",
+      "reassign_band": "5+",
+      "incidents": 852,
+      "sla_attainment": 0.1385
+    },
+    {
+      "priority": "4 - Low",
+      "reassign_band": "0",
+      "incidents": 481,
+      "sla_attainment": 0.8898
+    },
+    {
+      "priority": "4 - Low",
+      "reassign_band": "1",
+      "incidents": 164,
+      "sla_attainment": 0.8415
+    },
+    {
+      "priority": "4 - Low",
+      "reassign_band": "2",
+      "incidents": 53,
+      "sla_attainment": 0.6792
+    },
+    {
+      "priority": "4 - Low",
+      "reassign_band": "3-4",
+      "incidents": 48,
+      "sla_attainment": 0.75
+    }
+  ],
+  "mart_time_in_state": [
+    {
+      "incident_state": "Active",
+      "incidents": 15013,
+      "total_hours": 1414429.0,
+      "pct_of_open_hours": 34.5
+    },
+    {
+      "incident_state": "Awaiting User Info",
+      "incidents": 5471,
+      "total_hours": 1230444.0,
+      "pct_of_open_hours": 30.0
+    },
+    {
+      "incident_state": "New",
+      "incidents": 16397,
+      "total_hours": 1084497.0,
+      "pct_of_open_hours": 26.4
+    },
+    {
+      "incident_state": "Awaiting Vendor",
+      "incidents": 259,
+      "total_hours": 270924.0,
+      "pct_of_open_hours": 6.6
+    },
+    {
+      "incident_state": "Awaiting Problem",
+      "incidents": 247,
+      "total_hours": 92949.0,
+      "pct_of_open_hours": 2.3
+    },
+    {
+      "incident_state": "Awaiting Evidence",
+      "incidents": 21,
+      "total_hours": 12296.0,
+      "pct_of_open_hours": 0.3
+    }
+  ],
+  "mart_group_scorecard": [
+    {
+      "first_group": "Group 70",
+      "incidents_received": 12885,
+      "sla_attainment": 0.7444,
+      "resolved_by_first_group": 0.715,
+      "avg_reassignments": 0.85
+    },
+    {
+      "first_group": "Group 20",
+      "incidents_received": 1389,
+      "sla_attainment": 0.4924,
+      "resolved_by_first_group": 0.1228,
+      "avg_reassignments": 1.85
+    },
+    {
+      "first_group": "Group 25",
+      "incidents_received": 797,
+      "sla_attainment": 0.4718,
+      "resolved_by_first_group": 0.7808,
+      "avg_reassignments": 0.7
+    },
+    {
+      "first_group": "Group 24",
+      "incidents_received": 716,
+      "sla_attainment": 0.7053,
+      "resolved_by_first_group": 0.7496,
+      "avg_reassignments": 0.64
+    },
+    {
+      "first_group": "Group 64",
+      "incidents_received": 622,
+      "sla_attainment": 0.8859,
+      "resolved_by_first_group": 0.9871,
+      "avg_reassignments": 0.02
+    },
+    {
+      "first_group": "Group 65",
+      "incidents_received": 509,
+      "sla_attainment": 0.5305,
+      "resolved_by_first_group": 0.498,
+      "avg_reassignments": 1.19
+    },
+    {
+      "first_group": "Group 73",
+      "incidents_received": 498,
+      "sla_attainment": 0.5482,
+      "resolved_by_first_group": 0.7895,
+      "avg_reassignments": 1.06
+    },
+    {
+      "first_group": "Group 55",
+      "incidents_received": 433,
+      "sla_attainment": 0.4781,
+      "resolved_by_first_group": 0.4306,
+      "avg_reassignments": 1.42
+    },
+    {
+      "first_group": "Group 66",
+      "incidents_received": 391,
+      "sla_attainment": 0.4066,
+      "resolved_by_first_group": 0.6237,
+      "avg_reassignments": 1.08
+    },
+    {
+      "first_group": "Group 39",
+      "incidents_received": 385,
+      "sla_attainment": 0.5169,
+      "resolved_by_first_group": 0.7973,
+      "avg_reassignments": 0.9
+    },
+    {
+      "first_group": "Group 9",
+      "incidents_received": 346,
+      "sla_attainment": 0.1185,
+      "resolved_by_first_group": 0.2174,
+      "avg_reassignments": 1.89
+    },
+    {
+      "first_group": "Group 57",
+      "incidents_received": 345,
+      "sla_attainment": 0.4174,
+      "resolved_by_first_group": 0.4855,
+      "avg_reassignments": 0.97
+    },
+    {
+      "first_group": "Group 10",
+      "incidents_received": 328,
+      "sla_attainment": 0.253,
+      "resolved_by_first_group": 0.6738,
+      "avg_reassignments": 0.86
+    },
+    {
+      "first_group": "Group 28",
+      "incidents_received": 316,
+      "sla_attainment": 0.4778,
+      "resolved_by_first_group": 0.7532,
+      "avg_reassignments": 0.94
+    },
+    {
+      "first_group": "Group 27",
+      "incidents_received": 306,
+      "sla_attainment": 0.6046,
+      "resolved_by_first_group": 0.8937,
+      "avg_reassignments": 0.52
+    },
+    {
+      "first_group": "Group 76",
+      "incidents_received": 300,
+      "sla_attainment": 0.45,
+      "resolved_by_first_group": 0.4212,
+      "avg_reassignments": 1.4
+    },
+    {
+      "first_group": "Group 5",
+      "incidents_received": 296,
+      "sla_attainment": 0.5169,
+      "resolved_by_first_group": 0.4224,
+      "avg_reassignments": 1.2
+    },
+    {
+      "first_group": "Group 23",
+      "incidents_received": 292,
+      "sla_attainment": 0.7432,
+      "resolved_by_first_group": 0.9038,
+      "avg_reassignments": 0.48
+    },
+    {
+      "first_group": "Group 22",
+      "incidents_received": 291,
+      "sla_attainment": 0.4914,
+      "resolved_by_first_group": 0.5157,
+      "avg_reassignments": 1.01
+    },
+    {
+      "first_group": "Group 29",
+      "incidents_received": 256,
+      "sla_attainment": 0.4023,
+      "resolved_by_first_group": 0.5484,
+      "avg_reassignments": 1.28
+    }
+  ],
+  "mart_top_handoffs": [
+    {
+      "from_group": "Group 20",
+      "to_group": "Group 70",
+      "handoffs": 1088,
+      "bounce_backs": 430
+    },
+    {
+      "from_group": "Group 70",
+      "to_group": "Group 39",
+      "handoffs": 1060,
+      "bounce_backs": 152
+    },
+    {
+      "from_group": "Group 70",
+      "to_group": "Group 20",
+      "handoffs": 1056,
+      "bounce_backs": 215
+    },
+    {
+      "from_group": "Group 70",
+      "to_group": "Group 25",
+      "handoffs": 456,
+      "bounce_backs": 16
+    },
+    {
+      "from_group": "Group 39",
+      "to_group": "Group 70",
+      "handoffs": 433,
+      "bounce_backs": 275
+    },
+    {
+      "from_group": "Group 54",
+      "to_group": "Group 70",
+      "handoffs": 395,
+      "bounce_backs": 155
+    },
+    {
+      "from_group": "Group 70",
+      "to_group": "Group 54",
+      "handoffs": 290,
+      "bounce_backs": 37
+    },
+    {
+      "from_group": "Group 70",
+      "to_group": "Group 24",
+      "handoffs": 284,
+      "bounce_backs": 12
+    },
+    {
+      "from_group": "Group 56",
+      "to_group": "Group 70",
+      "handoffs": 260,
+      "bounce_backs": 57
+    },
+    {
+      "from_group": "Group 70",
+      "to_group": "Group 55",
+      "handoffs": 253,
+      "bounce_backs": 21
+    }
+  ],
+  "derived": {
+    "median_hours_to_resolve": 22.1,
+    "p90_hours_to_resolve": 381.5,
+    "breaches_from_reassigned_share": 0.6788,
+    "median_ttr_not_reassigned": 0.68,
+    "median_ttr_reassigned": 79.9,
+    "bounce_back_incidents": 2217,
+    "sla_priority_confirmed": 0.6731,
+    "sla_priority_unconfirmed": 0.5051,
+    "incidents_waiting_on_user": 5464,
+    "median_wait_on_user_hours": 96.0,
+    "routing": {
+      "split_at": "2016-04-26 08:40:00",
+      "test_incidents": 9102,
+      "covered": 449,
+      "accuracy_before": 0.5145,
+      "accuracy_after": 0.8151,
+      "fixed": 138,
+      "broken": 3,
+      "naive_agreement_on_correct": 0.7252,
+      "rule_count": 11
+    }
+  }
+}

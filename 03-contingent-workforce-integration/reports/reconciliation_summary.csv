@@ -1,0 +1,8 @@
+check,description,severity,owner,workers,pct_of_work_orders
+ended_account_active,Work order ended but ServiceNow account still active,Critical,IAM / Service desk,54,1.82
+orphan_account,Active ServiceNow contractor account with no Fieldglass work order,Critical,IAM,33,1.11
+missing_in_ec,Active work order with no Employee Central record,High,HR Operations,15,0.51
+ended_still_active_ec,Work order ended but Employee Central record still active,High,HR Operations,40,1.35
+cost_center_mismatch,Cost centre in EC differs from Fieldglass,Medium,Finance / HR Operations,86,2.9
+end_date_mismatch,End date in EC differs from Fieldglass (extension not synced),Medium,HR Operations,129,4.35
+late_onboarding,Onboarding case closed after the worker's start date,Low,HR Service Delivery,234,7.89
