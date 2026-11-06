@@ -1,6 +1,8 @@
 # ServiceNow Service Desk Analytics: Why a third of tickets miss SLA
 
-**Data:** a real ServiceNow incident audit log. 141,712 audit events covering 24,918 incidents, Feb 2016 – Feb 2017.
+📊 **[Open the live dashboard](https://harleysdata.github.io/dashboards/service-desk.html)**: a guided story with filters, computed live from the data.
+
+**Data:** a real ServiceNow incident audit log. 141,712 audit events covering 24,918 incidents. 98% were opened March–May 2016; their audit history runs to February 2017.
 **Tools:** Python (pandas) · SQL (SQLite) · Power BI semantic model and DAX · pytest · matplotlib.
 **Question:** The desk meets SLA on 63% of tickets. Where are the other 37% being lost, and what can be changed in ServiceNow to fix it?
 
@@ -20,7 +22,7 @@
 
 **Three findings, three changes:**
 
-1. **Reassignment is the biggest driver of missed SLA.** Each handoff costs about 15–20 points of attainment, and the pattern holds within the same priority. Two-thirds of all breaches came from reassigned tickets. → **Add assignment rules for the subcategories that are routed wrong most often.** Eleven rules, fit on the first 60% of the year and tested on the rest, raised first-touch accuracy on the tickets they covered from 51% to 82% (138 fixed, 3 broken).
+1. **Reassignment is the biggest driver of missed SLA.** Each handoff costs about 15–20 points of attainment, and the pattern holds within the same priority. Two-thirds of all breaches came from reassigned tickets. → **Add assignment rules for the subcategories that are routed wrong most often.** Eleven rules, built on the earliest 60% of tickets and tested on the later 40%, raised first-touch accuracy on the tickets they covered from 51% to 82% (138 fixed, 3 broken).
 2. **Critical and High tickets almost never meet SLA, even when nobody reassigns them** (3.6% for Critical with zero handoffs). That's not a performance problem; the SLA definitions for P1/P2 don't match how this desk actually works. → **Audit the P1/P2 SLA definitions and the priority matrix** before using SLA as a team KPI.
 3. **30% of open hours are spent waiting on the person who raised the ticket.** 5,464 incidents went into *Awaiting User Info*, with a median wait of 96 hours. → **Collect the right information at intake** (required fields per category in the service portal) so the ticket doesn't stall on the first follow-up question. This is the starting point for [Project 4](../04-contractor-onboarding-product-case/).
 
@@ -71,7 +73,7 @@ Median time to resolve is **0.7 hours** for tickets that stay with one group and
 
 I wanted a recommendation I could defend, so I tested it before suggesting it ([`src/routing.py`](src/routing.py)):
 
-1. Split tickets by open date: the first 60% for building rules, the last 40% for testing.
+1. Sort tickets by open date: the first 60% (up to 26 April 2016) for building rules, the last 40% for testing.
 2. For each subcategory, find the group that most often resolved it in the build period.
 3. Keep a rule only where it beats current routing by at least 15 points, with at least 30 tickets.
 4. Measure on the test period only.

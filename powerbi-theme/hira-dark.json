@@ -1,0 +1,28 @@
+{
+  "name": "Hira Hasan · Dark",
+  "dataColors": ["#8D8487", "#D42A35", "#E0A33A", "#6FAE8C", "#5B8FC9", "#B07CC6", "#C9C1BE", "#7D7476"],
+  "background": "#141113",
+  "foreground": "#EFE7E4",
+  "tableAccent": "#D42A35",
+  "good": "#6FAE8C",
+  "neutral": "#E0A33A",
+  "bad": "#D42A35",
+  "maximum": "#FF5A63",
+  "center": "#7D3A40",
+  "minimum": "#2A1619",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#EFE7E4" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#A8A0A0" },
+    "callout": { "fontFace": "Segoe UI Light", "fontSize": 28, "color": "#EFE7E4" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 11, "color": "#EFE7E4" }
+  },
+  "visualStyles": {
+    "*": { "*": {
+      "background": [{ "show": true, "color": { "solid": { "color": "#141113" } }, "transparency": 0 }],
+      "border": [{ "show": true, "color": { "solid": { "color": "#2B1D1F" } }, "radius": 3 }],
+      "valueAxis": [{ "gridlineColor": { "solid": { "color": "#2B1D1F" } }, "labelColor": { "solid": { "color": "#7D7476" } } }],
+      "categoryAxis": [{ "labelColor": { "solid": { "color": "#7D7476" } } }]
+    } },
+    "page": { "*": { "background": [{ "color": { "solid": { "color": "#0B0A0B" } }, "transparency": 0 }] } }
+  }
+}

@@ -6,6 +6,8 @@ Projects 1 and 2 use **real, public enterprise data**: a ServiceNow incident aud
 
 🌐 **Portfolio site:** [harleysdata.github.io](https://harleysdata.github.io)
 
+📊 **Live dashboards:** [ServiceNow service desk](https://harleysdata.github.io/dashboards/service-desk.html) · [SAP procure-to-pay controls](https://harleysdata.github.io/dashboards/p2p-controls.html). Each one has a guided story, filters and cross-filtering, and computes everything live from the real data. Power BI versions (data, DAX, theme and build guide) are in each project's `powerbi/` folder.
+
 ---
 
 ## Projects
@@ -38,7 +40,8 @@ flowchart LR
 |---|---|
 | **SQL** | Star-schema warehouse and reporting views ([P1](01-servicenow-service-desk-analytics/sql/marts.sql)); `PERCENT_RANK` vendor scoring, CTEs, window shares ([P2](02-sap-procure-to-pay-compliance/sql/marts.sql)) |
 | **Python (pandas)** | Event-log cleaning and fact tables ([P1](01-servicenow-service-desk-analytics/src/)); streaming XML parser for a 729 MB file ([P2](02-sap-procure-to-pay-compliance/src/parse_xes.py)); reconciliation engine ([P3](03-contingent-workforce-integration/src/reconcile.py)) |
-| **Power BI / DAX** | Semantic models with `USERELATIONSHIP`, `PERCENTILEX.INC`, row-level security design ([P1](01-servicenow-service-desk-analytics/powerbi/), [P2](02-sap-procure-to-pay-compliance/powerbi/)) |
+| **Power BI / DAX** | Star-schema models, DAX with `USERELATIONSHIP` and `PERCENTILEX.INC`, a custom report theme, and load-ready data ([P1](01-servicenow-service-desk-analytics/powerbi/), [P2](02-sap-procure-to-pay-compliance/powerbi/), [theme](powerbi-theme/hira-dark.json)) |
+| **Dashboard design and data storytelling** | Guided-story web dashboards with cross-filtering, written in plain JavaScript and SVG and hosted free on GitHub Pages ([service desk](https://harleysdata.github.io/dashboards/service-desk.html), [P2P](https://harleysdata.github.io/dashboards/p2p-controls.html)) |
 | **Statistics and experimentation** | Holding priority constant to check a confounder; time-based train/test split ([P1](01-servicenow-service-desk-analytics/)); power analysis with design effect ([P4](04-contractor-onboarding-product-case/)) |
 | **Process mining** | Variant analysis, throughput, conformance checks ([P2](02-sap-procure-to-pay-compliance/)) |
 | **ServiceNow** | Audit log (`sys_audit`) analysis, assignment rules, SLA definitions, HR lifecycle events, `sys_user` ([P1](01-servicenow-service-desk-analytics/), [P3](03-contingent-workforce-integration/)) |

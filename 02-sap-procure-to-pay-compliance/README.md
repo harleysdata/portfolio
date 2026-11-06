@@ -1,5 +1,7 @@
 # SAP Procure-to-Pay: Control testing and vendor risk scoring
 
+📊 **[Open the live dashboard](https://harleysdata.github.io/dashboards/p2p-controls.html)**: a guided story with filters, computed live from the data.
+
 **Data:** a real SAP purchase-to-pay event log from a multinational coatings and paints company. 1.6 million events, 251,734 purchase-order lines, 76,349 purchase orders, 1,975 vendors, €997M of PO value, 2018.
 **Tools:** Python (pandas, streaming XML parser) · SQL (SQLite, window functions) · process mining (variant analysis) · Power BI model · pytest.
 **Question:** Which purchase-to-pay controls are failing, how much spend do the failures touch, and which vendors should procurement and third-party risk look at first?
@@ -20,7 +22,7 @@
 **Findings and what I'd do about them:**
 
 1. **5,149 PO lines (€85M) were ordered and received by the same person.** This is a segregation-of-duties gap: one person can create a PO and confirm the goods arrived, which is the setup for paying for goods that never came. It's most common in the *invoice after GR* flow, where 15% of lines have it (vs. 1% elsewhere). → Restrict the GR transaction (MIGO) for users who hold PO-creation roles, or require a second approver above a value threshold.
-2. **3,450 lines (€27.5M) are after-the-fact POs:** the vendor's invoice is dated before the PO existed, meaning the purchase was made first and the paperwork followed. 57% of all *2-way match* lines and 14% of lines in the *Others* spend area work this way. → Publish a no-PO-no-pay policy for these spend areas and report after-the-fact POs by requester every month.
+2. **3,450 lines (€27.5M) are after-the-fact POs:** the vendor's invoice is dated before the PO existed, meaning the purchase was made first and the paperwork followed. It's concentrated: 50% of *Real Estate* lines, 14% of *Others* and 6% of *Trading & End Products* work this way, against under 1% in the big direct-materials areas. So do 57% of *2-way match* lines. → Publish a no-PO-no-pay policy for these spend areas and report after-the-fact POs by requester every month.
 3. **88% of lines are configured as "invoice before goods receipt", and that setting creates most of the payment blocks.** When an invoice is posted before the goods receipt, 97% of those lines are blocked for payment (median 7 days) until the GR arrives. Those blocks aren't fraud, they're AP rework that the configuration creates. → For stock materials with reliable deliveries, switch the PO default to GR-based invoice verification so invoices wait for the GR instead of being blocked.
 4. **655 lines were paid before any goods receipt.** That's small (€1.8M) but it's money out the door without proof of delivery. → Send these to AP for review and recovery.
 

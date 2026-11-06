@@ -1,13 +1,13 @@
 # Power BI model: P2P Controls and Vendor Risk
 
-Built on `fct_po_line` from `data/p2p.db`. Same caveat as Project 1: I designed the model and tested the logic in SQL, because Power BI Desktop doesn't run on macOS.
+The Power BI version of the [live web dashboard](https://harleysdata.github.io/dashboards/p2p-controls.html). The data is in [`data/`](data/), exported by `src/export_powerbi.py`: unzip `FactPOLine.zip` first, which holds 251,734 rows. The theme is [`../../powerbi-theme/hira-dark.json`](../../powerbi-theme/hira-dark.json).
 
 ## Tables
 
 | Table | Grain | Notes |
 |---|---|---|
 | FactPOLine | one row per PO line | control flags (`ctl_*`), milestone dates, PO value |
-| DimVendor | one row per vendor | joined to `mart_vendor_risk` for score and tier |
+| DimVendorRisk | one row per scored vendor | from `mart_vendor_risk`: score, tier and control rates |
 | DimSpendArea | spend area / sub-area | |
 | DimFlow | matching flow | 4 rows |
 | DimDate | calendar | active relationship on `po_at`, inactive on `cleared_at` |
@@ -48,3 +48,15 @@ CALCULATE ( [PO Lines], USERELATIONSHIP ( FactPOLine[cleared_at], DimDate[Date] 
 4. **Process.** Top variants and median days between steps.
 
 Row-level security: a role on `company` so each subsidiary's controller sees only their company code.
+
+## Build it (about 45 minutes, Windows)
+
+1. Unzip `data/FactPOLine.zip`. **Get data → Text/CSV** for `FactPOLine.csv`, `DimVendorRisk.csv` and `ProcessVariants.csv`. Set the `*_at` columns to *Date/Time* and the `ctl_*` columns to *Whole number*.
+2. In Power Query, reference `FactPOLine` to build `DimVendor` (distinct `vendor`), `DimSpendArea` (distinct `spend_area`) and `DimFlow` (distinct `flow`). Merge `DimVendorRisk` into `DimVendor` on `vendor` (left outer).
+3. `DimDate = CALENDAR ( DATE ( 2018, 1, 1 ), DATE ( 2019, 1, 31 ) )`, marked as the date table. Make the relationship on `po_at` active and the one on `cleared_at` inactive.
+4. Paste the measures above, then apply the theme `hira-dark.json`.
+5. Pages: *Control overview* (cards per control and a bar of exceptions by control), *Vendor risk* (scatter of spend vs `risk_score`, legend `risk_tier`, drill-through to vendor lines), *Exceptions worklist* (table filtered to high-risk flags), *Process* (`ProcessVariants` as a bar of share).
+6. **Check:** with no filters, *After-the-Fact PO %* reads **1.37%**, *Payment Block %* **22.2%**, and *High-Risk Exception Value* **€108.5M**.
+7. Export to PDF and save the `.pbix` and screenshots here.
+
+The live dashboard is the web version for the same licensing reason as Project 1.

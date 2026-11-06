@@ -1,0 +1,16 @@
+variant,po_lines,share,cumulative_share
+Create Purchase Order Item → Vendor creates invoice → Record Goods Receipt → Record Invoice Receipt → Clear Invoice,51130,0.203111220574098,0.203111220574098
+Create Purchase Order Item → Record Goods Receipt → Vendor creates invoice → Record Invoice Receipt → Clear Invoice,31125,0.1236424162012282,0.3267536367753263
+Create Purchase Order Item → Record Goods Receipt,13014,0.0516974266487641,0.3784510634240905
+Create Purchase Order Item → Vendor creates invoice → Record Goods Receipt → Record Invoice Receipt → Remove Payment Block → Clear Invoice,11618,0.0461518904875781,0.4246029539116687
+Create Purchase Order Item → Receive Order Confirmation → Record Goods Receipt → Vendor creates invoice → Record Invoice Receipt → Clear Invoice,9879,0.0392438049687368,0.4638467588804055
+Create Purchase Requisition Item → Create Purchase Order Item → Vendor creates invoice → Record Goods Receipt → Record Invoice Receipt → Clear Invoice,9069,0.0360261228121747,0.4998728816925803
+Create Purchase Order Item → Vendor creates invoice → Record Invoice Receipt → Record Goods Receipt → Remove Payment Block → Clear Invoice,8963,0.0356050434188468,0.5354779251114272
+Create Purchase Order Item → Record Goods Receipt → Vendor creates invoice → Record Invoice Receipt → Remove Payment Block → Clear Invoice,8112,0.0322244909309032,0.5677024160423305
+Create Purchase Order Item → Delete Purchase Order Item,5298,0.0210460247721801,0.5887484408145107
+Create Purchase Requisition Item → Create Purchase Order Item → Vendor creates invoice → Record Goods Receipt → Record Invoice Receipt,4291,0.0170457705355653,0.605794211350076
+Create Purchase Order Item → Receive Order Confirmation → Vendor creates invoice → Record Goods Receipt → Record Invoice Receipt → Clear Invoice,4290,0.0170417980884584,0.6228360094385345
+Create Purchase Requisition Item → Create Purchase Order Item → Record Goods Receipt,3970,0.015770615014261,0.6386066244527956
+Create Purchase Order Item → Record Goods Receipt → Vendor creates invoice → Record Invoice Receipt,3588,0.0142531402194379,0.6528597646722336
+Create Purchase Order Item,2835,0.0112618875479672,0.6641216522202009
+Create Purchase Order Item → Vendor creates invoice → Record Goods Receipt → Record Invoice Receipt,2820,0.0112023008413642,0.6753239530615652
