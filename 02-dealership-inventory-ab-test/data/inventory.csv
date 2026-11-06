@@ -1,0 +1,1401 @@
+stock_id,acquired_date,make,body_type,model_year,mileage_km,source,appraisal_method,price_vs_market_pct,days_to_turn
+JA20000,2026-05-26,Hyundai,Truck,2014,119700.0,Trade-in,Digital tool,-1.4,44
+JA20001,2025-12-04,Nissan,Truck,2017,127400.0,Auction,Manual,-2.1,52
+JA20002,2026-01-05,Hyundai,SUV,2016,52300.0,Private purchase,Manual,1.8,45
+JA20003,2026-04-30,Chevrolet,Sedan,2023,109000.0,Trade-in,Digital tool,5.1,69
+JA20004,2025-11-09,Hyundai,Truck,2021,123200.0,Auction,Manual,-0.3,47
+JA20005,2026-02-23,Toyota,SUV,2024,103700.0,Trade-in,Digital tool,-0.4,34
+JA20006,2026-03-27,Hyundai,Sedan,2019,157800.0,Trade-in,Digital tool,-2.0,64
+JA20007,2025-05-02,Ford,Minivan,2023,143600.0,Trade-in,Manual,3.5,84
+JA20008,2025-01-30,Toyota,Sedan,2021,62000.0,Private purchase,Manual,2.9,44
+JA20009,2025-06-12,Hyundai,Sedan,2017,100000.0,Private purchase,Manual,-1.3,61
+JA20010,2025-06-03,Chevrolet,SUV,2013,61600.0,Trade-in,Manual,1.0,39
+JA20011,2026-04-17,Toyota,SUV,2021,118200.0,Private purchase,Manual,5.6,63
+JA20012,2026-05-08,Ford,Hatchback,2013,60300.0,Trade-in,Digital tool,3.7,57
+JA20013,2025-01-03,Nissan,Truck,2023,131900.0,Auction,Manual,5.5,54
+JA20014,2025-09-27,Ford,Hatchback,2016,110500.0,Trade-in,Digital tool,2.8,60
+JA20015,2026-03-20,Honda,Sedan,2015,133800.0,Trade-in,Digital tool,-1.9,51
+JA20016,2025-03-12,Honda,Sedan,2020,89200.0,Trade-in,Manual,0.4,69
+JA20017,2026-03-07,Ford,Sedan,2024,36700.0,Trade-in,Digital tool,3.0,48
+JA20018,2025-03-06,Nissan,Truck,2021,165600.0,Private purchase,Manual,-2.7,51
+JA20019,2025-09-10,Hyundai,SUV,2014,88100.0,Trade-in,Digital tool,-0.9,47
+JA20020,2026-03-17,Toyota,Sedan,2016,150100.0,Trade-in,Digital tool,-7.9,65
+JA20021,2025-06-13,Chevrolet,Sedan,2020,112200.0,Trade-in,Manual,0.4,47
+JA20022,2025-07-04,Mercedes-Benz,Truck,2015,122000.0,Auction,Manual,-0.9,86
+JA20023,2025-05-31,Toyota,SUV,2015,168200.0,Trade-in,Manual,-2.9,54
+JA20024,2026-01-24,Honda,SUV,2018,108600.0,Trade-in,Digital tool,1.6,52
+JA20025,2025-05-18,Toyota,SUV,2015,151000.0,Trade-in,Manual,-1.0,52
+JA20026,2026-06-19,Chevrolet,SUV,2019,35600.0,Private purchase,Manual,0.4,42
+JA20027,2025-08-29,BMW,Hatchback,2014,129800.0,Trade-in,Manual,0.9,65
+JA20028,2025-09-16,Toyota,Truck,2016,85300.0,Trade-in,Digital tool,-3.5,42
+JA20029,2025-09-30,Honda,Truck,2024,89600.0,Auction,Manual,7.5,59
+JA20030,2025-11-11,Toyota,Sedan,2022,95300.0,Trade-in,Digital tool,-2.6,51
+JA20031,2025-10-26,Ford,SUV,2014,108900.0,Auction,Manual,2.6,68
+JA20032,2025-10-03,Mercedes-Benz,Sedan,2016,161300.0,Private purchase,Manual,-3.3,70
+JA20033,2026-06-22,Toyota,Hatchback,2023,20900.0,Auction,Manual,0.0,45
+JA20034,2026-03-13,Toyota,Sedan,2024,96800.0,Auction,Manual,0.6,57
+JA20035,2026-03-05,Ford,Sedan,2014,66300.0,Private purchase,Manual,0.7,62
+JA20036,2026-01-14,Ford,SUV,2024,141600.0,Auction,Manual,-0.4,54
+JA20037,2025-12-02,Nissan,SUV,2016,78100.0,Auction,Manual,2.4,74
+JA20038,2025-07-04,Ford,Sedan,2014,113300.0,Private purchase,Manual,8.0,73
+JA20039,2026-06-19,Toyota,Sedan,2015,79100.0,Private purchase,Manual,1.3,55
+JA20040,2025-09-09,Honda,SUV,2019,121700.0,Auction,Manual,1.3,50
+JA20041,2025-04-27,Kia,SUV,2024,135600.0,Trade-in,Manual,0.3,40
+JA20042,2026-04-02,Nissan,Truck,2024,79100.0,Trade-in,Digital tool,9.3,63
+JA20043,2025-03-28,Toyota,SUV,2014,97000.0,Trade-in,Manual,8.2,63
+JA20044,2026-04-09,Chevrolet,Sedan,2017,38200.0,Trade-in,Digital tool,1.6,57
+JA20045,2025-11-27,Honda,SUV,2023,107200.0,Auction,Manual,4.6,56
+JA20046,2025-03-03,Chevrolet,Truck,2024,129300.0,Auction,Manual,-0.9,49
+JA20047,2025-01-24,Toyota,SUV,2016,72800.0,Private purchase,Manual,1.3,70
+JA20048,2025-08-29,BMW,Sedan,2015,139800.0,Auction,Manual,2.7,84
+JA20049,2025-01-20,Toyota,Minivan,2024,12100.0,Auction,Manual,2.3,60
+JA20050,2025-03-18,Ford,Truck,2017,20900.0,Auction,Manual,-1.5,39
+JA20051,2025-10-06,Hyundai,Truck,2022,39500.0,Auction,Manual,-1.2,37
+JA20052,2026-06-08,Ford,SUV,2017,75600.0,Auction,Manual,3.9,54
+JA20053,2025-09-09,Toyota,Hatchback,2016,95700.0,Auction,Manual,3.1,76
+JA20054,2026-03-13,Toyota,Sedan,2023,91800.0,Trade-in,Digital tool,-8.9,42
+JA20055,2026-05-11,Honda,Minivan,2019,92300.0,Auction,Manual,2.2,60
+JA20056,2026-03-21,Toyota,Hatchback,2019,123900.0,Trade-in,Digital tool,4.4,81
+JA20057,2025-12-06,Toyota,Truck,2014,76100.0,Private purchase,Manual,-0.7,43
+JA20058,2025-08-27,Toyota,Hatchback,2016,44500.0,Private purchase,Manual,2.8,55
+JA20059,2025-10-05,Ford,Sedan,2017,45200.0,Auction,Manual,-3.8,58
+JA20060,2025-05-24,Honda,Truck,2019,179500.0,Auction,Manual,5.1,58
+JA20061,2025-09-26,Hyundai,SUV,2013,8000.0,Trade-in,Digital tool,-5.0,55
+JA20062,2025-07-24,Honda,Minivan,2016,87900.0,Trade-in,Manual,-3.0,50
+JA20063,2025-05-14,Toyota,Hatchback,2021,153300.0,Auction,Manual,0.6,57
+JA20064,2026-06-21,Honda,SUV,2019,114300.0,Trade-in,Digital tool,8.7,57
+JA20065,2025-01-07,Nissan,SUV,2020,61800.0,Auction,Manual,-0.5,40
+JA20066,2025-02-22,Honda,Sedan,2023,95100.0,Private purchase,Manual,-3.1,38
+JA20067,2025-04-14,Ford,Truck,2016,129600.0,Auction,Manual,3.7,74
+JA20068,2026-06-08,Nissan,SUV,2013,143300.0,Private purchase,Manual,2.8,73
+JA20069,2026-01-09,Ford,Minivan,2013,59000.0,Trade-in,Digital tool,5.9,59
+JA20070,2026-04-22,BMW,SUV,2023,125400.0,Private purchase,Manual,-3.1,64
+JA20071,2025-04-19,BMW,Minivan,2024,105100.0,Private purchase,Manual,-4.4,62
+JA20072,2026-01-25,Honda,Truck,2019,139200.0,Auction,Manual,0.6,48
+JA20073,2025-07-19,Nissan,Sedan,2014,150600.0,Private purchase,Manual,3.4,59
+JA20074,2025-09-22,Honda,SUV,2013,81300.0,Auction,Manual,3.3,50
+JA20075,2025-01-03,Toyota,SUV,2016,37000.0,Auction,Manual,6.1,51
+JA20076,2025-11-30,Ford,SUV,2014,110800.0,Auction,Manual,-4.0,58
+JA20077,2026-03-25,Hyundai,Sedan,2013,166100.0,Trade-in,Digital tool,-3.9,86
+JA20078,2025-12-25,Mercedes-Benz,Truck,2016,122400.0,Trade-in,Digital tool,-1.1,62
+JA20079,2025-03-25,Toyota,Hatchback,2017,104200.0,Auction,Manual,5.2,59
+JA20080,2025-10-16,Nissan,SUV,2022,191000.0,Trade-in,Digital tool,1.2,50
+JA20081,2025-05-25,Ford,Minivan,2017,53400.0,Auction,Manual,0.2,52
+JA20082,2026-06-06,Toyota,SUV,2021,131100.0,Trade-in,Digital tool,-4.6,38
+JA20083,2026-04-21,Kia,Minivan,2019,72200.0,Auction,Manual,5.3,59
+JA20084,2025-04-11,Nissan,Hatchback,2023,97000.0,Private purchase,Manual,5.6,63
+JA20085,2025-10-03,Toyota,SUV,2016,98600.0,Auction,Manual,12.5,75
+JA20086,2026-05-23,BMW,Hatchback,2024,155600.0,Trade-in,Digital tool,-1.3,56
+JA20087,2026-04-03,Toyota,Truck,2015,57600.0,Auction,Manual,8.2,57
+JA20088,2026-01-18,Toyota,Truck,2014,73600.0,Auction,Manual,-2.9,58
+JA20089,2025-12-12,Honda,Hatchback,2022,31300.0,Private purchase,Manual,-0.3,47
+JA20090,2025-01-23,Mercedes-Benz,Sedan,2019,114500.0,Trade-in,Manual,-0.8,84
+JA20091,2026-02-05,Toyota,Sedan,2016,76700.0,Trade-in,Digital tool,-2.4,43
+JA20092,2025-09-13,BMW,SUV,2014,111900.0,Private purchase,Manual,-1.6,63
+JA20093,2025-02-19,Hyundai,Hatchback,2016,52100.0,Auction,Manual,-0.2,59
+JA20094,2025-05-13,Toyota,Hatchback,2020,80600.0,Private purchase,Manual,1.7,53
+JA20095,2025-10-20,Hyundai,SUV,2018,136600.0,Auction,Manual,0.1,48
+JA20096,2026-01-28,Ford,Truck,2014,88000.0,Auction,Manual,4.5,58
+JA20097,2025-10-02,Hyundai,SUV,2016,120000.0,Private purchase,Manual,1.6,52
+JA20098,2025-11-27,Nissan,SUV,2019,116100.0,Auction,Manual,1.9,45
+JA20099,2026-04-16,Nissan,SUV,2021,80900.0,Trade-in,Digital tool,5.2,60
+JA20100,2026-01-06,Kia,Sedan,2019,32600.0,Trade-in,Digital tool,0.6,47
+JA20101,2025-07-15,Toyota,SUV,2014,134400.0,Trade-in,Manual,2.5,53
+JA20102,2025-12-14,Chevrolet,SUV,2014,101800.0,Trade-in,Digital tool,-0.7,49
+JA20103,2025-11-20,Ford,SUV,2016,134300.0,Trade-in,Digital tool,-0.4,50
+JA20104,2025-02-28,Chevrolet,SUV,2021,14500.0,Trade-in,Manual,4.1,49
+JA20105,2025-02-01,BMW,Truck,2018,28800.0,Auction,Manual,-1.3,54
+JA20106,2025-12-23,Kia,SUV,2014,9300.0,Private purchase,Manual,6.4,49
+JA20107,2025-07-29,Honda,Sedan,2016,59900.0,Trade-in,Manual,8.0,63
+JA20108,2025-11-20,Ford,Sedan,2020,136700.0,Trade-in,Digital tool,3.9,62
+JA20109,2025-06-24,Mercedes-Benz,SUV,2023,117600.0,Private purchase,Manual,-0.0,52
+JA20110,2025-05-02,Mercedes-Benz,SUV,2015,93600.0,Private purchase,Manual,-4.4,72
+JA20111,2025-03-23,Honda,Hatchback,2017,100200.0,Private purchase,Manual,0.2,48
+JA20112,2025-07-26,Mercedes-Benz,Minivan,2015,125400.0,Trade-in,Manual,2.5,67
+JA20113,2026-03-17,Ford,Hatchback,2018,82900.0,Auction,Manual,5.1,63
+JA20114,2025-08-05,Honda,SUV,2018,110800.0,Auction,Manual,1.2,45
+JA20115,2025-07-24,Nissan,Truck,2018,100600.0,Auction,Manual,0.7,52
+JA20116,2025-11-07,Ford,Sedan,2014,8000.0,Trade-in,Digital tool,5.3,52
+JA20117,2026-06-13,Ford,SUV,2022,79600.0,Private purchase,Manual,-0.7,38
+JA20118,2025-07-31,Honda,Sedan,2019,149400.0,Auction,Manual,6.1,67
+JA20119,2025-11-15,Ford,Minivan,2015,79200.0,Trade-in,Digital tool,2.9,56
+JA20120,2025-08-26,Toyota,Hatchback,2017,89300.0,Trade-in,Manual,-3.3,52
+JA20121,2025-11-23,Toyota,Sedan,2022,70700.0,Auction,Manual,3.0,56
+JA20122,2025-08-29,Nissan,SUV,2021,75600.0,Trade-in,Manual,-0.3,44
+JA20123,2025-12-11,Hyundai,Hatchback,2024,140000.0,Auction,Manual,-1.8,48
+JA20124,2025-10-23,Nissan,Minivan,2019,84300.0,Trade-in,Digital tool,-7.9,46
+JA20125,2026-01-01,Chevrolet,Sedan,2016,54100.0,Trade-in,Digital tool,-6.8,69
+JA20126,2026-06-01,Honda,SUV,2014,8000.0,Trade-in,Digital tool,1.0,39
+JA20127,2025-03-23,Honda,Sedan,2015,72100.0,Trade-in,Manual,0.4,56
+JA20128,2025-10-31,Honda,Truck,2019,16300.0,Private purchase,Manual,3.0,54
+JA20129,2025-08-26,Honda,Sedan,2022,22100.0,Trade-in,Manual,-2.3,34
+JA20130,2025-07-13,Nissan,SUV,2021,126800.0,Auction,Manual,0.6,52
+JA20131,2025-05-10,Honda,SUV,2016,123300.0,Private purchase,Manual,0.8,47
+JA20132,2025-01-29,Honda,SUV,2016,18300.0,Trade-in,Manual,-4.2,41
+JA20133,2025-08-06,Hyundai,SUV,2015,129100.0,Trade-in,Manual,-4.6,49
+JA20134,2026-03-23,Toyota,SUV,2016,113400.0,Auction,Manual,3.6,64
+JA20135,2025-02-22,Toyota,Minivan,2013,63700.0,Trade-in,Manual,2.5,50
+JA20136,2025-08-08,Nissan,SUV,2015,124400.0,Private purchase,Manual,-1.8,42
+JA20137,2026-06-07,Nissan,Truck,2020,29900.0,Trade-in,Digital tool,-1.0,42
+JA20138,2026-05-29,Honda,Truck,2015,46800.0,Auction,Manual,4.5,58
+JA20139,2025-04-27,Hyundai,Sedan,2024,37400.0,Trade-in,Manual,9.1,53
+JA20140,2025-01-05,Toyota,Sedan,2014,50500.0,Trade-in,Manual,-1.6,67
+JA20141,2025-12-29,Ford,SUV,2023,130100.0,Trade-in,Digital tool,1.8,47
+JA20142,2025-01-08,Hyundai,Truck,2023,41700.0,Private purchase,Manual,10.2,59
+JA20143,2025-06-12,Honda,Truck,2020,48900.0,Auction,Manual,2.1,40
+JA20144,2025-09-26,Honda,Truck,2016,56900.0,Auction,Manual,7.6,64
+JA20145,2026-04-18,Hyundai,Sedan,2018,102800.0,Trade-in,Digital tool,-10.8,54
+JA20146,2025-02-20,Hyundai,Minivan,2020,81400.0,Trade-in,Manual,7.6,71
+JA20147,2025-12-24,Toyota,Hatchback,2024,129500.0,Private purchase,Manual,1.8,48
+JA20148,2025-10-15,Nissan,Sedan,2016,66500.0,Auction,Manual,-5.5,101
+JA20149,2025-03-13,Toyota,Truck,2020,43400.0,Auction,Manual,4.9,61
+JA20150,2026-04-02,Mercedes-Benz,SUV,2023,74800.0,Auction,Manual,6.0,75
+JA20151,2026-04-02,Toyota,Minivan,2024,96400.0,Trade-in,Digital tool,4.1,79
+JA20152,2025-09-18,Honda,Sedan,2017,57600.0,Private purchase,Manual,6.6,62
+JA20153,2026-05-26,Toyota,Hatchback,2021,106000.0,Trade-in,Digital tool,-0.7,52
+JA20154,2025-11-24,Kia,SUV,2019,167500.0,Trade-in,Digital tool,-3.5,41
+JA20155,2026-05-04,Honda,Minivan,2021,71500.0,Auction,Manual,0.1,43
+JA20156,2026-06-03,Hyundai,SUV,2017,96500.0,Trade-in,Digital tool,-0.8,44
+JA20157,2025-11-04,Kia,Sedan,2021,148700.0,Auction,Manual,3.5,66
+JA20158,2025-06-01,Mercedes-Benz,SUV,2023,68700.0,Auction,Manual,-0.0,51
+JA20159,2025-03-20,Toyota,SUV,2014,60700.0,Trade-in,Manual,2.1,46
+JA20160,2025-10-31,Ford,Truck,2023,50800.0,Auction,Manual,5.3,59
+JA20161,2025-04-14,Hyundai,SUV,2016,110400.0,Auction,Manual,3.2,64
+JA20162,2026-02-10,Nissan,Sedan,2013,115000.0,Trade-in,Digital tool,8.4,71
+JA20163,2026-05-17,Honda,SUV,2013,88500.0,Trade-in,Digital tool,7.8,65
+JA20164,2025-05-13,Honda,Hatchback,2019,96100.0,Trade-in,Manual,-2.6,54
+JA20165,2025-10-26,Toyota,SUV,2024,145300.0,Trade-in,Digital tool,-2.8,47
+JA20166,2025-01-27,Toyota,SUV,2015,129000.0,Trade-in,Manual,-3.3,41
+JA20167,2025-04-08,Hyundai,Hatchback,2024,38200.0,Trade-in,Manual,-2.7,40
+JA20168,2025-07-23,Toyota,Truck,2013,93800.0,Auction,Manual,4.0,57
+JA20169,2026-04-23,Toyota,Truck,2020,98400.0,Auction,Manual,-2.0,62
+JA20170,2026-06-08,Honda,Minivan,2020,122900.0,Trade-in,Digital tool,-4.7,46
+JA20171,2025-12-13,Toyota,SUV,2014,85100.0,Auction,Manual,0.8,51
+JA20172,2025-11-12,Toyota,Truck,2023,68200.0,Auction,Manual,5.0,52
+JA20173,2025-11-04,Mercedes-Benz,Truck,2014,75700.0,Auction,Manual,0.5,57
+JA20174,2025-02-02,Ford,Truck,2014,22800.0,Auction,Manual,0.5,38
+JA20175,2025-07-23,Toyota,Truck,2018,92900.0,Trade-in,Manual,5.5,77
+JA20176,2026-06-15,Nissan,SUV,2017,70000.0,Auction,Manual,3.7,54
+JA20177,2025-08-10,Toyota,SUV,2017,112500.0,Auction,Manual,3.7,63
+JA20178,2025-04-26,Honda,Truck,2017,52800.0,Trade-in,Manual,5.6,56
+JA20179,2025-05-10,Mercedes-Benz,Sedan,2015,76400.0,Auction,Manual,-2.1,61
+JA20180,2026-01-21,BMW,SUV,2020,54600.0,Auction,Manual,2.7,58
+JA20181,2025-01-21,Hyundai,SUV,2014,51100.0,Auction,Manual,-0.6,60
+JA20182,2026-06-08,Toyota,Sedan,2019,121700.0,Auction,Manual,5.9,62
+JA20183,2026-04-19,Honda,SUV,2020,75100.0,Auction,Manual,5.1,56
+JA20184,2025-11-03,Toyota,Truck,2018,111400.0,Auction,Manual,-2.2,52
+JA20185,2025-09-10,Toyota,SUV,2022,48800.0,Auction,Manual,7.1,55
+JA20186,2026-02-16,Toyota,Hatchback,2020,97500.0,Trade-in,Digital tool,-5.2,47
+JA20187,2025-10-23,Toyota,SUV,2013,26000.0,Trade-in,Digital tool,4.0,56
+JA20188,2025-09-15,Hyundai,Sedan,2017,74400.0,Private purchase,Manual,2.7,54
+JA20189,2025-06-23,Toyota,SUV,2016,73400.0,Trade-in,Manual,-1.5,67
+JA20190,2025-08-30,Toyota,Truck,2016,116800.0,Auction,Manual,-2.5,57
+JA20191,2026-02-10,BMW,Sedan,2016,100600.0,Trade-in,Digital tool,-1.8,77
+JA20192,2025-01-30,Honda,SUV,2022,86400.0,Auction,Manual,1.8,55
+JA20193,2025-01-14,Honda,Minivan,2019,126900.0,Auction,Manual,-0.9,51
+JA20194,2026-01-25,Toyota,Truck,2015,101000.0,Auction,Manual,4.1,59
+JA20195,2025-07-20,Chevrolet,SUV,2020,114800.0,Private purchase,Manual,-3.6,45
+JA20196,2026-03-11,Nissan,Hatchback,2017,124000.0,Auction,Manual,1.9,62
+JA20197,2025-01-17,Ford,SUV,2017,90600.0,Trade-in,Manual,1.9,54
+JA20198,2026-05-05,Hyundai,Minivan,2014,81500.0,Trade-in,Digital tool,-8.0,56
+JA20199,2025-03-08,Toyota,SUV,2023,106300.0,Trade-in,Manual,3.1,49
+JA20200,2025-08-13,Honda,Minivan,2023,76600.0,Trade-in,Manual,-3.1,39
+JA20201,2026-06-07,Hyundai,SUV,2017,108700.0,Private purchase,Manual,-7.9,64
+JA20202,2025-02-28,Mercedes-Benz,Truck,2016,137500.0,Auction,Manual,-0.5,59
+JA20203,2025-12-22,Chevrolet,SUV,2016,127400.0,Auction,Manual,1.0,51
+JA20204,2026-01-29,Hyundai,Sedan,2018,78000.0,Auction,Manual,5.4,56
+JA20205,2025-08-20,Ford,Sedan,2022,41900.0,Trade-in,Manual,-0.0,50
+JA20206,2025-02-12,Toyota,SUV,2023,91000.0,Trade-in,Manual,7.7,68
+JA20207,2025-10-10,BMW,SUV,2023,88200.0,Auction,Manual,7.5,80
+JA20208,2025-08-23,Toyota,SUV,2020,137400.0,Trade-in,Manual,6.2,51
+JA20209,2026-04-17,Toyota,Truck,2023,77900.0,Trade-in,Digital tool,4.6,61
+JA20210,2026-01-04,Nissan,SUV,2013,84800.0,Auction,Manual,3.3,55
+JA20211,2025-07-05,Chevrolet,Sedan,2015,122500.0,Auction,Manual,-0.3,56
+JA20212,2025-02-01,Chevrolet,SUV,2016,74100.0,Trade-in,Manual,4.4,49
+JA20213,2025-11-15,Ford,SUV,2015,86800.0,Trade-in,Digital tool,3.2,57
+JA20214,2025-05-31,Toyota,Minivan,2021,161600.0,Auction,Manual,2.8,74
+JA20215,2026-01-05,Toyota,Sedan,2018,152600.0,Auction,Manual,0.9,61
+JA20216,2026-04-12,Chevrolet,Truck,2015,118300.0,Trade-in,Digital tool,-6.8,46
+JA20217,2025-07-11,Kia,Truck,2024,103800.0,Auction,Manual,4.5,67
+JA20218,2026-05-03,Honda,Hatchback,2016,54400.0,Auction,Manual,3.3,59
+JA20219,2025-10-08,BMW,SUV,2020,115400.0,Private purchase,Manual,-3.3,56
+JA20220,2025-10-14,Ford,SUV,2020,95400.0,Trade-in,Digital tool,-0.2,40
+JA20221,2026-02-18,Honda,Sedan,2020,101900.0,Auction,Manual,4.7,67
+JA20222,2026-03-03,Ford,SUV,2023,72400.0,Auction,Manual,1.4,51
+JA20223,2026-05-06,Toyota,SUV,2016,92600.0,Trade-in,Digital tool,2.5,46
+JA20224,2026-06-24,Ford,Hatchback,2018,85800.0,Auction,Manual,4.9,57
+JA20225,2025-03-23,Toyota,Sedan,2024,105700.0,Trade-in,Manual,-3.9,46
+JA20226,2025-08-11,Nissan,Sedan,2019,150100.0,Trade-in,Manual,0.7,49
+JA20227,2026-05-20,Ford,SUV,2015,107500.0,Trade-in,Digital tool,1.3,49
+JA20228,2025-06-16,BMW,Truck,2013,26900.0,Auction,Manual,5.5,77
+JA20229,2025-01-03,BMW,Sedan,2019,54400.0,Auction,Manual,7.4,74
+JA20230,2025-11-08,Honda,SUV,2014,29900.0,Trade-in,Digital tool,-8.2,32
+JA20231,2026-02-11,Honda,Minivan,2021,61400.0,Trade-in,Digital tool,-0.9,40
+JA20232,2026-02-06,Mercedes-Benz,Minivan,2018,115400.0,Auction,Manual,4.7,77
+JA20233,2026-03-14,Ford,Minivan,2022,109100.0,Trade-in,Digital tool,4.2,60
+JA20234,2025-12-14,Toyota,Hatchback,2013,69200.0,Trade-in,Digital tool,6.0,60
+JA20235,2025-03-15,Toyota,Sedan,2022,103700.0,Private purchase,Manual,-1.8,53
+JA20236,2026-04-03,Kia,SUV,2023,62900.0,Auction,Manual,0.4,39
+JA20237,2025-08-15,Hyundai,Truck,2017,36400.0,Auction,Manual,-2.3,61
+JA20238,2026-04-03,Toyota,SUV,2020,37000.0,Auction,Manual,5.1,62
+JA20239,2026-03-17,Ford,Sedan,2016,58800.0,Trade-in,Digital tool,-5.8,83
+JA20240,2026-06-09,Ford,SUV,2019,149800.0,Trade-in,Digital tool,4.1,62
+JA20241,2025-01-08,Ford,SUV,2024,39500.0,Auction,Manual,5.6,55
+JA20242,2026-04-13,Mercedes-Benz,Truck,2013,142700.0,Auction,Manual,3.8,66
+JA20243,2025-12-06,Mercedes-Benz,SUV,2019,146100.0,Private purchase,Manual,-6.7,57
+JA20244,2025-09-20,Toyota,Truck,2020,85800.0,Trade-in,Digital tool,-3.3,36
+JA20245,2026-03-05,Toyota,Truck,2016,91100.0,Auction,Manual,4.8,70
+JA20246,2026-05-30,Ford,Hatchback,2015,68600.0,Trade-in,Digital tool,-6.2,45
+JA20247,2025-10-05,Chevrolet,Sedan,2014,92000.0,Trade-in,Digital tool,-1.6,86
+JA20248,2025-02-17,Hyundai,Hatchback,2014,119300.0,Trade-in,Manual,1.5,57
+JA20249,2026-01-27,Nissan,Truck,2022,93400.0,Trade-in,Digital tool,2.9,78
+JA20250,2025-05-05,Hyundai,Minivan,2019,132800.0,Trade-in,Manual,3.0,52
+JA20251,2025-05-03,Toyota,Hatchback,2023,140300.0,Trade-in,Manual,3.0,55
+JA20252,2025-04-15,Chevrolet,SUV,2018,106700.0,Trade-in,Manual,0.1,39
+JA20253,2025-04-18,Toyota,SUV,2019,106000.0,Auction,Manual,1.9,46
+JA20254,2026-05-07,Nissan,Sedan,2024,90500.0,Auction,Manual,1.3,53
+JA20255,2025-07-16,Toyota,SUV,2017,106800.0,Auction,Manual,4.8,52
+JA20256,2025-02-27,Ford,SUV,2019,48500.0,Auction,Manual,1.2,52
+JA20257,2025-04-07,Kia,Hatchback,2020,109100.0,Auction,Manual,6.0,67
+JA20258,2025-08-02,Ford,SUV,2020,101100.0,Trade-in,Manual,-4.8,40
+JA20259,2025-07-06,Toyota,SUV,2024,58500.0,Auction,Manual,6.6,54
+JA20260,2025-06-17,Ford,Truck,2022,178800.0,Auction,Manual,1.2,52
+JA20261,2026-05-27,Hyundai,SUV,2019,54100.0,Private purchase,Manual,6.3,93
+JA20262,2026-04-13,Toyota,SUV,2019,58200.0,Auction,Manual,2.2,48
+JA20263,2025-11-06,Honda,Minivan,2022,104000.0,Trade-in,Digital tool,2.8,54
+JA20264,2026-06-17,Toyota,Truck,2022,15600.0,Auction,Manual,7.8,54
+JA20265,2025-07-03,Ford,Sedan,2023,61300.0,Trade-in,Manual,-0.3,54
+JA20266,2025-03-16,Honda,SUV,2024,32000.0,Auction,Manual,2.2,47
+JA20267,2025-05-27,Ford,SUV,2022,54300.0,Auction,Manual,1.2,47
+JA20268,2025-02-18,Honda,Minivan,2014,87600.0,Auction,Manual,2.7,54
+JA20269,2026-05-30,Hyundai,Truck,2018,105600.0,Trade-in,Digital tool,-7.0,44
+JA20270,2025-04-29,Toyota,SUV,2013,136900.0,Trade-in,Manual,1.2,64
+JA20271,2025-08-29,BMW,Truck,2015,125100.0,Trade-in,Manual,0.9,54
+JA20272,2025-04-20,Mercedes-Benz,SUV,2015,140200.0,Auction,Manual,-1.2,75
+JA20273,2026-06-14,Ford,Truck,2021,116400.0,Auction,Manual,1.1,53
+JA20274,2025-03-27,Ford,SUV,2017,74200.0,Auction,Manual,-4.2,50
+JA20275,2025-10-06,Chevrolet,SUV,2022,137400.0,Trade-in,Digital tool,4.9,62
+JA20276,2026-05-29,Honda,SUV,2020,73400.0,Auction,Manual,3.6,50
+JA20277,2025-10-09,Chevrolet,SUV,2024,68300.0,Trade-in,Digital tool,6.8,53
+JA20278,2026-05-01,Honda,Hatchback,2013,153900.0,Private purchase,Manual,-1.6,69
+JA20279,2026-04-30,Nissan,Hatchback,2014,124300.0,Private purchase,Manual,-2.7,70
+JA20280,2026-02-19,Honda,Truck,2022,101600.0,Trade-in,Digital tool,0.5,55
+JA20281,2026-02-06,Hyundai,Truck,2014,122900.0,Auction,Manual,-4.7,70
+JA20282,2025-11-08,Mercedes-Benz,SUV,2016,127900.0,Auction,Manual,2.8,80
+JA20283,2025-11-10,Toyota,SUV,2020,38400.0,Trade-in,Digital tool,-3.4,31
+JA20284,2026-03-25,Chevrolet,Hatchback,2018,89100.0,Trade-in,Digital tool,-2.0,54
+JA20285,2025-08-19,Ford,Minivan,2022,45700.0,Trade-in,Manual,2.9,43
+JA20286,2026-05-26,Honda,Sedan,2014,97700.0,Auction,Manual,2.0,56
+JA20287,2026-04-20,Honda,Truck,2013,66000.0,Trade-in,Digital tool,6.7,53
+JA20288,2025-07-22,Toyota,Minivan,2023,147100.0,Trade-in,Manual,4.4,56
+JA20289,2025-08-11,Honda,Minivan,2020,113500.0,Auction,Manual,-3.2,56
+JA20290,2026-01-21,Hyundai,SUV,2014,60400.0,Trade-in,Digital tool,3.2,46
+JA20291,2026-05-14,Toyota,Truck,2016,92100.0,Auction,Manual,-3.4,51
+JA20292,2025-02-22,Hyundai,Sedan,2015,44400.0,Trade-in,Manual,2.2,64
+JA20293,2025-02-07,Mercedes-Benz,Sedan,2024,94400.0,Trade-in,Manual,-3.1,59
+JA20294,2025-05-14,Kia,Sedan,2016,114600.0,Auction,Manual,-1.4,49
+JA20295,2025-08-21,BMW,SUV,2017,103300.0,Trade-in,Manual,7.1,69
+JA20296,2025-03-29,Chevrolet,SUV,2024,15700.0,Private purchase,Manual,-0.3,41
+JA20297,2025-10-08,Toyota,Truck,2013,79400.0,Auction,Manual,-0.7,48
+JA20298,2025-10-20,Kia,Truck,2023,113100.0,Trade-in,Digital tool,-2.9,46
+JA20299,2026-05-29,Toyota,Hatchback,2022,105000.0,Trade-in,Digital tool,-1.9,43
+JA20300,2026-02-07,BMW,SUV,2014,139100.0,Auction,Manual,7.6,78
+JA20301,2025-05-16,BMW,SUV,2016,41400.0,Private purchase,Manual,-2.8,58
+JA20302,2026-03-01,Hyundai,Sedan,2023,113700.0,Private purchase,Manual,-3.0,43
+JA20303,2026-03-12,Ford,Minivan,2018,66700.0,Trade-in,Digital tool,1.6,51
+JA20304,2026-01-03,Toyota,Sedan,2021,100500.0,Trade-in,Digital tool,-7.0,48
+JA20305,2026-01-01,Ford,SUV,2014,108900.0,Auction,Manual,0.4,50
+JA20306,2025-06-17,Honda,Sedan,2022,120200.0,Trade-in,Manual,6.3,67
+JA20307,2026-01-23,Toyota,Minivan,2016,69700.0,Trade-in,Digital tool,-0.6,62
+JA20308,2025-03-14,Toyota,Hatchback,2015,100100.0,Trade-in,Manual,-0.1,51
+JA20309,2025-12-06,Chevrolet,Hatchback,2014,46000.0,Auction,Manual,-1.0,49
+JA20310,2026-05-13,Mercedes-Benz,Sedan,2022,36300.0,Auction,Manual,-1.8,54
+JA20311,2026-06-09,Toyota,SUV,2016,114900.0,Auction,Manual,-0.5,65
+JA20312,2025-06-11,Toyota,Hatchback,2020,90500.0,Auction,Manual,2.4,53
+JA20313,2025-06-29,Honda,Truck,2019,28000.0,Auction,Manual,6.8,51
+JA20314,2025-12-01,Toyota,Hatchback,2017,58700.0,Trade-in,Digital tool,3.2,51
+JA20315,2025-08-04,Toyota,Sedan,2016,93500.0,Trade-in,Manual,-0.4,58
+JA20316,2026-01-30,Hyundai,SUV,2013,154900.0,Trade-in,Digital tool,-3.6,52
+JA20317,2025-04-20,Ford,SUV,2021,134500.0,Trade-in,Manual,4.6,62
+JA20318,2025-04-02,Ford,Hatchback,2018,124600.0,Trade-in,Manual,-5.3,46
+JA20319,2025-01-28,Toyota,Hatchback,2023,21300.0,Trade-in,Manual,0.1,40
+JA20320,2025-09-11,Hyundai,SUV,2015,88800.0,Trade-in,Digital tool,-2.0,40
+JA20321,2025-04-25,Honda,Hatchback,2019,111800.0,Trade-in,Manual,-2.6,45
+JA20322,2025-06-11,Honda,Sedan,2013,108400.0,Private purchase,Manual,-2.1,57
+JA20323,2026-05-10,Ford,Sedan,2013,109300.0,Private purchase,Manual,3.2,60
+JA20324,2026-03-16,BMW,Sedan,2018,83300.0,Auction,Manual,-4.7,88
+JA20325,2026-03-30,Honda,SUV,2024,163000.0,Trade-in,Digital tool,-4.3,58
+JA20326,2025-11-17,Nissan,SUV,2021,151700.0,Auction,Manual,-0.8,51
+JA20327,2025-03-02,Honda,SUV,2015,88900.0,Private purchase,Manual,2.1,49
+JA20328,2026-02-08,BMW,SUV,2023,53500.0,Auction,Manual,-3.6,44
+JA20329,2025-11-23,Honda,Sedan,2017,174800.0,Auction,Manual,6.1,67
+JA20330,2026-05-06,Ford,SUV,2017,70600.0,Auction,Manual,0.6,59
+JA20331,2025-09-16,BMW,Truck,2019,140500.0,Private purchase,Manual,0.8,54
+JA20332,2025-04-04,Nissan,SUV,2023,169000.0,Auction,Manual,0.3,54
+JA20333,2025-11-18,Toyota,Sedan,2020,54900.0,Trade-in,Digital tool,-3.4,47
+JA20334,2025-09-04,Toyota,Sedan,2017,104300.0,Auction,Manual,-2.1,62
+JA20335,2025-12-23,Kia,SUV,2017,78800.0,Private purchase,Manual,6.3,78
+JA20336,2025-07-22,Toyota,Sedan,2014,113300.0,Trade-in,Manual,2.6,68
+JA20337,2025-06-15,Honda,Sedan,2018,105500.0,Trade-in,Manual,1.3,53
+JA20338,2025-03-09,Mercedes-Benz,Sedan,2024,170500.0,Trade-in,Manual,5.7,89
+JA20339,2026-06-04,Toyota,Hatchback,2020,116300.0,Trade-in,Digital tool,-3.6,55
+JA20340,2026-02-12,Toyota,Truck,2017,92300.0,Trade-in,Digital tool,1.7,47
+JA20341,2025-09-09,Toyota,SUV,2018,137700.0,Auction,Manual,1.8,57
+JA20342,2025-05-07,Toyota,Hatchback,2015,81800.0,Auction,Manual,-1.8,64
+JA20343,2025-12-06,Ford,Sedan,2016,78100.0,Auction,Manual,4.7,79
+JA20344,2025-08-11,Hyundai,Truck,2019,182200.0,Auction,Manual,-4.2,51
+JA20345,2025-12-10,Honda,SUV,2017,59800.0,Trade-in,Digital tool,1.8,44
+JA20346,2025-02-18,Toyota,Sedan,2013,73100.0,Auction,Manual,-1.8,48
+JA20347,2025-04-10,Chevrolet,Truck,2017,94400.0,Trade-in,Manual,3.3,61
+JA20348,2026-02-01,Chevrolet,Truck,2019,50400.0,Trade-in,Digital tool,4.7,49
+JA20349,2025-02-03,Hyundai,Hatchback,2016,8300.0,Trade-in,Manual,4.0,72
+JA20350,2026-01-01,Toyota,SUV,2019,134900.0,Auction,Manual,-0.7,67
+JA20351,2025-08-11,Ford,Hatchback,2020,61300.0,Auction,Manual,1.6,56
+JA20352,2025-01-02,Hyundai,Sedan,2016,71000.0,Auction,Manual,0.3,57
+JA20353,2026-02-17,Ford,Truck,2019,77800.0,Auction,Manual,-2.9,42
+JA20354,2026-01-13,BMW,Hatchback,2016,53400.0,Trade-in,Digital tool,-5.2,53
+JA20355,2026-03-17,Honda,Sedan,2017,49700.0,Auction,Manual,1.9,56
+JA20356,2026-04-29,Ford,Hatchback,2019,99100.0,Auction,Manual,3.8,61
+JA20357,2026-01-30,Toyota,Hatchback,2021,188600.0,Trade-in,Digital tool,-7.8,76
+JA20358,2026-03-31,Hyundai,Hatchback,2013,122100.0,Auction,Manual,1.4,59
+JA20359,2025-03-03,Nissan,SUV,2022,122500.0,Auction,Manual,3.7,62
+JA20360,2026-05-11,Nissan,Sedan,2022,32400.0,Auction,Manual,2.1,50
+JA20361,2026-05-09,Honda,SUV,2020,91700.0,Auction,Manual,-2.3,48
+JA20362,2026-01-10,Kia,Truck,2015,45300.0,Trade-in,Digital tool,3.3,53
+JA20363,2026-03-10,Nissan,Hatchback,2017,123500.0,Trade-in,Digital tool,-5.6,47
+JA20364,2026-02-05,Ford,SUV,2021,83500.0,Trade-in,Digital tool,1.7,53
+JA20365,2026-04-19,Ford,Truck,2024,94200.0,Auction,Manual,8.0,76
+JA20366,2026-04-26,Chevrolet,Truck,2024,89100.0,Auction,Manual,-6.4,56
+JA20367,2025-10-10,Toyota,SUV,2014,69300.0,Auction,Manual,2.7,54
+JA20368,2026-03-17,Hyundai,Hatchback,2021,31800.0,Trade-in,Digital tool,0.4,39
+JA20369,2026-05-10,Nissan,Sedan,2022,115800.0,Trade-in,Digital tool,0.1,59
+JA20370,2025-06-10,Ford,SUV,2021,37300.0,Trade-in,Manual,-1.4,35
+JA20371,2025-01-26,BMW,SUV,2018,45400.0,Auction,Manual,0.4,56
+JA20372,2025-04-02,Ford,Truck,2021,80700.0,Trade-in,Manual,-3.8,33
+JA20373,2025-01-17,Ford,SUV,2017,64400.0,Trade-in,Manual,2.2,40
+JA20374,2025-08-23,Honda,Sedan,2014,103100.0,Trade-in,Manual,3.8,61
+JA20375,2025-01-11,BMW,SUV,2023,133100.0,Private purchase,Manual,-1.0,52
+JA20376,2025-05-20,Honda,Sedan,2014,102600.0,Auction,Manual,-2.0,52
+JA20377,2025-05-17,Nissan,Sedan,2020,100500.0,Private purchase,Manual,-0.2,41
+JA20378,2026-01-17,Ford,Hatchback,2017,93600.0,Trade-in,Digital tool,-0.9,54
+JA20379,2025-05-15,Mercedes-Benz,Truck,2024,127000.0,Trade-in,Manual,1.9,49
+JA20380,2026-05-28,Mercedes-Benz,Truck,2017,18800.0,Auction,Manual,1.2,50
+JA20381,2025-04-12,Toyota,SUV,2023,107300.0,Private purchase,Manual,1.9,53
+JA20382,2026-06-09,Kia,SUV,2016,55300.0,Trade-in,Digital tool,-6.0,42
+JA20383,2025-11-03,Hyundai,Hatchback,2014,43300.0,Private purchase,Manual,-9.1,52
+JA20384,2025-05-12,Toyota,Minivan,2017,92800.0,Auction,Manual,4.1,65
+JA20385,2025-01-22,Ford,Sedan,2019,77100.0,Private purchase,Manual,7.2,66
+JA20386,2025-06-15,Toyota,Minivan,2024,116000.0,Private purchase,Manual,-3.9,47
+JA20387,2025-11-15,Ford,Truck,2022,136700.0,Trade-in,Digital tool,-3.5,40
+JA20388,2025-02-28,Toyota,Sedan,2018,8000.0,Private purchase,Manual,2.8,61
+JA20389,2025-03-31,Honda,Sedan,2013,89700.0,Trade-in,Manual,5.4,66
+JA20390,2025-03-04,Honda,SUV,2017,171000.0,Trade-in,Manual,4.2,61
+JA20391,2026-01-02,Hyundai,Sedan,2019,127300.0,Trade-in,Digital tool,4.1,106
+JA20392,2025-02-17,Chevrolet,SUV,2018,150500.0,Trade-in,Manual,1.4,46
+JA20393,2025-01-12,Mercedes-Benz,Sedan,2024,96700.0,Auction,Manual,3.2,78
+JA20394,2025-09-04,Honda,Sedan,2016,35200.0,Auction,Manual,3.2,60
+JA20395,2025-06-17,Hyundai,SUV,2015,47600.0,Trade-in,Manual,-0.1,36
+JA20396,2025-11-04,Toyota,Sedan,2016,121100.0,Auction,Manual,6.3,68
+JA20397,2026-05-22,Honda,SUV,2014,131000.0,Auction,Manual,4.1,60
+JA20398,2026-04-09,Mercedes-Benz,Sedan,2014,63400.0,Trade-in,Digital tool,3.0,58
+JA20399,2025-10-18,Toyota,Hatchback,2016,81900.0,Auction,Manual,0.1,51
+JA20400,2025-12-14,BMW,Sedan,2015,103100.0,Trade-in,Digital tool,3.2,77
+JA20401,2026-03-15,Hyundai,Truck,2017,22600.0,Auction,Manual,-2.5,57
+JA20402,2025-08-25,Honda,Sedan,2022,78600.0,Auction,Manual,3.2,60
+JA20403,2025-12-22,Chevrolet,SUV,2016,157400.0,Auction,Manual,-8.6,56
+JA20404,2025-04-27,Honda,SUV,2022,180100.0,Private purchase,Manual,-2.3,48
+JA20405,2025-11-26,BMW,Hatchback,2018,88300.0,Private purchase,Manual,4.5,64
+JA20406,2025-05-08,Toyota,Minivan,2014,165900.0,Auction,Manual,-0.2,60
+JA20407,2025-04-14,Toyota,SUV,2023,71600.0,Trade-in,Manual,2.3,48
+JA20408,2026-02-16,Nissan,SUV,2015,60200.0,Trade-in,Digital tool,-7.2,36
+JA20409,2025-11-07,Ford,Minivan,2019,8000.0,Auction,Manual,7.7,62
+JA20410,2025-07-23,Toyota,Hatchback,2013,130900.0,Auction,Manual,3.9,70
+JA20411,2025-01-22,Ford,Sedan,2020,77700.0,Auction,Manual,1.5,57
+JA20412,2025-05-08,Honda,Hatchback,2021,186200.0,Auction,Manual,3.2,59
+JA20413,2026-03-09,Ford,Sedan,2014,105900.0,Auction,Manual,2.9,81
+JA20414,2025-09-10,Nissan,Hatchback,2018,100200.0,Private purchase,Manual,7.1,71
+JA20415,2026-06-03,Chevrolet,SUV,2013,20400.0,Auction,Manual,2.4,46
+JA20416,2026-05-02,Toyota,Sedan,2020,152700.0,Auction,Manual,-4.2,55
+JA20417,2026-04-07,Hyundai,Truck,2024,78200.0,Auction,Manual,0.6,52
+JA20418,2025-01-09,Kia,SUV,2021,86200.0,Auction,Manual,6.6,70
+JA20419,2025-01-28,Ford,Truck,2017,8000.0,Auction,Manual,3.8,46
+JA20420,2025-11-09,Nissan,SUV,2021,129700.0,Private purchase,Manual,-0.0,40
+JA20421,2025-07-02,Toyota,Truck,2024,132200.0,Trade-in,Manual,4.0,66
+JA20422,2026-03-31,BMW,Hatchback,2019,68500.0,Auction,Manual,2.1,70
+JA20423,2025-06-21,Hyundai,Sedan,2017,96400.0,Trade-in,Manual,4.0,59
+JA20424,2025-03-24,BMW,Minivan,2014,108400.0,Auction,Manual,-4.6,64
+JA20425,2025-03-02,Chevrolet,Sedan,2020,131200.0,Private purchase,Manual,-1.9,51
+JA20426,2025-06-12,BMW,Truck,2024,96900.0,Private purchase,Manual,4.2,54
+JA20427,2025-12-05,Toyota,SUV,2020,161600.0,Private purchase,Manual,0.7,59
+JA20428,2025-03-10,Nissan,SUV,2023,83000.0,Auction,Manual,3.0,53
+JA20429,2026-03-07,Toyota,Truck,2014,68500.0,Auction,Manual,9.3,72
+JA20430,2025-06-13,Honda,Minivan,2014,74100.0,Private purchase,Manual,0.4,85
+JA20431,2025-06-19,Honda,Sedan,2013,8000.0,Auction,Manual,2.5,59
+JA20432,2025-12-24,Hyundai,Hatchback,2023,60500.0,Trade-in,Digital tool,-3.1,39
+JA20433,2026-04-11,Hyundai,SUV,2018,133000.0,Trade-in,Digital tool,-3.3,44
+JA20434,2025-08-24,Mercedes-Benz,Hatchback,2020,103400.0,Auction,Manual,1.3,76
+JA20435,2026-03-07,Toyota,Hatchback,2014,60000.0,Auction,Manual,-4.1,68
+JA20436,2025-06-14,Toyota,Sedan,2013,106800.0,Auction,Manual,-6.6,60
+JA20437,2025-03-11,Honda,Sedan,2016,12000.0,Auction,Manual,6.9,62
+JA20438,2026-03-24,Chevrolet,Truck,2022,81400.0,Auction,Manual,1.2,56
+JA20439,2026-02-19,Ford,SUV,2015,113800.0,Auction,Manual,6.0,59
+JA20440,2026-02-10,Ford,Truck,2022,120700.0,Auction,Manual,2.1,47
+JA20441,2026-04-22,Nissan,Truck,2016,61800.0,Auction,Manual,2.2,51
+JA20442,2025-09-27,Hyundai,Sedan,2021,129300.0,Trade-in,Digital tool,1.7,59
+JA20443,2025-04-17,Honda,SUV,2018,167600.0,Auction,Manual,4.4,66
+JA20444,2025-11-12,Toyota,SUV,2016,75800.0,Auction,Manual,-3.1,51
+JA20445,2025-11-06,Ford,SUV,2016,122500.0,Auction,Manual,6.3,59
+JA20446,2025-07-28,BMW,Hatchback,2016,30500.0,Trade-in,Manual,-2.2,53
+JA20447,2025-12-11,Hyundai,SUV,2017,14400.0,Trade-in,Digital tool,-0.1,38
+JA20448,2025-05-23,Toyota,SUV,2019,117400.0,Auction,Manual,11.6,73
+JA20449,2025-11-26,Ford,SUV,2018,94600.0,Trade-in,Digital tool,-0.6,41
+JA20450,2026-03-05,Honda,Sedan,2020,100900.0,Auction,Manual,8.1,77
+JA20451,2025-02-21,Hyundai,Sedan,2021,69500.0,Trade-in,Manual,0.2,45
+JA20452,2025-09-02,Hyundai,Hatchback,2017,81100.0,Auction,Manual,4.0,58
+JA20453,2025-12-24,Mercedes-Benz,Hatchback,2013,125300.0,Trade-in,Digital tool,-0.7,76
+JA20454,2025-01-28,Honda,Minivan,2019,161600.0,Private purchase,Manual,3.2,63
+JA20455,2025-12-08,Ford,Hatchback,2024,84200.0,Trade-in,Digital tool,-4.2,38
+JA20456,2026-05-08,Hyundai,Sedan,2023,26900.0,Trade-in,Digital tool,-4.5,46
+JA20457,2026-03-21,BMW,SUV,2018,143900.0,Auction,Manual,2.9,92
+JA20458,2026-01-06,Nissan,Minivan,2024,117000.0,Auction,Manual,-4.5,62
+JA20459,2026-03-10,Ford,SUV,2024,120200.0,Trade-in,Digital tool,-4.2,55
+JA20460,2025-07-15,Chevrolet,Sedan,2017,100200.0,Auction,Manual,4.1,79
+JA20461,2025-06-26,Ford,SUV,2013,185900.0,Auction,Manual,-0.8,63
+JA20462,2025-02-15,Mercedes-Benz,Hatchback,2019,96000.0,Trade-in,Manual,-1.9,55
+JA20463,2026-01-25,Honda,SUV,2013,113500.0,Trade-in,Digital tool,-5.2,60
+JA20464,2025-06-19,Toyota,Sedan,2022,18800.0,Auction,Manual,2.2,44
+JA20465,2026-04-14,Chevrolet,SUV,2014,69800.0,Trade-in,Digital tool,-2.3,46
+JA20466,2025-09-09,Honda,Hatchback,2015,65500.0,Trade-in,Digital tool,-0.3,56
+JA20467,2026-04-28,Chevrolet,Sedan,2023,91800.0,Private purchase,Manual,0.9,52
+JA20468,2025-03-16,Hyundai,Sedan,2019,106900.0,Trade-in,Manual,8.8,68
+JA20469,2025-03-29,Ford,SUV,2017,63000.0,Private purchase,Manual,-0.1,36
+JA20470,2025-07-07,Toyota,SUV,2014,162200.0,Auction,Manual,-6.0,80
+JA20471,2025-01-15,Chevrolet,Hatchback,2023,50300.0,Trade-in,Manual,2.1,55
+JA20472,2025-09-23,Toyota,Truck,2018,74900.0,Private purchase,Manual,1.6,43
+JA20473,2025-12-18,Mercedes-Benz,Truck,2021,102500.0,Trade-in,Digital tool,-0.3,46
+JA20474,2025-12-24,BMW,Minivan,2013,42900.0,Auction,Manual,-4.7,64
+JA20475,2025-04-26,Honda,Sedan,2014,115800.0,Trade-in,Manual,6.0,69
+JA20476,2025-03-30,Toyota,SUV,2021,118300.0,Trade-in,Manual,1.5,50
+JA20477,2025-11-01,BMW,Sedan,2017,81200.0,Private purchase,Manual,1.4,78
+JA20478,2025-12-08,Ford,SUV,2022,169400.0,Trade-in,Digital tool,-7.1,44
+JA20479,2026-05-26,Toyota,Sedan,2016,96200.0,Private purchase,Manual,3.5,64
+JA20480,2026-04-29,Ford,Sedan,2016,104200.0,Trade-in,Digital tool,-1.1,45
+JA20481,2025-07-24,Honda,Sedan,2018,54500.0,Auction,Manual,6.9,65
+JA20482,2025-03-29,Ford,Minivan,2014,25900.0,Trade-in,Manual,-0.0,64
+JA20483,2025-05-17,Hyundai,Hatchback,2022,67700.0,Auction,Manual,-3.2,43
+JA20484,2026-04-22,BMW,Sedan,2020,80100.0,Private purchase,Manual,2.1,70
+JA20485,2025-09-04,Chevrolet,Hatchback,2014,74700.0,Auction,Manual,-2.0,53
+JA20486,2026-06-21,Toyota,Hatchback,2024,123700.0,Trade-in,Digital tool,0.7,50
+JA20487,2025-12-21,Ford,Truck,2024,8000.0,Trade-in,Digital tool,-5.1,30
+JA20488,2025-11-18,Ford,Sedan,2021,47600.0,Auction,Manual,1.1,56
+JA20489,2025-02-24,Kia,Hatchback,2018,19900.0,Auction,Manual,0.7,55
+JA20490,2025-11-15,Toyota,Sedan,2018,146700.0,Trade-in,Digital tool,-1.0,64
+JA20491,2025-07-25,Ford,SUV,2017,70300.0,Private purchase,Manual,-0.4,41
+JA20492,2026-04-01,BMW,SUV,2020,72300.0,Auction,Manual,-1.5,50
+JA20493,2025-03-14,Honda,Truck,2021,48900.0,Private purchase,Manual,1.4,55
+JA20494,2025-04-14,Honda,SUV,2023,129000.0,Trade-in,Manual,-0.6,40
+JA20495,2025-12-24,Hyundai,Sedan,2016,76500.0,Trade-in,Digital tool,-0.3,56
+JA20496,2026-01-03,Honda,Sedan,2022,101800.0,Auction,Manual,0.5,50
+JA20497,2026-03-25,Mercedes-Benz,SUV,2021,11500.0,Auction,Manual,-7.1,54
+JA20498,2025-10-11,Toyota,SUV,2020,139900.0,Trade-in,Digital tool,-1.1,90
+JA20499,2025-07-23,Toyota,SUV,2017,108800.0,Trade-in,Manual,7.0,69
+JA20500,2025-06-15,Toyota,Truck,2024,115100.0,Trade-in,Manual,2.8,44
+JA20501,2025-07-20,Nissan,SUV,2018,142500.0,Auction,Manual,3.9,62
+JA20502,2025-12-24,Honda,Sedan,2017,85300.0,Auction,Manual,3.4,64
+JA20503,2025-10-19,BMW,Minivan,2015,86300.0,Trade-in,Digital tool,-2.7,60
+JA20504,2025-06-09,BMW,Sedan,2018,121700.0,Private purchase,Manual,-3.6,70
+JA20505,2025-04-27,Mercedes-Benz,Hatchback,2015,110100.0,Auction,Manual,4.8,85
+JA20506,2026-01-19,Honda,Truck,2016,83200.0,Auction,Manual,5.7,64
+JA20507,2025-05-14,Toyota,Minivan,2023,94800.0,Trade-in,Manual,3.8,75
+JA20508,2025-04-23,Honda,SUV,2021,72800.0,Trade-in,Manual,3.3,43
+JA20509,2025-06-28,Mercedes-Benz,Sedan,2019,121700.0,Trade-in,Manual,3.1,64
+JA20510,2026-04-06,Nissan,Minivan,2024,130400.0,Auction,Manual,1.5,48
+JA20511,2025-09-05,Toyota,Sedan,2018,93200.0,Trade-in,Digital tool,0.2,53
+JA20512,2025-11-18,Nissan,Minivan,2017,168300.0,Trade-in,Digital tool,-0.8,55
+JA20513,2025-02-14,BMW,SUV,2022,31400.0,Trade-in,Manual,2.9,56
+JA20514,2025-07-06,Mercedes-Benz,SUV,2015,83700.0,Private purchase,Manual,-2.0,50
+JA20515,2026-02-11,Nissan,Hatchback,2023,161600.0,Auction,Manual,-0.8,52
+JA20516,2026-02-22,BMW,Sedan,2013,76200.0,Trade-in,Digital tool,1.3,65
+JA20517,2025-11-09,Chevrolet,Sedan,2014,28900.0,Trade-in,Digital tool,-2.2,44
+JA20518,2026-04-19,Honda,Minivan,2019,149000.0,Auction,Manual,-7.7,61
+JA20519,2025-06-11,Toyota,SUV,2024,114900.0,Trade-in,Manual,2.1,50
+JA20520,2025-03-30,Nissan,Minivan,2021,45200.0,Private purchase,Manual,-7.2,44
+JA20521,2025-02-11,Toyota,Sedan,2013,124100.0,Private purchase,Manual,9.0,83
+JA20522,2025-04-18,Honda,SUV,2023,52100.0,Trade-in,Manual,4.4,49
+JA20523,2026-02-17,Kia,SUV,2020,39400.0,Auction,Manual,4.2,50
+JA20524,2026-05-04,Hyundai,Sedan,2017,87000.0,Trade-in,Digital tool,-3.4,45
+JA20525,2025-03-12,Ford,Sedan,2016,73800.0,Trade-in,Manual,-2.7,54
+JA20526,2025-09-28,Mercedes-Benz,Hatchback,2015,49100.0,Trade-in,Digital tool,-1.7,53
+JA20527,2025-03-13,Honda,SUV,2016,78400.0,Trade-in,Manual,1.7,58
+JA20528,2026-04-02,Kia,SUV,2013,52800.0,Auction,Manual,-1.3,52
+JA20529,2025-03-12,BMW,SUV,2018,95500.0,Trade-in,Manual,2.2,55
+JA20530,2025-12-12,Honda,Sedan,2017,92200.0,Auction,Manual,4.3,58
+JA20531,2025-02-13,Honda,Truck,2020,123000.0,Auction,Manual,3.9,52
+JA20532,2026-02-03,Toyota,Sedan,2021,74900.0,Auction,Manual,-2.4,66
+JA20533,2026-05-05,BMW,Sedan,2018,39700.0,Trade-in,Digital tool,-9.2,46
+JA20534,2026-01-31,Toyota,Sedan,2018,40200.0,Trade-in,Digital tool,-0.9,41
+JA20535,2025-05-26,Toyota,SUV,2021,83200.0,Auction,Manual,-0.9,85
+JA20536,2026-03-31,BMW,SUV,2021,154700.0,Auction,Manual,3.3,77
+JA20537,2025-06-15,Hyundai,Minivan,2024,127100.0,Auction,Manual,7.9,91
+JA20538,2026-02-12,Nissan,SUV,2019,67400.0,Trade-in,Digital tool,5.4,59
+JA20539,2026-03-26,Nissan,Minivan,2015,130900.0,Trade-in,Digital tool,0.2,57
+JA20540,2025-09-20,Toyota,Sedan,2019,46600.0,Private purchase,Manual,5.9,64
+JA20541,2025-12-01,Toyota,SUV,2015,133700.0,Auction,Manual,7.9,64
+JA20542,2026-04-07,Ford,SUV,2018,77800.0,Trade-in,Digital tool,-0.7,39
+JA20543,2025-04-12,Toyota,SUV,2020,123900.0,Auction,Manual,2.7,50
+JA20544,2025-01-11,Ford,SUV,2015,118100.0,Trade-in,Manual,4.9,52
+JA20545,2025-08-23,Nissan,Sedan,2017,82000.0,Auction,Manual,1.5,95
+JA20546,2025-04-08,Hyundai,Sedan,2013,106300.0,Auction,Manual,-0.3,53
+JA20547,2026-04-23,Hyundai,Sedan,2016,50300.0,Auction,Manual,-1.2,62
+JA20548,2026-04-14,Toyota,Sedan,2024,90200.0,Trade-in,Digital tool,-0.8,38
+JA20549,2025-07-22,Honda,SUV,2019,136600.0,Private purchase,Manual,-0.7,38
+JA20550,2025-06-16,BMW,SUV,2019,257500.0,Private purchase,Manual,4.7,77
+JA20551,2026-01-19,Toyota,Minivan,2021,121300.0,Private purchase,Manual,0.4,58
+JA20552,2025-09-02,Ford,SUV,2023,96700.0,Auction,Manual,7.3,55
+JA20553,2025-02-22,Toyota,Truck,2023,52500.0,Trade-in,Manual,6.3,50
+JA20554,2025-12-24,Mercedes-Benz,Sedan,2013,135600.0,Private purchase,Manual,-3.1,81
+JA20555,2026-01-28,Toyota,Truck,2024,26700.0,Auction,Manual,5.8,66
+JA20556,2025-02-07,Ford,SUV,2016,60900.0,Auction,Manual,0.1,42
+JA20557,2026-02-24,Ford,SUV,2022,107500.0,Auction,Manual,6.9,85
+JA20558,2025-10-16,Nissan,Sedan,2014,44800.0,Trade-in,Digital tool,1.1,70
+JA20559,2026-03-22,Mercedes-Benz,Hatchback,2017,154900.0,Private purchase,Manual,1.5,79
+JA20560,2026-04-05,Nissan,SUV,2016,137000.0,Auction,Manual,4.3,55
+JA20561,2025-12-31,Honda,SUV,2023,70400.0,Trade-in,Digital tool,-2.9,35
+JA20562,2025-06-30,Toyota,SUV,2017,70900.0,Trade-in,Manual,2.9,54
+JA20563,2025-07-20,Nissan,Hatchback,2021,40200.0,Trade-in,Manual,3.2,51
+JA20564,2026-01-27,Kia,SUV,2017,37000.0,Trade-in,Digital tool,-1.4,41
+JA20565,2025-02-04,Toyota,SUV,2015,110900.0,Private purchase,Manual,3.2,59
+JA20566,2025-05-05,Chevrolet,Sedan,2021,118200.0,Trade-in,Manual,-2.1,53
+JA20567,2025-10-08,Toyota,Hatchback,2024,107300.0,Trade-in,Digital tool,1.3,59
+JA20568,2026-05-25,Ford,Sedan,2023,103800.0,Auction,Manual,-2.9,72
+JA20569,2026-02-14,Ford,SUV,2015,70700.0,Trade-in,Digital tool,1.6,51
+JA20570,2026-03-17,Hyundai,Sedan,2022,107600.0,Trade-in,Digital tool,1.0,49
+JA20571,2025-04-14,Kia,SUV,2021,34100.0,Auction,Manual,4.4,52
+JA20572,2025-06-01,Nissan,SUV,2018,93500.0,Trade-in,Manual,-0.4,38
+JA20573,2025-05-24,Honda,Minivan,2021,152300.0,Auction,Manual,13.3,88
+JA20574,2026-02-09,Nissan,Sedan,2020,146200.0,Auction,Manual,0.9,73
+JA20575,2025-10-17,Ford,SUV,2023,74600.0,Auction,Manual,2.3,40
+JA20576,2025-04-25,Ford,Hatchback,2016,79700.0,Trade-in,Manual,-1.1,42
+JA20577,2026-02-09,Honda,Minivan,2020,148500.0,Trade-in,Digital tool,4.7,75
+JA20578,2025-12-11,Ford,Hatchback,2014,164900.0,Auction,Manual,-0.1,59
+JA20579,2026-04-30,Honda,SUV,2024,33100.0,Private purchase,Manual,5.5,48
+JA20580,2025-10-29,Honda,SUV,2016,76000.0,Auction,Manual,-1.9,53
+JA20581,2025-03-09,Toyota,Sedan,2013,102600.0,Auction,Manual,2.9,87
+JA20582,2026-04-25,Ford,Sedan,2022,142100.0,Auction,Manual,0.3,67
+JA20583,2025-04-10,Honda,Hatchback,2013,59500.0,Trade-in,Manual,5.3,73
+JA20584,2025-01-30,Chevrolet,Minivan,2014,119000.0,Auction,Manual,0.7,68
+JA20585,2026-03-08,Chevrolet,Hatchback,2015,81100.0,Trade-in,Digital tool,-4.0,46
+JA20586,2025-09-01,Honda,SUV,2017,188600.0,Trade-in,Digital tool,1.0,59
+JA20587,2025-12-15,Hyundai,Sedan,2019,110400.0,Auction,Manual,-2.8,74
+JA20588,2025-03-12,BMW,SUV,2019,87800.0,Trade-in,Manual,-1.9,43
+JA20589,2026-01-25,Honda,Sedan,2018,79700.0,Auction,Manual,4.7,55
+JA20590,2025-08-07,Hyundai,SUV,2023,135600.0,Auction,Manual,-5.3,55
+JA20591,2026-06-23,Ford,SUV,2013,120500.0,Trade-in,Digital tool,2.2,48
+JA20592,2025-12-10,Hyundai,SUV,2015,49700.0,Private purchase,Manual,0.3,42
+JA20593,2026-05-23,Mercedes-Benz,SUV,2015,101900.0,Trade-in,Digital tool,-4.2,59
+JA20594,2026-03-05,Toyota,SUV,2014,39400.0,Private purchase,Manual,2.7,70
+JA20595,2026-04-01,Mercedes-Benz,Truck,2019,62800.0,Trade-in,Digital tool,1.7,54
+JA20596,2025-02-17,Hyundai,SUV,2021,41200.0,Auction,Manual,-0.4,45
+JA20597,2026-02-24,Chevrolet,SUV,2017,39900.0,Private purchase,Manual,1.1,59
+JA20598,2025-11-22,Hyundai,Truck,2019,65600.0,Auction,Manual,4.8,52
+JA20599,2025-08-02,BMW,Truck,2022,53800.0,Auction,Manual,4.7,55
+JA20600,2025-06-18,Honda,Truck,2022,114400.0,Trade-in,Manual,1.6,63
+JA20601,2025-12-13,Nissan,Truck,2018,125200.0,Auction,Manual,-1.1,42
+JA20602,2025-04-17,Honda,Truck,2021,83600.0,Auction,Manual,-1.8,38
+JA20603,2025-04-10,Ford,Sedan,2023,48300.0,Trade-in,Manual,-0.4,37
+JA20604,2026-04-17,Nissan,Truck,2018,125500.0,Trade-in,Digital tool,1.9,59
+JA20605,2026-02-15,Toyota,SUV,2022,11900.0,Private purchase,Manual,4.0,53
+JA20606,2025-11-16,Toyota,SUV,2021,15600.0,Auction,Manual,3.0,53
+JA20607,2026-02-14,Chevrolet,Truck,2018,122400.0,Trade-in,Digital tool,4.6,69
+JA20608,2025-06-24,Chevrolet,SUV,2018,119600.0,Auction,Manual,0.7,47
+JA20609,2026-01-25,Hyundai,Sedan,2017,132300.0,Auction,Manual,0.4,58
+JA20610,2025-04-22,Honda,SUV,2023,84500.0,Private purchase,Manual,0.4,38
+JA20611,2025-08-29,Hyundai,Sedan,2015,42500.0,Auction,Manual,9.1,73
+JA20612,2025-03-21,Toyota,Hatchback,2016,72700.0,Trade-in,Manual,-5.9,50
+JA20613,2025-07-24,Hyundai,Truck,2016,116000.0,Trade-in,Manual,3.0,47
+JA20614,2025-07-03,Hyundai,Sedan,2015,62400.0,Trade-in,Manual,3.5,61
+JA20615,2025-08-15,Hyundai,SUV,2017,65000.0,Private purchase,Manual,2.1,53
+JA20616,2025-09-15,Ford,Hatchback,2021,37200.0,Trade-in,Digital tool,8.2,70
+JA20617,2025-01-19,Honda,Truck,2017,46500.0,Trade-in,Manual,6.3,54
+JA20618,2025-07-04,Nissan,Sedan,2014,127100.0,Private purchase,Manual,4.8,68
+JA20619,2026-04-01,Ford,Hatchback,2015,111500.0,Trade-in,Digital tool,-4.0,52
+JA20620,2025-08-22,Nissan,Truck,2018,46600.0,Auction,Manual,3.8,44
+JA20621,2025-10-20,Honda,Minivan,2018,49800.0,Private purchase,Manual,0.5,62
+JA20622,2025-02-25,Toyota,Truck,2017,70600.0,Private purchase,Manual,2.1,62
+JA20623,2025-07-29,Ford,Hatchback,2014,115200.0,Trade-in,Manual,2.6,55
+JA20624,2026-06-08,Hyundai,Sedan,2018,46300.0,Auction,Manual,0.1,49
+JA20625,2025-10-23,Mercedes-Benz,Truck,2023,86400.0,Trade-in,Digital tool,1.8,56
+JA20626,2025-01-11,BMW,Hatchback,2018,8000.0,Auction,Manual,8.0,79
+JA20627,2026-01-25,Toyota,SUV,2019,42700.0,Trade-in,Digital tool,3.3,48
+JA20628,2026-02-20,Chevrolet,Sedan,2021,110100.0,Trade-in,Digital tool,0.2,51
+JA20629,2025-07-25,Honda,Sedan,2014,129300.0,Trade-in,Manual,-5.4,58
+JA20630,2025-01-18,Nissan,SUV,2019,46800.0,Trade-in,Manual,6.0,46
+JA20631,2026-03-25,Honda,Truck,2016,62100.0,Auction,Manual,6.0,63
+JA20632,2025-05-17,Honda,Truck,2018,125300.0,Trade-in,Manual,1.2,48
+JA20633,2026-05-12,Ford,Minivan,2016,77500.0,Trade-in,Digital tool,-2.4,77
+JA20634,2025-07-16,Ford,SUV,2014,71500.0,Trade-in,Manual,4.4,76
+JA20635,2025-07-29,Nissan,Sedan,2014,114100.0,Trade-in,Manual,-1.1,59
+JA20636,2026-03-05,Hyundai,Hatchback,2020,101100.0,Trade-in,Digital tool,2.4,53
+JA20637,2025-03-16,Nissan,Sedan,2018,137900.0,Trade-in,Manual,-2.1,63
+JA20638,2025-01-16,Honda,Hatchback,2014,125100.0,Auction,Manual,-1.5,54
+JA20639,2026-02-15,Nissan,Sedan,2015,70100.0,Trade-in,Digital tool,-0.5,67
+JA20640,2026-05-15,Honda,SUV,2021,88500.0,Auction,Manual,-3.5,45
+JA20641,2026-06-21,Hyundai,SUV,2014,90800.0,Trade-in,Digital tool,-0.6,48
+JA20642,2025-03-11,Ford,SUV,2023,38800.0,Trade-in,Manual,3.9,40
+JA20643,2025-03-21,Hyundai,Sedan,2021,54100.0,Trade-in,Manual,-3.0,41
+JA20644,2025-07-02,Toyota,SUV,2020,132300.0,Private purchase,Manual,5.4,81
+JA20645,2026-01-20,Ford,Hatchback,2018,29500.0,Trade-in,Digital tool,-2.7,51
+JA20646,2026-05-08,Toyota,Minivan,2015,133200.0,Trade-in,Digital tool,1.5,57
+JA20647,2026-03-22,Honda,SUV,2021,104700.0,Private purchase,Manual,2.8,61
+JA20648,2025-07-22,Toyota,SUV,2018,87700.0,Trade-in,Manual,0.2,43
+JA20649,2026-05-13,Hyundai,SUV,2018,114900.0,Trade-in,Digital tool,-2.5,49
+JA20650,2025-05-19,BMW,Minivan,2021,112400.0,Trade-in,Manual,-4.5,63
+JA20651,2025-03-08,Honda,SUV,2019,141800.0,Auction,Manual,-0.7,47
+JA20652,2025-08-23,Toyota,Truck,2013,77200.0,Trade-in,Manual,-0.9,47
+JA20653,2025-02-19,Hyundai,SUV,2016,84100.0,Private purchase,Manual,8.1,72
+JA20654,2026-01-02,Toyota,SUV,2020,83400.0,Trade-in,Digital tool,3.3,54
+JA20655,2026-06-18,BMW,SUV,2018,168900.0,Auction,Manual,-3.2,56
+JA20656,2025-02-27,Toyota,Truck,2015,131300.0,Auction,Manual,5.0,62
+JA20657,2025-03-05,Honda,SUV,2018,56200.0,Auction,Manual,2.8,86
+JA20658,2025-04-07,Ford,Hatchback,2017,79900.0,Auction,Manual,0.5,50
+JA20659,2025-04-06,Toyota,Sedan,2017,65000.0,Trade-in,Manual,3.7,53
+JA20660,2025-10-16,Honda,SUV,2015,93900.0,Trade-in,Digital tool,2.4,53
+JA20661,2025-11-07,Honda,SUV,2022,101900.0,Private purchase,Manual,-0.2,36
+JA20662,2026-05-29,Nissan,Truck,2019,185400.0,Trade-in,Digital tool,-1.6,43
+JA20663,2025-08-29,Kia,Sedan,2015,20100.0,Auction,Manual,2.6,71
+JA20664,2026-05-16,Honda,SUV,2022,134600.0,Auction,Manual,-1.7,41
+JA20665,2026-02-10,Chevrolet,SUV,2015,110900.0,Private purchase,Manual,2.7,66
+JA20666,2026-04-07,Toyota,Sedan,2016,65200.0,Trade-in,Digital tool,-0.8,52
+JA20667,2025-04-13,Hyundai,Hatchback,2017,87400.0,Trade-in,Manual,-0.6,54
+JA20668,2025-09-03,Ford,Sedan,2024,73500.0,Private purchase,Manual,-1.2,70
+JA20669,2026-05-09,Honda,Hatchback,2022,95400.0,Auction,Manual,3.1,53
+JA20670,2026-02-10,Chevrolet,Sedan,2020,133800.0,Auction,Manual,5.3,60
+JA20671,2025-04-28,Nissan,Sedan,2023,32500.0,Auction,Manual,3.2,66
+JA20672,2026-04-02,Toyota,Sedan,2023,146100.0,Auction,Manual,-1.2,68
+JA20673,2026-02-20,Honda,Truck,2019,78500.0,Auction,Manual,4.8,61
+JA20674,2025-03-21,Chevrolet,Sedan,2023,153700.0,Auction,Manual,2.6,57
+JA20675,2025-02-06,Kia,Truck,2017,110000.0,Trade-in,Manual,4.2,49
+JA20676,2025-05-20,Hyundai,SUV,2017,143000.0,Auction,Manual,6.3,65
+JA20677,2025-09-13,BMW,SUV,2020,116200.0,Trade-in,Digital tool,-3.9,58
+JA20678,2025-03-24,Kia,Hatchback,2024,137000.0,Private purchase,Manual,1.5,47
+JA20679,2025-01-18,Nissan,Sedan,2022,95800.0,Trade-in,Manual,-0.3,60
+JA20680,2025-03-01,Hyundai,Hatchback,2024,60200.0,Auction,Manual,-1.3,44
+JA20681,2025-06-19,Honda,Minivan,2015,120500.0,Auction,Manual,9.5,77
+JA20682,2025-07-30,Honda,Sedan,2018,122100.0,Trade-in,Manual,5.5,77
+JA20683,2025-06-18,Hyundai,SUV,2021,177800.0,Auction,Manual,-4.6,51
+JA20684,2025-08-30,Mercedes-Benz,Truck,2024,13200.0,Auction,Manual,3.6,66
+JA20685,2026-01-24,Honda,Truck,2021,85700.0,Trade-in,Digital tool,-2.6,44
+JA20686,2025-05-14,Honda,SUV,2023,136200.0,Private purchase,Manual,6.3,54
+JA20687,2025-09-03,Toyota,Hatchback,2017,43300.0,Auction,Manual,2.3,52
+JA20688,2026-01-29,Nissan,Sedan,2020,84500.0,Auction,Manual,1.3,60
+JA20689,2025-01-31,Ford,SUV,2014,178500.0,Private purchase,Manual,2.5,67
+JA20690,2026-05-23,Chevrolet,SUV,2016,150400.0,Trade-in,Digital tool,0.9,60
+JA20691,2026-06-22,Honda,SUV,2020,58400.0,Trade-in,Digital tool,-0.4,55
+JA20692,2025-06-06,Hyundai,Sedan,2015,150900.0,Private purchase,Manual,1.2,67
+JA20693,2026-04-25,Nissan,Hatchback,2015,141200.0,Trade-in,Digital tool,-1.0,62
+JA20694,2025-05-17,Ford,SUV,2014,124900.0,Auction,Manual,3.9,61
+JA20695,2026-05-10,Toyota,SUV,2017,109000.0,Trade-in,Digital tool,-4.7,46
+JA20696,2025-12-23,Ford,Sedan,2016,103300.0,Auction,Manual,2.0,55
+JA20697,2025-05-14,Nissan,Sedan,2019,58900.0,Trade-in,Manual,1.5,47
+JA20698,2025-02-03,Toyota,Sedan,2019,73000.0,Auction,Manual,0.2,53
+JA20699,2025-08-01,Toyota,Hatchback,2024,123100.0,Auction,Manual,4.7,61
+JA20700,2026-02-07,Ford,Hatchback,2020,99400.0,Trade-in,Digital tool,-5.3,41
+JA20701,2025-05-03,Honda,Minivan,2014,167900.0,Auction,Manual,0.6,58
+JA20702,2025-10-05,Chevrolet,Truck,2017,80400.0,Auction,Manual,-1.2,65
+JA20703,2025-03-09,Chevrolet,SUV,2013,8000.0,Trade-in,Manual,4.0,43
+JA20704,2025-08-18,Mercedes-Benz,SUV,2019,80400.0,Private purchase,Manual,0.2,66
+JA20705,2025-01-18,Chevrolet,Sedan,2019,104900.0,Auction,Manual,2.2,63
+JA20706,2026-06-17,Hyundai,Minivan,2023,109100.0,Trade-in,Digital tool,0.9,57
+JA20707,2025-09-29,Toyota,SUV,2024,96500.0,Trade-in,Digital tool,-6.5,47
+JA20708,2026-03-31,Chevrolet,Sedan,2024,60900.0,Trade-in,Digital tool,1.2,44
+JA20709,2025-03-08,Nissan,Sedan,2013,153700.0,Auction,Manual,-0.8,57
+JA20710,2025-04-01,Nissan,Sedan,2013,67200.0,Auction,Manual,1.0,54
+JA20711,2025-04-06,Nissan,SUV,2020,122300.0,Trade-in,Manual,1.6,56
+JA20712,2025-11-04,Chevrolet,SUV,2024,82400.0,Auction,Manual,5.0,49
+JA20713,2026-04-10,Honda,SUV,2013,45900.0,Trade-in,Digital tool,2.3,50
+JA20714,2025-11-24,Nissan,SUV,2022,150500.0,Auction,Manual,8.6,72
+JA20715,2025-09-19,Ford,Sedan,2019,8000.0,Auction,Manual,2.7,58
+JA20716,2026-05-24,Honda,Sedan,2019,59800.0,Trade-in,Digital tool,-2.3,51
+JA20717,2025-04-10,Honda,Truck,2014,111300.0,Auction,Manual,0.1,45
+JA20718,2025-03-30,Toyota,Sedan,2018,79700.0,Auction,Manual,4.4,86
+JA20719,2025-12-28,Ford,Minivan,2020,124000.0,Private purchase,Manual,8.0,66
+JA20720,2026-04-07,Honda,SUV,2021,90000.0,Trade-in,Digital tool,0.8,51
+JA20721,2025-05-24,Ford,Hatchback,2017,75900.0,Auction,Manual,-0.2,53
+JA20722,2025-05-21,Chevrolet,Sedan,2021,180500.0,Private purchase,Manual,3.0,61
+JA20723,2025-10-12,Nissan,Truck,2020,85200.0,Trade-in,Digital tool,0.5,40
+JA20724,2026-02-25,Nissan,Hatchback,2021,87700.0,Private purchase,Manual,2.1,70
+JA20725,2025-06-02,Kia,Sedan,2016,50700.0,Trade-in,Manual,-0.8,46
+JA20726,2026-03-21,Toyota,Sedan,2024,64100.0,Trade-in,Digital tool,-10.0,38
+JA20727,2025-10-06,Ford,Sedan,2013,120100.0,Private purchase,Manual,-0.0,49
+JA20728,2026-01-16,Toyota,SUV,2013,116700.0,Trade-in,Digital tool,3.4,53
+JA20729,2025-12-06,Honda,Sedan,2015,94200.0,Trade-in,Digital tool,0.3,64
+JA20730,2025-09-17,Mercedes-Benz,SUV,2013,66100.0,Trade-in,Digital tool,-8.8,52
+JA20731,2025-10-17,Toyota,SUV,2016,121600.0,Auction,Manual,2.0,57
+JA20732,2026-06-22,Nissan,Sedan,2019,26000.0,Auction,Manual,-4.9,60
+JA20733,2025-08-02,BMW,Minivan,2014,80500.0,Trade-in,Manual,9.4,90
+JA20734,2026-05-26,Ford,Minivan,2016,84100.0,Auction,Manual,2.7,70
+JA20735,2026-03-04,Chevrolet,SUV,2015,60400.0,Trade-in,Digital tool,-5.0,50
+JA20736,2025-04-09,Ford,SUV,2023,100300.0,Auction,Manual,5.0,58
+JA20737,2026-04-17,Honda,Sedan,2019,67500.0,Trade-in,Digital tool,-3.4,50
+JA20738,2025-07-26,Ford,Sedan,2020,62100.0,Auction,Manual,4.1,65
+JA20739,2025-04-07,Toyota,SUV,2018,166400.0,Private purchase,Manual,2.1,57
+JA20740,2025-05-17,Honda,Truck,2019,124000.0,Trade-in,Manual,-2.4,48
+JA20741,2025-03-15,Honda,Truck,2022,142400.0,Private purchase,Manual,4.5,53
+JA20742,2025-07-03,Kia,Sedan,2024,96400.0,Auction,Manual,-3.0,46
+JA20743,2025-03-03,Honda,Sedan,2018,133000.0,Auction,Manual,7.0,72
+JA20744,2025-10-21,Honda,Sedan,2018,125700.0,Trade-in,Digital tool,-0.3,48
+JA20745,2026-06-13,Mercedes-Benz,Truck,2019,143000.0,Auction,Manual,-1.8,53
+JA20746,2026-06-05,Toyota,Minivan,2019,189200.0,Auction,Manual,-4.8,71
+JA20747,2026-05-24,Mercedes-Benz,Minivan,2021,85400.0,Auction,Manual,8.0,73
+JA20748,2025-05-12,Chevrolet,Minivan,2015,104900.0,Private purchase,Manual,7.4,79
+JA20749,2025-05-05,Hyundai,Hatchback,2023,92500.0,Auction,Manual,-2.7,57
+JA20750,2026-01-02,Ford,SUV,2013,8000.0,Trade-in,Digital tool,5.7,54
+JA20751,2026-06-08,Toyota,Sedan,2020,38700.0,Private purchase,Manual,2.6,69
+JA20752,2026-03-23,Toyota,Truck,2024,95400.0,Auction,Manual,1.2,40
+JA20753,2025-04-23,Toyota,SUV,2013,120000.0,Auction,Manual,1.7,58
+JA20754,2026-02-02,Honda,Sedan,2023,71600.0,Auction,Manual,1.0,67
+JA20755,2025-10-01,Ford,SUV,2018,140100.0,Trade-in,Digital tool,4.8,62
+JA20756,2025-08-27,Mercedes-Benz,SUV,2023,146100.0,Trade-in,Manual,2.6,56
+JA20757,2025-09-26,Ford,Sedan,2013,78200.0,Trade-in,Digital tool,-7.4,45
+JA20758,2025-10-22,Kia,SUV,2023,151700.0,Auction,Manual,9.8,73
+JA20759,2026-05-10,Nissan,Sedan,2020,164800.0,Private purchase,Manual,5.3,59
+JA20760,2026-03-04,Toyota,SUV,2021,113400.0,Auction,Manual,-2.1,57
+JA20761,2025-01-22,Hyundai,Hatchback,2013,55500.0,Auction,Manual,0.7,62
+JA20762,2026-02-16,Toyota,SUV,2017,153600.0,Trade-in,Digital tool,-3.9,41
+JA20763,2025-06-20,Toyota,Sedan,2019,88300.0,Trade-in,Manual,2.2,51
+JA20764,2025-07-02,Mercedes-Benz,Hatchback,2015,79800.0,Trade-in,Manual,3.5,84
+JA20765,2025-11-20,Honda,Sedan,2014,99500.0,Trade-in,Digital tool,0.4,62
+JA20766,2026-06-16,Toyota,SUV,2020,73400.0,Trade-in,Digital tool,-2.7,36
+JA20767,2025-02-05,Toyota,SUV,2023,137800.0,Trade-in,Manual,-1.0,38
+JA20768,2025-10-05,Hyundai,Sedan,2015,126000.0,Trade-in,Digital tool,2.7,54
+JA20769,2025-05-08,Ford,SUV,2014,143700.0,Auction,Manual,1.6,53
+JA20770,2026-05-09,Toyota,SUV,2016,118200.0,Auction,Manual,10.4,79
+JA20771,2025-09-09,Nissan,Sedan,2020,63200.0,Auction,Manual,-1.0,53
+JA20772,2026-04-07,Honda,Sedan,2018,88600.0,Private purchase,Manual,4.9,77
+JA20773,2026-04-21,Chevrolet,SUV,2021,130000.0,Trade-in,Digital tool,-0.3,50
+JA20774,2025-02-24,Ford,Sedan,2024,78700.0,Private purchase,Manual,-0.8,57
+JA20775,2026-02-15,Ford,Sedan,2016,211800.0,Auction,Manual,7.1,80
+JA20776,2026-03-03,Ford,SUV,2021,85300.0,Auction,Manual,2.5,48
+JA20777,2026-03-24,Nissan,SUV,2020,71500.0,Private purchase,Manual,-1.3,37
+JA20778,2026-06-18,Kia,SUV,2023,141000.0,Auction,Manual,0.8,44
+JA20779,2026-02-15,Chevrolet,Hatchback,2016,124900.0,Trade-in,Digital tool,3.3,85
+JA20780,2026-03-27,Toyota,SUV,2014,93900.0,Trade-in,Digital tool,-5.1,42
+JA20781,2026-01-18,Ford,SUV,2016,85800.0,Trade-in,Digital tool,4.7,67
+JA20782,2025-06-09,Honda,SUV,2013,112100.0,Auction,Manual,4.6,60
+JA20783,2026-04-04,Toyota,Truck,2016,128400.0,Auction,Manual,1.0,60
+JA20784,2026-01-14,Toyota,Hatchback,2023,125500.0,Auction,Manual,7.1,76
+JA20785,2026-01-03,Honda,SUV,2013,82900.0,Trade-in,Digital tool,6.0,75
+JA20786,2026-06-10,Mercedes-Benz,Hatchback,2015,112300.0,Trade-in,Digital tool,1.7,62
+JA20787,2026-02-02,Nissan,Truck,2021,128800.0,Auction,Manual,2.6,57
+JA20788,2025-07-03,Chevrolet,SUV,2015,125600.0,Auction,Manual,8.9,70
+JA20789,2025-06-12,Nissan,Hatchback,2013,8000.0,Trade-in,Manual,7.6,70
+JA20790,2025-06-27,Honda,SUV,2019,59400.0,Trade-in,Manual,-1.5,54
+JA20791,2025-04-01,Honda,Truck,2015,64000.0,Trade-in,Manual,1.2,41
+JA20792,2025-02-13,Ford,SUV,2021,85800.0,Auction,Manual,1.2,57
+JA20793,2026-02-13,Honda,Sedan,2014,102200.0,Auction,Manual,0.5,56
+JA20794,2026-02-28,Ford,Sedan,2013,131900.0,Trade-in,Digital tool,-6.1,49
+JA20795,2025-03-31,Chevrolet,Hatchback,2022,119700.0,Private purchase,Manual,5.4,57
+JA20796,2025-08-01,Toyota,Hatchback,2020,89900.0,Trade-in,Manual,2.3,58
+JA20797,2026-05-12,Honda,Sedan,2019,95900.0,Trade-in,Digital tool,-0.1,52
+JA20798,2026-03-29,Ford,SUV,2020,165400.0,Trade-in,Digital tool,4.8,55
+JA20799,2025-11-19,Nissan,Sedan,2018,70500.0,Auction,Manual,-0.1,50
+JA20800,2026-06-09,Hyundai,SUV,2019,107200.0,Auction,Manual,1.8,54
+JA20801,2025-06-27,Nissan,Minivan,2019,157600.0,Auction,Manual,3.0,74
+JA20802,2026-04-01,Toyota,Truck,2014,108800.0,Private purchase,Manual,0.4,43
+JA20803,2026-05-21,Toyota,Sedan,2022,13300.0,Trade-in,Digital tool,-0.9,35
+JA20804,2025-11-17,Honda,SUV,2020,110000.0,Trade-in,Digital tool,2.4,61
+JA20805,2025-03-25,Honda,Truck,2020,79500.0,Trade-in,Manual,2.0,45
+JA20806,2025-06-08,Nissan,SUV,2024,90500.0,Auction,Manual,7.0,54
+JA20807,2025-10-05,Kia,Hatchback,2019,137000.0,Trade-in,Digital tool,-3.3,66
+JA20808,2025-05-31,Nissan,Truck,2023,113800.0,Trade-in,Manual,2.8,53
+JA20809,2025-02-19,Toyota,Sedan,2016,84400.0,Auction,Manual,-3.4,51
+JA20810,2025-04-03,Honda,Truck,2013,130700.0,Private purchase,Manual,1.6,54
+JA20811,2026-06-06,Chevrolet,Sedan,2019,112400.0,Private purchase,Manual,-0.6,52
+JA20812,2025-07-26,Mercedes-Benz,SUV,2023,99200.0,Trade-in,Manual,7.1,60
+JA20813,2025-11-07,Hyundai,Sedan,2024,107000.0,Auction,Manual,4.8,57
+JA20814,2025-08-25,Honda,SUV,2020,105100.0,Auction,Manual,3.9,73
+JA20815,2026-03-10,Honda,SUV,2019,81400.0,Private purchase,Manual,8.9,66
+JA20816,2025-02-24,Hyundai,Sedan,2023,76600.0,Trade-in,Manual,7.4,64
+JA20817,2025-06-02,BMW,Hatchback,2018,96000.0,Private purchase,Manual,4.7,71
+JA20818,2025-11-12,Honda,SUV,2023,56800.0,Auction,Manual,-0.6,41
+JA20819,2026-03-09,Toyota,Sedan,2023,44600.0,Trade-in,Digital tool,-5.9,44
+JA20820,2025-09-07,Toyota,Minivan,2022,147000.0,Auction,Manual,1.9,71
+JA20821,2026-01-15,Toyota,Hatchback,2013,85400.0,Trade-in,Digital tool,-1.8,51
+JA20822,2026-03-09,Chevrolet,Hatchback,2016,94000.0,Trade-in,Digital tool,-2.9,58
+JA20823,2025-12-14,Hyundai,Truck,2013,89600.0,Auction,Manual,0.9,45
+JA20824,2026-03-19,Kia,Sedan,2018,95900.0,Auction,Manual,-4.2,54
+JA20825,2026-05-29,Toyota,Sedan,2022,95900.0,Trade-in,Digital tool,5.1,66
+JA20826,2025-04-28,Honda,Sedan,2024,97600.0,Auction,Manual,-2.3,54
+JA20827,2025-08-23,Chevrolet,Sedan,2024,62800.0,Auction,Manual,-0.5,44
+JA20828,2025-05-03,Hyundai,SUV,2013,132300.0,Auction,Manual,4.1,68
+JA20829,2025-08-13,Toyota,SUV,2013,67300.0,Auction,Manual,-4.1,67
+JA20830,2025-01-02,Ford,SUV,2019,136400.0,Auction,Manual,5.5,54
+JA20831,2026-01-09,Hyundai,SUV,2013,18200.0,Auction,Manual,5.5,59
+JA20832,2025-05-08,Nissan,Truck,2022,52500.0,Auction,Manual,0.8,46
+JA20833,2026-03-27,Ford,Sedan,2013,134700.0,Private purchase,Manual,-2.1,59
+JA20834,2026-01-24,Toyota,SUV,2019,89100.0,Trade-in,Digital tool,-2.3,37
+JA20835,2025-06-30,Mercedes-Benz,Hatchback,2019,68200.0,Private purchase,Manual,-5.0,71
+JA20836,2025-09-03,Ford,SUV,2018,110000.0,Auction,Manual,7.2,60
+JA20837,2025-12-28,Nissan,Minivan,2014,53200.0,Trade-in,Digital tool,-0.3,49
+JA20838,2025-08-14,Ford,Truck,2022,98100.0,Auction,Manual,-0.8,53
+JA20839,2025-04-23,Toyota,Sedan,2019,8000.0,Trade-in,Manual,-1.4,51
+JA20840,2025-01-24,Honda,Sedan,2021,76900.0,Auction,Manual,4.2,78
+JA20841,2025-10-25,Toyota,Hatchback,2020,69000.0,Auction,Manual,7.7,62
+JA20842,2025-10-15,Toyota,SUV,2019,116600.0,Auction,Manual,-2.8,45
+JA20843,2026-02-20,Toyota,SUV,2013,130000.0,Auction,Manual,-0.2,62
+JA20844,2025-03-12,Ford,Sedan,2018,60800.0,Auction,Manual,-4.6,57
+JA20845,2025-02-05,Honda,SUV,2023,159400.0,Trade-in,Manual,4.6,56
+JA20846,2026-02-02,Honda,Sedan,2015,71300.0,Trade-in,Digital tool,0.1,50
+JA20847,2026-01-29,Chevrolet,Sedan,2016,12800.0,Auction,Manual,10.5,71
+JA20848,2026-03-08,Toyota,SUV,2023,8000.0,Private purchase,Manual,1.5,36
+JA20849,2025-01-09,Toyota,Minivan,2019,156600.0,Trade-in,Manual,0.4,48
+JA20850,2025-12-20,Chevrolet,Truck,2020,91500.0,Private purchase,Manual,-0.7,57
+JA20851,2026-06-02,Ford,SUV,2017,69100.0,Trade-in,Digital tool,2.7,42
+JA20852,2026-02-17,Ford,Truck,2016,65100.0,Auction,Manual,-4.2,52
+JA20853,2025-09-11,Honda,Sedan,2017,51300.0,Trade-in,Digital tool,2.3,49
+JA20854,2025-09-14,Ford,Truck,2024,149100.0,Auction,Manual,2.9,69
+JA20855,2025-08-09,Honda,Truck,2017,91600.0,Trade-in,Manual,0.1,40
+JA20856,2025-01-30,Chevrolet,Minivan,2019,166600.0,Auction,Manual,-1.4,55
+JA20857,2026-01-25,Chevrolet,SUV,2013,87000.0,Trade-in,Digital tool,3.5,64
+JA20858,2025-10-18,Honda,Minivan,2023,8000.0,Trade-in,Digital tool,6.6,49
+JA20859,2025-10-10,Toyota,Sedan,2018,128800.0,Auction,Manual,0.3,64
+JA20860,2026-05-19,BMW,SUV,2022,80300.0,Trade-in,Digital tool,1.5,50
+JA20861,2026-01-30,Honda,SUV,2016,85500.0,Private purchase,Manual,8.6,63
+JA20862,2026-06-02,Hyundai,SUV,2020,157700.0,Auction,Manual,-0.3,63
+JA20863,2025-02-15,Chevrolet,Hatchback,2017,84500.0,Private purchase,Manual,1.0,61
+JA20864,2026-05-29,Chevrolet,Sedan,2016,141500.0,Trade-in,Digital tool,-5.1,52
+JA20865,2025-10-31,BMW,SUV,2014,94800.0,Auction,Manual,1.4,67
+JA20866,2025-08-06,Ford,Truck,2021,64900.0,Trade-in,Manual,1.7,49
+JA20867,2025-10-29,Chevrolet,Sedan,2017,115300.0,Trade-in,Digital tool,-2.1,60
+JA20868,2025-01-20,Ford,Hatchback,2014,71000.0,Trade-in,Manual,-0.8,47
+JA20869,2026-05-19,Honda,SUV,2021,144100.0,Auction,Manual,-4.0,72
+JA20870,2025-12-07,Ford,Hatchback,2021,133400.0,Auction,Manual,-3.1,51
+JA20871,2025-01-22,Honda,Hatchback,2024,97500.0,Auction,Manual,-1.7,44
+JA20872,2026-05-09,Nissan,SUV,2023,119400.0,Trade-in,Digital tool,1.9,45
+JA20873,2025-09-02,Chevrolet,Sedan,2015,117600.0,Auction,Manual,0.1,59
+JA20874,2025-03-06,Toyota,SUV,2013,84000.0,Trade-in,Manual,-1.2,80
+JA20875,2025-12-07,Toyota,Sedan,2023,130800.0,Trade-in,Digital tool,2.0,49
+JA20876,2025-02-07,Honda,SUV,2024,85900.0,Auction,Manual,4.1,53
+JA20877,2025-10-25,Ford,Hatchback,2020,119600.0,Auction,Manual,-0.9,51
+JA20878,2026-02-16,Mercedes-Benz,SUV,2020,57000.0,Auction,Manual,-0.4,54
+JA20879,2025-02-10,Mercedes-Benz,Truck,2014,99100.0,Private purchase,Manual,4.5,64
+JA20880,2026-03-04,Mercedes-Benz,Truck,2019,111600.0,Private purchase,Manual,3.4,75
+JA20881,2025-11-17,Nissan,SUV,2013,63500.0,Trade-in,Digital tool,-3.7,40
+JA20882,2025-06-25,Nissan,SUV,2022,78400.0,Private purchase,Manual,2.9,43
+JA20883,2025-04-30,Honda,Hatchback,2023,73800.0,Auction,Manual,1.9,58
+JA20884,2025-01-07,Honda,SUV,2013,124200.0,Auction,Manual,6.2,68
+JA20885,2025-04-16,Toyota,SUV,2015,66300.0,Trade-in,Manual,-1.3,55
+JA20886,2025-06-03,Chevrolet,SUV,2024,112700.0,Trade-in,Manual,5.4,51
+JA20887,2026-04-20,Honda,Sedan,2014,156200.0,Auction,Manual,3.6,79
+JA20888,2025-10-05,Toyota,SUV,2022,109400.0,Trade-in,Digital tool,-4.3,40
+JA20889,2025-04-17,Honda,SUV,2020,30700.0,Auction,Manual,6.0,50
+JA20890,2026-02-06,Honda,Sedan,2020,100200.0,Trade-in,Digital tool,3.0,64
+JA20891,2025-09-03,Nissan,Truck,2021,136900.0,Auction,Manual,-3.0,52
+JA20892,2026-03-27,Toyota,Truck,2016,83800.0,Auction,Manual,9.6,72
+JA20893,2026-02-10,Honda,Sedan,2023,139600.0,Auction,Manual,-2.4,49
+JA20894,2026-05-19,BMW,SUV,2018,120000.0,Trade-in,Digital tool,-4.0,52
+JA20895,2026-01-17,Chevrolet,SUV,2019,112100.0,Auction,Manual,0.8,53
+JA20896,2025-02-28,Hyundai,Sedan,2021,84800.0,Trade-in,Manual,4.9,54
+JA20897,2025-10-26,Hyundai,Sedan,2016,74800.0,Auction,Manual,4.2,57
+JA20898,2025-08-18,Honda,Sedan,2013,85100.0,Auction,Manual,1.6,56
+JA20899,2026-03-12,BMW,Minivan,2016,97900.0,Auction,Manual,7.2,80
+JA20900,2025-03-25,Nissan,SUV,2020,116300.0,Auction,Manual,3.5,50
+JA20901,2025-09-09,Ford,Hatchback,2015,112200.0,Trade-in,Digital tool,4.8,73
+JA20902,2026-03-22,Toyota,Truck,2022,83300.0,Auction,Manual,12.8,66
+JA20903,2025-12-02,Toyota,Hatchback,2020,98000.0,Private purchase,Manual,2.7,54
+JA20904,2025-01-21,Honda,Minivan,2021,110900.0,Private purchase,Manual,-7.9,51
+JA20905,2026-03-19,Honda,SUV,2024,30400.0,Auction,Manual,0.3,36
+JA20906,2025-07-18,Toyota,Minivan,2015,64700.0,Trade-in,Manual,-2.1,49
+JA20907,2026-01-02,Ford,Sedan,2014,63500.0,Private purchase,Manual,2.4,47
+JA20908,2025-12-19,Ford,Truck,2017,87300.0,Auction,Manual,2.4,50
+JA20909,2025-12-13,Honda,Minivan,2017,84500.0,Trade-in,Digital tool,-5.2,55
+JA20910,2025-08-14,Honda,Sedan,2013,85200.0,Auction,Manual,-2.4,58
+JA20911,2025-08-08,Honda,Sedan,2017,60600.0,Private purchase,Manual,1.0,48
+JA20912,2025-02-24,Honda,SUV,2024,122400.0,Auction,Manual,1.2,53
+JA20913,2025-10-29,Hyundai,Sedan,2013,106700.0,Auction,Manual,-8.0,56
+JA20914,2025-06-07,Ford,SUV,2024,29800.0,Trade-in,Manual,5.7,45
+JA20915,2025-08-02,Toyota,Sedan,2020,96100.0,Private purchase,Manual,2.1,61
+JA20916,2025-04-01,Chevrolet,SUV,2024,50500.0,Private purchase,Manual,2.0,39
+JA20917,2026-02-06,Ford,Minivan,2024,163700.0,Auction,Manual,3.1,59
+JA20918,2026-05-14,Ford,Sedan,2020,77400.0,Private purchase,Manual,-1.9,55
+JA20919,2025-07-25,Nissan,Truck,2016,79900.0,Trade-in,Manual,1.8,75
+JA20920,2025-08-17,Nissan,SUV,2022,99000.0,Trade-in,Manual,6.0,47
+JA20921,2025-09-09,Chevrolet,SUV,2021,87600.0,Trade-in,Digital tool,3.7,64
+JA20922,2025-02-08,Chevrolet,Hatchback,2019,93300.0,Auction,Manual,3.8,81
+JA20923,2026-02-12,Hyundai,SUV,2023,157500.0,Private purchase,Manual,0.9,44
+JA20924,2026-04-21,Nissan,Minivan,2023,104700.0,Private purchase,Manual,-1.2,41
+JA20925,2025-09-29,Toyota,Sedan,2016,129100.0,Trade-in,Digital tool,4.6,59
+JA20926,2025-02-03,Nissan,Sedan,2014,140800.0,Auction,Manual,4.0,75
+JA20927,2025-07-02,Honda,Sedan,2024,56700.0,Auction,Manual,0.4,44
+JA20928,2025-03-27,Honda,Sedan,2013,163200.0,Trade-in,Manual,-6.4,51
+JA20929,2026-03-23,Toyota,Sedan,2021,123200.0,Private purchase,Manual,-1.4,43
+JA20930,2026-03-09,Honda,Sedan,2021,134000.0,Auction,Manual,-5.5,60
+JA20931,2025-07-25,Toyota,Truck,2020,61200.0,Trade-in,Manual,6.8,55
+JA20932,2025-07-23,Hyundai,SUV,2018,128400.0,Trade-in,Manual,2.7,53
+JA20933,2026-04-02,Nissan,SUV,2015,112200.0,Auction,Manual,-0.9,49
+JA20934,2025-02-17,Chevrolet,Sedan,2019,74200.0,Private purchase,Manual,0.9,62
+JA20935,2026-03-01,Toyota,SUV,2016,187000.0,Trade-in,Digital tool,9.6,72
+JA20936,2026-06-04,Hyundai,Sedan,2023,118400.0,Auction,Manual,6.7,68
+JA20937,2025-08-30,Chevrolet,Sedan,2014,86200.0,Trade-in,Manual,-3.2,63
+JA20938,2026-02-12,Toyota,Truck,2017,103500.0,Private purchase,Manual,1.5,53
+JA20939,2026-01-20,Toyota,SUV,2023,132100.0,Trade-in,Digital tool,-5.3,37
+JA20940,2026-04-30,Honda,Sedan,2020,141000.0,Private purchase,Manual,-4.7,70
+JA20941,2025-01-19,Ford,Truck,2022,119000.0,Auction,Manual,2.7,49
+JA20942,2026-01-16,Toyota,SUV,2014,144400.0,Auction,Manual,11.4,73
+JA20943,2025-07-30,Ford,Hatchback,2014,154600.0,Auction,Manual,8.1,83
+JA20944,2026-04-10,Honda,Truck,2018,46400.0,Auction,Manual,2.2,42
+JA20945,2026-04-10,Hyundai,SUV,2019,76300.0,Trade-in,Digital tool,-2.0,38
+JA20946,2025-06-04,Ford,Sedan,2022,58200.0,Trade-in,Manual,2.8,60
+JA20947,2025-11-09,Nissan,Truck,2015,99700.0,Trade-in,Digital tool,3.6,58
+JA20948,2025-09-24,Honda,Sedan,2019,153500.0,Trade-in,Digital tool,-6.2,54
+JA20949,2025-10-29,Nissan,Truck,2022,121900.0,Trade-in,Digital tool,-7.8,57
+JA20950,2026-03-26,Nissan,Minivan,2018,54000.0,Auction,Manual,9.4,68
+JA20951,2025-12-25,Nissan,Truck,2019,84000.0,Auction,Manual,3.1,48
+JA20952,2026-02-13,Toyota,Sedan,2024,136900.0,Auction,Manual,8.3,84
+JA20953,2026-01-01,Mercedes-Benz,Hatchback,2024,74500.0,Auction,Manual,2.9,80
+JA20954,2025-05-16,Hyundai,Sedan,2024,91900.0,Private purchase,Manual,7.8,64
+JA20955,2025-11-12,Honda,SUV,2021,108000.0,Private purchase,Manual,-0.4,48
+JA20956,2025-07-24,Ford,SUV,2020,22900.0,Trade-in,Manual,4.0,52
+JA20957,2025-08-16,Ford,Sedan,2014,127000.0,Auction,Manual,8.1,76
+JA20958,2025-03-02,Ford,Minivan,2017,109500.0,Private purchase,Manual,6.0,56
+JA20959,2025-04-10,Honda,Sedan,2017,118500.0,Trade-in,Manual,0.2,59
+JA20960,2025-07-05,Honda,SUV,2022,56700.0,Auction,Manual,5.5,53
+JA20961,2025-06-08,Honda,Minivan,2019,65100.0,Auction,Manual,-0.6,54
+JA20962,2025-12-10,Chevrolet,Sedan,2015,71900.0,Auction,Manual,-3.6,54
+JA20963,2025-06-08,Ford,SUV,2023,105800.0,Auction,Manual,4.1,67
+JA20964,2025-05-14,Toyota,Sedan,2013,98600.0,Auction,Manual,7.5,78
+JA20965,2025-08-21,Ford,SUV,2017,100900.0,Trade-in,Manual,5.4,57
+JA20966,2025-11-03,Toyota,SUV,2020,167500.0,Private purchase,Manual,-3.0,40
+JA20967,2026-06-24,Toyota,Truck,2015,148000.0,Auction,Manual,5.4,63
+JA20968,2025-10-03,Kia,Truck,2014,67000.0,Trade-in,Digital tool,2.2,66
+JA20969,2025-07-10,Honda,Minivan,2016,69700.0,Auction,Manual,0.2,76
+JA20970,2025-06-23,Ford,SUV,2015,164400.0,Auction,Manual,-7.8,63
+JA20971,2025-08-30,Honda,Hatchback,2015,83100.0,Private purchase,Manual,6.0,65
+JA20972,2026-05-16,Toyota,Truck,2016,151000.0,Auction,Manual,5.5,65
+JA20973,2025-07-20,BMW,SUV,2014,159700.0,Auction,Manual,4.0,65
+JA20974,2025-05-14,Mercedes-Benz,Sedan,2018,74100.0,Trade-in,Manual,-4.9,53
+JA20975,2025-11-10,Toyota,Sedan,2017,85000.0,Trade-in,Digital tool,-6.4,54
+JA20976,2026-02-22,Ford,SUV,2018,99100.0,Trade-in,Digital tool,3.5,50
+JA20977,2026-05-27,Honda,SUV,2015,61200.0,Auction,Manual,5.2,64
+JA20978,2025-06-01,Toyota,Hatchback,2021,56700.0,Private purchase,Manual,4.0,58
+JA20979,2026-04-26,Hyundai,SUV,2019,79800.0,Auction,Manual,1.0,64
+JA20980,2026-04-07,Chevrolet,Sedan,2019,129900.0,Trade-in,Digital tool,1.1,67
+JA20981,2025-07-23,Nissan,Sedan,2023,77900.0,Trade-in,Manual,-0.2,51
+JA20982,2025-06-30,Nissan,Hatchback,2021,87500.0,Private purchase,Manual,0.8,56
+JA20983,2025-05-25,Toyota,Sedan,2024,77200.0,Trade-in,Manual,-1.4,59
+JA20984,2025-06-21,Honda,Sedan,2013,41200.0,Auction,Manual,3.0,66
+JA20985,2026-04-23,Ford,Minivan,2014,155200.0,Private purchase,Manual,0.3,54
+JA20986,2025-06-17,Nissan,SUV,2022,8000.0,Private purchase,Manual,5.8,48
+JA20987,2025-09-24,Honda,Truck,2019,69600.0,Auction,Manual,4.9,61
+JA20988,2026-05-20,Ford,SUV,2024,118100.0,Private purchase,Manual,-1.2,63
+JA20989,2026-01-06,Chevrolet,Truck,2021,40000.0,Trade-in,Digital tool,6.8,54
+JA20990,2025-03-12,Toyota,Truck,2023,120000.0,Private purchase,Manual,-2.5,37
+JA20991,2025-02-09,Honda,Hatchback,2014,145900.0,Auction,Manual,3.8,89
+JA20992,2025-05-01,Honda,Sedan,2013,61400.0,Trade-in,Manual,6.3,57
+JA20993,2026-04-13,Kia,SUV,2019,104100.0,Auction,Manual,7.1,66
+JA20994,2025-05-03,Honda,Sedan,2019,51400.0,Trade-in,Manual,-6.8,44
+JA20995,2025-06-19,Toyota,Hatchback,2015,116100.0,Private purchase,Manual,6.0,66
+JA20996,2025-10-19,Ford,SUV,2023,99300.0,Trade-in,Digital tool,4.4,73
+JA20997,2025-09-25,Hyundai,SUV,2017,104400.0,Auction,Manual,7.7,62
+JA20998,2025-02-10,Toyota,SUV,2018,150400.0,Trade-in,Manual,-6.9,42
+JA20999,2025-04-17,Chevrolet,Minivan,2016,114600.0,Auction,Manual,-0.7,56
+JA21000,2026-06-21,Toyota,SUV,2019,149600.0,Trade-in,Digital tool,-0.9,46
+JA21001,2025-08-15,Nissan,SUV,2022,121100.0,Private purchase,Manual,0.2,48
+JA21002,2025-05-31,Toyota,SUV,2018,47800.0,Trade-in,Manual,7.3,54
+JA21003,2026-03-24,BMW,Hatchback,2015,106200.0,Auction,Manual,-0.7,62
+JA21004,2025-09-09,Toyota,Sedan,2021,115400.0,Private purchase,Manual,6.9,65
+JA21005,2026-03-23,Nissan,Truck,2019,38000.0,Trade-in,Digital tool,1.7,42
+JA21006,2025-03-27,Chevrolet,Truck,2015,149100.0,Auction,Manual,-3.8,49
+JA21007,2025-09-13,Honda,Sedan,2020,98500.0,Trade-in,Digital tool,-4.5,44
+JA21008,2026-03-14,Toyota,Truck,2015,110500.0,Auction,Manual,0.1,52
+JA21009,2026-02-19,Hyundai,Sedan,2016,59900.0,Private purchase,Manual,2.4,62
+JA21010,2026-01-01,Ford,Sedan,2014,98700.0,Trade-in,Digital tool,3.5,62
+JA21011,2025-09-05,Ford,SUV,2024,107800.0,Private purchase,Manual,1.3,40
+JA21012,2026-03-21,Chevrolet,SUV,2021,82700.0,Trade-in,Digital tool,3.1,44
+JA21013,2025-07-21,Ford,Sedan,2016,99000.0,Trade-in,Manual,-4.3,48
+JA21014,2025-12-23,Ford,SUV,2020,11000.0,Private purchase,Manual,-10.2,33
+JA21015,2025-10-22,Ford,SUV,2016,150200.0,Trade-in,Digital tool,-1.8,75
+JA21016,2025-06-12,Ford,Hatchback,2024,51200.0,Trade-in,Manual,3.8,57
+JA21017,2025-04-19,Ford,SUV,2021,8500.0,Trade-in,Manual,0.6,35
+JA21018,2025-10-15,Toyota,SUV,2013,57300.0,Private purchase,Manual,-2.0,37
+JA21019,2025-06-20,Honda,Sedan,2018,62400.0,Private purchase,Manual,3.7,68
+JA21020,2025-10-07,Honda,Sedan,2017,117500.0,Auction,Manual,9.7,80
+JA21021,2026-01-17,Honda,SUV,2021,59200.0,Auction,Manual,1.6,66
+JA21022,2026-03-10,Chevrolet,SUV,2024,107100.0,Auction,Manual,-0.9,58
+JA21023,2026-02-21,Toyota,Sedan,2014,57400.0,Auction,Manual,-1.4,52
+JA21024,2025-10-03,Toyota,SUV,2014,184000.0,Trade-in,Digital tool,7.4,76
+JA21025,2025-01-31,Ford,Minivan,2014,117600.0,Auction,Manual,1.8,54
+JA21026,2025-04-08,Honda,Truck,2024,174000.0,Private purchase,Manual,4.4,56
+JA21027,2026-01-31,Honda,Sedan,2021,55100.0,Trade-in,Digital tool,4.4,55
+JA21028,2025-11-18,Honda,Hatchback,2018,122300.0,Trade-in,Digital tool,3.8,59
+JA21029,2026-03-18,Ford,SUV,2017,57500.0,Private purchase,Manual,-1.7,37
+JA21030,2025-09-22,Nissan,SUV,2020,118900.0,Trade-in,Digital tool,3.3,49
+JA21031,2025-08-29,Kia,Hatchback,2023,122800.0,Trade-in,Manual,5.4,54
+JA21032,2025-05-13,Chevrolet,Sedan,2013,31900.0,Private purchase,Manual,4.0,71
+JA21033,2025-02-03,Ford,SUV,2015,50200.0,Auction,Manual,6.0,53
+JA21034,2025-03-19,Ford,Sedan,2020,49000.0,Auction,Manual,-0.2,44
+JA21035,2026-01-04,Ford,Truck,2015,35500.0,Trade-in,Digital tool,-0.8,72
+JA21036,2025-11-09,Honda,Sedan,2024,66400.0,Auction,Manual,-0.1,45
+JA21037,2025-05-13,Mercedes-Benz,SUV,2023,57200.0,Trade-in,Manual,5.0,72
+JA21038,2025-07-15,Toyota,SUV,2022,37800.0,Auction,Manual,-0.6,54
+JA21039,2025-12-14,Toyota,Sedan,2017,99500.0,Auction,Manual,3.6,59
+JA21040,2025-07-26,Hyundai,SUV,2013,117400.0,Private purchase,Manual,-2.4,48
+JA21041,2025-07-23,Hyundai,SUV,2014,43000.0,Auction,Manual,1.5,43
+JA21042,2025-05-26,Honda,Sedan,2019,73300.0,Private purchase,Manual,0.6,54
+JA21043,2025-12-11,Mercedes-Benz,Sedan,2015,95900.0,Trade-in,Digital tool,-1.0,84
+JA21044,2026-04-26,Ford,SUV,2022,86300.0,Auction,Manual,2.5,58
+JA21045,2025-05-20,Hyundai,Hatchback,2022,67500.0,Trade-in,Manual,1.3,41
+JA21046,2025-06-07,Toyota,SUV,2015,127900.0,Auction,Manual,1.1,86
+JA21047,2025-09-15,BMW,Hatchback,2016,129400.0,Auction,Manual,-6.3,66
+JA21048,2025-04-13,Toyota,Sedan,2024,122700.0,Trade-in,Manual,6.4,74
+JA21049,2025-10-11,Honda,Sedan,2019,87200.0,Auction,Manual,-0.5,54
+JA21050,2026-04-23,BMW,Sedan,2013,175000.0,Private purchase,Manual,1.0,71
+JA21051,2025-12-07,Mercedes-Benz,Truck,2023,165100.0,Trade-in,Digital tool,-3.8,70
+JA21052,2025-03-30,BMW,SUV,2022,79400.0,Auction,Manual,6.0,89
+JA21053,2025-04-20,Chevrolet,SUV,2020,90700.0,Auction,Manual,-1.6,52
+JA21054,2025-02-11,Honda,Hatchback,2015,143000.0,Trade-in,Manual,4.0,79
+JA21055,2026-06-04,Toyota,SUV,2022,63500.0,Trade-in,Digital tool,4.2,43
+JA21056,2025-07-06,Ford,Sedan,2017,111400.0,Auction,Manual,8.6,74
+JA21057,2025-06-06,Toyota,Truck,2024,97300.0,Auction,Manual,6.8,58
+JA21058,2026-04-09,Mercedes-Benz,SUV,2023,67300.0,Private purchase,Manual,4.5,53
+JA21059,2025-06-15,Toyota,SUV,2016,86200.0,Auction,Manual,-2.8,57
+JA21060,2025-05-06,Honda,Hatchback,2023,32600.0,Auction,Manual,7.2,60
+JA21061,2025-05-19,Toyota,SUV,2023,73700.0,Trade-in,Manual,6.8,51
+JA21062,2025-08-03,Toyota,SUV,2015,15600.0,Private purchase,Manual,5.4,52
+JA21063,2025-02-06,Ford,Hatchback,2019,186600.0,Auction,Manual,5.2,69
+JA21064,2025-12-13,Toyota,SUV,2021,155600.0,Trade-in,Digital tool,-0.2,39
+JA21065,2025-08-17,BMW,SUV,2015,144500.0,Auction,Manual,-0.0,61
+JA21066,2026-06-09,Nissan,Hatchback,2023,107400.0,Private purchase,Manual,6.3,54
+JA21067,2026-02-21,Honda,SUV,2014,135300.0,Auction,Manual,7.1,84
+JA21068,2025-07-27,Chevrolet,Minivan,2021,146200.0,Private purchase,Manual,-2.1,59
+JA21069,2026-01-19,Chevrolet,Hatchback,2016,136000.0,Trade-in,Digital tool,3.2,67
+JA21070,2026-03-12,Honda,Hatchback,2024,132100.0,Auction,Manual,3.0,60
+JA21071,2025-04-16,Chevrolet,SUV,2014,58800.0,Auction,Manual,5.6,56
+JA21072,2025-03-28,Mercedes-Benz,SUV,2017,112400.0,Trade-in,Manual,3.1,74
+JA21073,2025-03-15,Hyundai,Truck,2022,73900.0,Auction,Manual,6.5,58
+JA21074,2025-01-25,Honda,Hatchback,2017,48000.0,Trade-in,Manual,6.1,69
+JA21075,2025-06-23,BMW,SUV,2019,49600.0,Auction,Manual,5.6,66
+JA21076,2026-03-05,Mercedes-Benz,SUV,2016,112400.0,Auction,Manual,-3.5,64
+JA21077,2026-02-19,Honda,SUV,2013,137400.0,Auction,Manual,5.3,69
+JA21078,2025-07-24,Toyota,SUV,2013,40500.0,Trade-in,Manual,2.2,42
+JA21079,2025-09-21,BMW,Sedan,2023,165000.0,Trade-in,Digital tool,-4.9,56
+JA21080,2026-02-19,Hyundai,Sedan,2022,154000.0,Auction,Manual,4.9,68
+JA21081,2026-05-14,Honda,Sedan,2020,80000.0,Auction,Manual,-3.4,45
+JA21082,2025-06-02,Hyundai,SUV,2021,76600.0,Trade-in,Manual,5.6,50
+JA21083,2025-12-21,Honda,SUV,2018,92200.0,Trade-in,Digital tool,6.3,56
+JA21084,2025-11-17,BMW,SUV,2019,134400.0,Auction,Manual,0.1,62
+JA21085,2025-12-02,Honda,SUV,2014,79800.0,Trade-in,Digital tool,3.2,51
+JA21086,2026-03-10,Toyota,SUV,2014,50900.0,Private purchase,Manual,3.9,62
+JA21087,2026-02-19,Toyota,Minivan,2018,108900.0,Trade-in,Digital tool,2.2,56
+JA21088,2025-08-02,Honda,SUV,2024,12500.0,Private purchase,Manual,-3.3,27
+JA21089,2026-02-10,Kia,SUV,2024,100700.0,Auction,Manual,4.5,51
+JA21090,2025-01-30,Toyota,Truck,2019,141400.0,Auction,Manual,2.6,49
+JA21091,2025-07-05,Ford,Minivan,2020,107300.0,Auction,Manual,5.0,68
+JA21092,2025-04-28,Kia,Truck,2022,126300.0,Auction,Manual,2.1,71
+JA21093,2025-05-19,Toyota,Sedan,2018,114800.0,Trade-in,Manual,6.4,63
+JA21094,2026-05-03,Honda,SUV,2017,124100.0,Auction,Manual,3.2,64
+JA21095,2025-08-25,Chevrolet,Sedan,2020,100800.0,Trade-in,Manual,4.8,75
+JA21096,2025-02-09,Toyota,SUV,2019,61800.0,Trade-in,Manual,7.5,56
+JA21097,2025-09-22,Mercedes-Benz,Hatchback,2019,86000.0,Private purchase,Manual,2.8,74
+JA21098,2025-02-07,Chevrolet,Hatchback,2013,92100.0,Private purchase,Manual,6.0,76
+JA21099,2025-03-18,Toyota,Sedan,2020,145400.0,Auction,Manual,3.0,71
+JA21100,2025-07-27,Hyundai,Hatchback,2017,160000.0,Trade-in,Manual,4.2,72
+JA21101,2025-08-27,Hyundai,Truck,2015,111800.0,Auction,Manual,0.0,55
+JA21102,2025-05-06,Nissan,Truck,2022,64900.0,Auction,Manual,5.2,47
+JA21103,2025-12-12,Honda,SUV,2014,65800.0,Trade-in,Digital tool,4.5,48
+JA21104,2025-09-26,Honda,SUV,2015,87500.0,Trade-in,Digital tool,-0.7,42
+JA21105,2025-03-15,Honda,SUV,2013,150600.0,Auction,Manual,5.3,63
+JA21106,2026-03-20,Honda,Hatchback,2021,108400.0,Trade-in,Digital tool,1.3,63
+JA21107,2025-03-16,Toyota,Hatchback,2022,92800.0,Auction,Manual,-2.3,60
+JA21108,2025-07-14,BMW,Hatchback,2017,64400.0,Trade-in,Manual,3.5,67
+JA21109,2025-04-04,BMW,Hatchback,2013,130300.0,Trade-in,Manual,7.3,87
+JA21110,2026-05-25,Honda,Hatchback,2018,106600.0,Auction,Manual,0.2,55
+JA21111,2025-06-02,Nissan,Sedan,2016,93000.0,Trade-in,Manual,-4.9,49
+JA21112,2026-04-14,Ford,Truck,2015,99100.0,Private purchase,Manual,2.9,50
+JA21113,2026-06-04,Honda,SUV,2020,162500.0,Private purchase,Manual,-0.4,48
+JA21114,2025-04-29,Honda,Truck,2021,88600.0,Auction,Manual,9.6,62
+JA21115,2025-01-14,Mercedes-Benz,SUV,2018,162500.0,Auction,Manual,2.0,65
+JA21116,2025-01-08,Honda,Minivan,2017,144700.0,Auction,Manual,2.1,76
+JA21117,2025-04-10,Hyundai,Hatchback,2023,97100.0,Trade-in,Manual,-0.3,39
+JA21118,2025-08-05,Mercedes-Benz,SUV,2019,130400.0,Auction,Manual,3.1,63
+JA21119,2025-03-31,Honda,Truck,2015,90000.0,Trade-in,Manual,-0.1,83
+JA21120,2026-06-01,Chevrolet,Hatchback,2022,61900.0,Auction,Manual,-1.4,55
+JA21121,2025-09-14,Toyota,SUV,2014,84300.0,Auction,Manual,1.9,55
+JA21122,2026-04-03,Nissan,Sedan,2023,58700.0,Trade-in,Digital tool,-3.6,41
+JA21123,2025-01-09,Chevrolet,Sedan,2014,115500.0,Trade-in,Manual,7.3,67
+JA21124,2025-03-13,Chevrolet,Sedan,2019,95600.0,Auction,Manual,-2.5,72
+JA21125,2025-09-05,Kia,Hatchback,2018,117700.0,Private purchase,Manual,1.8,69
+JA21126,2025-03-29,Nissan,Truck,2024,128100.0,Trade-in,Manual,-0.6,55
+JA21127,2025-03-29,Kia,SUV,2016,8000.0,Auction,Manual,-3.3,53
+JA21128,2025-01-14,Honda,Sedan,2014,107500.0,Auction,Manual,8.7,75
+JA21129,2025-05-26,Ford,Sedan,2018,22900.0,Auction,Manual,-6.1,50
+JA21130,2026-02-17,Toyota,SUV,2016,101700.0,Auction,Manual,7.9,65
+JA21131,2026-03-04,Toyota,SUV,2021,59900.0,Auction,Manual,-3.4,34
+JA21132,2025-10-02,Ford,SUV,2013,99200.0,Auction,Manual,2.5,53
+JA21133,2025-04-10,Nissan,SUV,2016,149600.0,Auction,Manual,11.0,70
+JA21134,2025-08-31,Chevrolet,SUV,2023,26700.0,Auction,Manual,-6.2,43
+JA21135,2025-11-30,Toyota,Truck,2020,102600.0,Auction,Manual,-3.2,63
+JA21136,2025-03-21,Mercedes-Benz,Minivan,2014,91900.0,Trade-in,Manual,7.3,89
+JA21137,2025-08-08,Honda,Sedan,2013,19300.0,Trade-in,Manual,2.8,46
+JA21138,2026-03-21,Honda,Sedan,2019,120900.0,Auction,Manual,-0.0,47
+JA21139,2025-08-14,Chevrolet,Truck,2019,96400.0,Trade-in,Manual,2.0,47
+JA21140,2025-09-12,BMW,Truck,2015,74700.0,Trade-in,Digital tool,-4.1,56
+JA21141,2026-03-18,Nissan,Truck,2023,66100.0,Private purchase,Manual,2.6,41
+JA21142,2025-12-29,Honda,SUV,2013,223500.0,Trade-in,Digital tool,5.5,73
+JA21143,2025-03-28,Ford,Hatchback,2024,79200.0,Auction,Manual,0.6,46
+JA21144,2025-11-26,Chevrolet,SUV,2013,23000.0,Trade-in,Digital tool,0.2,44
+JA21145,2026-05-14,Honda,SUV,2019,57800.0,Auction,Manual,6.9,72
+JA21146,2025-04-25,Chevrolet,Sedan,2024,80300.0,Auction,Manual,9.9,73
+JA21147,2026-04-28,Chevrolet,Sedan,2024,79600.0,Auction,Manual,-0.2,50
+JA21148,2025-11-13,Ford,Truck,2024,91800.0,Auction,Manual,3.3,50
+JA21149,2025-12-27,BMW,SUV,2015,53100.0,Auction,Manual,-0.1,67
+JA21150,2025-06-28,Honda,Minivan,2021,116700.0,Auction,Manual,-0.4,50
+JA21151,2025-01-27,Nissan,Sedan,2016,75600.0,Trade-in,Manual,0.6,51
+JA21152,2025-01-15,Hyundai,Hatchback,2016,40600.0,Trade-in,Manual,-0.3,44
+JA21153,2025-12-25,Honda,Sedan,2018,62400.0,Auction,Manual,-4.6,50
+JA21154,2026-06-15,Ford,SUV,2018,79600.0,Trade-in,Digital tool,-8.2,42
+JA21155,2025-11-21,Hyundai,SUV,2019,128900.0,Private purchase,Manual,-0.7,38
+JA21156,2025-07-13,Ford,Sedan,2014,114400.0,Trade-in,Manual,2.7,66
+JA21157,2026-02-21,Toyota,Sedan,2022,81500.0,Auction,Manual,6.9,82
+JA21158,2026-05-26,Kia,Sedan,2017,95800.0,Trade-in,Digital tool,-2.4,69
+JA21159,2025-04-26,Mercedes-Benz,SUV,2018,103600.0,Auction,Manual,1.5,82
+JA21160,2025-02-26,Toyota,SUV,2022,176500.0,Auction,Manual,4.7,54
+JA21161,2026-05-30,Mercedes-Benz,Sedan,2013,70300.0,Trade-in,Digital tool,2.5,64
+JA21162,2025-01-25,Ford,SUV,2020,113700.0,Auction,Manual,1.7,51
+JA21163,2026-04-24,Toyota,Hatchback,2021,124100.0,Auction,Manual,1.9,65
+JA21164,2025-03-19,Chevrolet,SUV,2023,56900.0,Auction,Manual,9.5,62
+JA21165,2025-03-03,Ford,Minivan,2015,102600.0,Auction,Manual,0.8,59
+JA21166,2025-05-30,Nissan,Hatchback,2014,101500.0,Trade-in,Manual,0.2,48
+JA21167,2025-06-20,Chevrolet,Sedan,2023,76200.0,Private purchase,Manual,-4.2,58
+JA21168,2025-06-28,Ford,Truck,2019,117700.0,Trade-in,Manual,3.8,48
+JA21169,2025-01-18,Toyota,Sedan,2015,136100.0,Trade-in,Manual,1.1,59
+JA21170,2026-04-07,Chevrolet,Sedan,2023,140200.0,Auction,Manual,9.6,105
+JA21171,2026-03-25,Nissan,Hatchback,2016,87300.0,Private purchase,Manual,0.8,55
+JA21172,2026-01-03,BMW,Hatchback,2016,102600.0,Private purchase,Manual,5.3,71
+JA21173,2026-05-10,Honda,SUV,2014,189000.0,Auction,Manual,5.8,84
+JA21174,2026-05-22,Chevrolet,Hatchback,2021,50900.0,Trade-in,Digital tool,6.1,67
+JA21175,2026-06-19,BMW,SUV,2016,103900.0,Auction,Manual,-3.0,59
+JA21176,2025-07-22,Honda,SUV,2021,130600.0,Auction,Manual,8.3,68
+JA21177,2025-11-27,Ford,Sedan,2020,101000.0,Auction,Manual,2.2,63
+JA21178,2026-02-17,Honda,SUV,2020,121200.0,Auction,Manual,1.7,72
+JA21179,2025-12-26,Toyota,Sedan,2016,101900.0,Auction,Manual,0.9,56
+JA21180,2026-03-04,Honda,Sedan,2017,125100.0,Private purchase,Manual,0.6,60
+JA21181,2026-01-02,Honda,Sedan,2013,146300.0,Auction,Manual,0.8,59
+JA21182,2025-07-29,Toyota,Hatchback,2017,86100.0,Private purchase,Manual,-7.0,42
+JA21183,2025-11-04,Nissan,Hatchback,2020,102900.0,Auction,Manual,4.1,67
+JA21184,2025-04-18,Ford,SUV,2024,92800.0,Trade-in,Manual,2.4,40
+JA21185,2026-05-30,Hyundai,SUV,2021,78900.0,Auction,Manual,-1.6,44
+JA21186,2026-04-29,Honda,Truck,2014,94200.0,Auction,Manual,1.9,65
+JA21187,2025-11-25,Honda,SUV,2014,49700.0,Trade-in,Digital tool,8.6,57
+JA21188,2026-02-19,Nissan,Sedan,2024,124800.0,Trade-in,Digital tool,1.1,51
+JA21189,2025-07-01,Ford,Truck,2018,163100.0,Trade-in,Manual,0.6,50
+JA21190,2025-07-26,Hyundai,SUV,2017,163200.0,Auction,Manual,8.8,67
+JA21191,2025-10-04,Ford,Truck,2013,146000.0,Trade-in,Digital tool,-3.5,52
+JA21192,2025-05-23,Hyundai,Truck,2013,56400.0,Trade-in,Manual,1.5,53
+JA21193,2025-01-11,BMW,Sedan,2013,155800.0,Private purchase,Manual,-0.0,60
+JA21194,2025-08-02,Honda,SUV,2017,66400.0,Private purchase,Manual,1.2,42
+JA21195,2026-01-27,Ford,Sedan,2017,92900.0,Private purchase,Manual,5.0,65
+JA21196,2025-05-21,Nissan,SUV,2018,168800.0,Auction,Manual,4.4,69
+JA21197,2026-01-10,Toyota,Hatchback,2016,52100.0,Auction,Manual,-0.7,55
+JA21198,2025-11-20,Mercedes-Benz,Sedan,2018,128700.0,Auction,Manual,1.6,98
+JA21199,2025-08-16,Ford,SUV,2023,106300.0,Auction,Manual,2.5,59
+JA21200,2026-01-27,Honda,Hatchback,2022,88900.0,Auction,Manual,0.5,61
+JA21201,2026-04-05,Nissan,Sedan,2013,60000.0,Trade-in,Digital tool,-0.5,48
+JA21202,2026-05-29,Chevrolet,SUV,2013,111900.0,Trade-in,Digital tool,-3.2,53
+JA21203,2026-02-12,Hyundai,Sedan,2020,76400.0,Auction,Manual,-0.7,60
+JA21204,2025-02-19,BMW,Sedan,2017,136800.0,Auction,Manual,2.3,73
+JA21205,2025-07-01,Toyota,Minivan,2021,144000.0,Private purchase,Manual,-1.9,50
+JA21206,2025-10-13,Ford,SUV,2013,39800.0,Trade-in,Digital tool,1.3,59
+JA21207,2025-02-11,Nissan,Sedan,2018,74800.0,Trade-in,Manual,1.4,49
+JA21208,2025-08-14,BMW,Minivan,2023,82200.0,Trade-in,Manual,-1.5,51
+JA21209,2025-03-13,Hyundai,Sedan,2019,47700.0,Trade-in,Manual,-0.3,48
+JA21210,2025-10-27,Hyundai,Hatchback,2022,50300.0,Trade-in,Digital tool,-2.2,49
+JA21211,2025-04-10,Honda,SUV,2015,98500.0,Auction,Manual,1.5,53
+JA21212,2025-05-27,Hyundai,Sedan,2014,86700.0,Private purchase,Manual,2.6,54
+JA21213,2025-06-14,Hyundai,SUV,2016,28900.0,Trade-in,Manual,1.3,47
+JA21214,2026-06-10,BMW,Hatchback,2021,73500.0,Trade-in,Digital tool,-3.8,53
+JA21215,2025-08-30,Chevrolet,Sedan,2013,115800.0,Auction,Manual,7.7,73
+JA21216,2025-10-28,Nissan,SUV,2015,46800.0,Trade-in,Digital tool,3.1,47
+JA21217,2026-05-17,Mercedes-Benz,SUV,2023,58100.0,Trade-in,Digital tool,0.1,40
+JA21218,2025-01-08,Toyota,Sedan,2019,158500.0,Private purchase,Manual,5.8,63
+JA21219,2025-05-31,Nissan,SUV,2013,147700.0,Trade-in,Manual,3.4,53
+JA21220,2025-08-18,Ford,Sedan,2020,30200.0,Trade-in,Manual,1.1,53
+JA21221,2026-05-01,Nissan,Truck,2014,41000.0,Auction,Manual,2.5,57
+JA21222,2026-01-26,Honda,SUV,2023,110100.0,Auction,Manual,12.5,66
+JA21223,2026-01-03,Ford,SUV,2021,47300.0,Private purchase,Manual,6.0,46
+JA21224,2025-07-24,Chevrolet,SUV,2023,84900.0,Auction,Manual,6.2,58
+JA21225,2026-04-06,Toyota,SUV,2018,76900.0,Trade-in,Digital tool,-1.9,64
+JA21226,2025-04-11,Honda,Hatchback,2013,117400.0,Trade-in,Manual,4.5,66
+JA21227,2025-08-06,Ford,SUV,2019,8000.0,Auction,Manual,10.9,63
+JA21228,2025-07-12,Chevrolet,Truck,2019,8000.0,Auction,Manual,3.8,58
+JA21229,2025-01-02,Honda,SUV,2016,46000.0,Trade-in,Manual,6.3,56
+JA21230,2025-02-19,Chevrolet,Truck,2015,135600.0,Trade-in,Manual,7.0,63
+JA21231,2026-03-01,Honda,Truck,2014,88800.0,Trade-in,Digital tool,2.1,43
+JA21232,2026-05-25,Honda,SUV,2024,26700.0,Trade-in,Digital tool,5.7,56
+JA21233,2025-05-13,Hyundai,Truck,2022,114700.0,Trade-in,Manual,3.0,66
+JA21234,2025-02-11,Hyundai,Minivan,2015,123300.0,Trade-in,Manual,4.0,64
+JA21235,2025-03-18,BMW,Sedan,2014,85200.0,Auction,Manual,-0.3,68
+JA21236,2025-02-01,BMW,Sedan,2023,81800.0,Auction,Manual,12.4,81
+JA21237,2026-03-08,Honda,SUV,2016,112500.0,Auction,Manual,3.3,65
+JA21238,2025-01-27,Nissan,SUV,2016,143400.0,Auction,Manual,2.5,58
+JA21239,2026-01-06,Hyundai,Truck,2022,101100.0,Trade-in,Digital tool,5.0,50
+JA21240,2026-03-05,Honda,Hatchback,2014,116300.0,Private purchase,Manual,0.2,72
+JA21241,2025-04-25,Chevrolet,SUV,2016,93100.0,Auction,Manual,2.1,59
+JA21242,2025-05-04,BMW,SUV,2015,79700.0,Auction,Manual,-0.9,69
+JA21243,2025-05-25,Ford,SUV,2024,58400.0,Trade-in,Manual,2.2,47
+JA21244,2026-02-14,BMW,Sedan,2022,105300.0,Private purchase,Manual,0.6,53
+JA21245,2026-05-23,Toyota,SUV,2015,83000.0,Auction,Manual,4.2,50
+JA21246,2026-02-12,Toyota,Minivan,2018,85300.0,Trade-in,Digital tool,-0.9,45
+JA21247,2025-05-26,Nissan,Truck,2019,132200.0,Trade-in,Manual,-0.2,52
+JA21248,2026-01-22,Honda,Hatchback,2015,114500.0,Trade-in,Digital tool,-1.5,52
+JA21249,2026-01-15,Hyundai,Sedan,2019,129800.0,Trade-in,Digital tool,-0.8,51
+JA21250,2025-08-17,Ford,Truck,2024,32000.0,Trade-in,Manual,0.1,37
+JA21251,2025-03-11,Toyota,Minivan,2019,117300.0,Trade-in,Manual,5.7,61
+JA21252,2025-06-19,Nissan,SUV,2014,71400.0,Auction,Manual,4.7,56
+JA21253,2026-03-17,Nissan,Sedan,2022,62700.0,Trade-in,Digital tool,0.2,43
+JA21254,2025-10-06,Toyota,SUV,2018,60900.0,Trade-in,Digital tool,-5.0,40
+JA21255,2025-03-05,Honda,Truck,2013,143500.0,Trade-in,Manual,4.1,54
+JA21256,2026-05-09,Chevrolet,SUV,2016,128100.0,Trade-in,Digital tool,-5.3,53
+JA21257,2025-10-06,BMW,Truck,2019,66300.0,Trade-in,Digital tool,0.3,50
+JA21258,2025-07-08,BMW,SUV,2017,49500.0,Trade-in,Manual,2.3,56
+JA21259,2025-01-20,Ford,Truck,2022,95500.0,Auction,Manual,-0.2,42
+JA21260,2025-11-05,Honda,Truck,2020,76600.0,Trade-in,Digital tool,-3.6,50
+JA21261,2025-10-25,Ford,Hatchback,2013,161400.0,Private purchase,Manual,-0.6,51
+JA21262,2025-03-23,Toyota,Hatchback,2022,36500.0,Private purchase,Manual,10.1,63
+JA21263,2026-04-03,Ford,Sedan,2019,21800.0,Auction,Manual,1.1,60
+JA21264,2025-09-30,Honda,Truck,2019,84800.0,Trade-in,Digital tool,-1.2,45
+JA21265,2025-02-15,Toyota,SUV,2018,95400.0,Trade-in,Manual,5.8,59
+JA21266,2025-04-16,Honda,SUV,2017,100300.0,Auction,Manual,3.7,52
+JA21267,2025-05-29,Toyota,Truck,2017,125100.0,Private purchase,Manual,6.2,54
+JA21268,2026-02-09,Ford,Hatchback,2018,177900.0,Private purchase,Manual,-2.6,58
+JA21269,2026-02-17,Nissan,Truck,2019,81300.0,Auction,Manual,-2.1,47
+JA21270,2026-03-20,Hyundai,Sedan,2015,73200.0,Private purchase,Manual,15.0,96
+JA21271,2025-11-25,Kia,Sedan,2020,24600.0,Trade-in,Digital tool,-0.6,39
+JA21272,2026-05-07,BMW,Truck,2021,104700.0,Auction,Manual,1.0,56
+JA21273,2025-06-18,Hyundai,Sedan,2021,129100.0,Auction,Manual,2.7,58
+JA21274,2025-11-11,BMW,SUV,2021,84600.0,Trade-in,Digital tool,3.4,55
+JA21275,2025-12-06,Ford,Hatchback,2023,142200.0,Auction,Manual,-2.5,54
+JA21276,2025-07-18,Chevrolet,SUV,2017,96200.0,Auction,Manual,3.2,57
+JA21277,2025-09-03,Honda,Hatchback,2020,155600.0,Private purchase,Manual,2.0,58
+JA21278,2026-01-17,Ford,Truck,2024,108300.0,Trade-in,Digital tool,2.2,51
+JA21279,2026-04-11,Kia,Truck,2024,52700.0,Trade-in,Digital tool,0.3,52
+JA21280,2026-05-13,Hyundai,Hatchback,2018,69500.0,Trade-in,Digital tool,-2.4,48
+JA21281,2025-06-08,Ford,Minivan,2020,33700.0,Trade-in,Manual,-1.2,41
+JA21282,2026-01-23,Chevrolet,Minivan,2021,25500.0,Trade-in,Digital tool,-9.8,57
+JA21283,2026-02-14,Honda,Sedan,2016,105700.0,Trade-in,Digital tool,3.4,57
+JA21284,2026-05-22,Chevrolet,SUV,2019,129800.0,Private purchase,Manual,-3.6,45
+JA21285,2025-12-10,Toyota,Truck,2014,173200.0,Trade-in,Digital tool,-1.9,52
+JA21286,2025-04-19,Honda,Minivan,2019,92800.0,Auction,Manual,8.5,74
+JA21287,2026-02-04,Toyota,Sedan,2013,85500.0,Trade-in,Digital tool,-2.0,68
+JA21288,2025-04-03,Honda,SUV,2016,50600.0,Trade-in,Manual,4.5,71
+JA21289,2025-07-24,Mercedes-Benz,SUV,2016,134500.0,Trade-in,Manual,1.3,67
+JA21290,2025-09-22,Toyota,Sedan,2021,110600.0,Auction,Manual,4.8,62
+JA21291,2026-01-27,Honda,Truck,2014,71200.0,Trade-in,Digital tool,-0.3,64
+JA21292,2025-04-01,Hyundai,Hatchback,2020,122500.0,Trade-in,Manual,0.1,47
+JA21293,2026-01-13,Nissan,SUV,2021,117500.0,Auction,Manual,7.3,65
+JA21294,2025-03-19,Chevrolet,Sedan,2016,20200.0,Trade-in,Manual,1.1,68
+JA21295,2025-07-29,Honda,Sedan,2021,124700.0,Private purchase,Manual,-3.1,53
+JA21296,2025-03-07,Honda,SUV,2020,100400.0,Trade-in,Manual,0.8,38
+JA21297,2025-01-15,Chevrolet,SUV,2020,79300.0,Trade-in,Manual,4.2,53
+JA21298,2025-06-25,Toyota,Sedan,2014,78300.0,Private purchase,Manual,-2.2,54
+JA21299,2026-06-04,Toyota,Sedan,2017,164900.0,Trade-in,Digital tool,2.6,71
+JA21300,2025-10-30,Honda,Hatchback,2016,156400.0,Trade-in,Digital tool,2.6,55
+JA21301,2026-01-21,Ford,SUV,2018,168000.0,Auction,Manual,10.3,95
+JA21302,2025-05-04,Mercedes-Benz,Hatchback,2023,49100.0,Auction,Manual,-0.4,51
+JA21303,2025-04-21,Nissan,SUV,2016,68800.0,Trade-in,Manual,4.6,62
+JA21304,2026-05-05,Hyundai,Sedan,2017,131200.0,Trade-in,Digital tool,-6.8,48
+JA21305,2026-01-30,Ford,Truck,2024,46700.0,Auction,Manual,0.5,37
+JA21306,2025-09-21,Nissan,SUV,2018,66200.0,Auction,Manual,2.5,54
+JA21307,2025-05-31,Hyundai,Minivan,2013,22800.0,Trade-in,Manual,3.7,51
+JA21308,2026-04-11,Honda,Minivan,2021,169100.0,Auction,Manual,1.9,62
+JA21309,2025-09-11,Toyota,Minivan,2016,137500.0,Auction,Manual,1.8,74
+JA21310,2025-01-29,Toyota,SUV,2020,113300.0,Auction,Manual,-0.3,47
+JA21311,2026-04-10,Chevrolet,Sedan,2019,103800.0,Trade-in,Digital tool,-2.1,45
+JA21312,2025-08-14,Hyundai,Truck,2018,78300.0,Auction,Manual,3.3,65
+JA21313,2025-08-30,Chevrolet,Hatchback,2015,79100.0,Auction,Manual,4.3,63
+JA21314,2025-07-26,Toyota,SUV,2023,119600.0,Trade-in,Manual,4.6,45
+JA21315,2025-06-05,BMW,SUV,2023,66500.0,Private purchase,Manual,5.9,64
+JA21316,2025-11-21,Honda,Hatchback,2017,144100.0,Trade-in,Digital tool,4.2,65
+JA21317,2025-06-14,Mercedes-Benz,SUV,2018,75300.0,Auction,Manual,-4.8,51
+JA21318,2025-10-02,Hyundai,SUV,2020,60100.0,Trade-in,Digital tool,-2.4,42
+JA21319,2025-02-11,Ford,SUV,2017,146900.0,Auction,Manual,1.5,57
+JA21320,2026-03-27,Chevrolet,Sedan,2020,89200.0,Auction,Manual,-0.4,52
+JA21321,2025-04-29,Hyundai,Sedan,2013,117200.0,Auction,Manual,6.1,71
+JA21322,2025-11-23,Nissan,Truck,2023,78400.0,Auction,Manual,5.0,47
+JA21323,2025-05-27,Toyota,Hatchback,2016,8000.0,Trade-in,Manual,1.7,53
+JA21324,2025-04-10,Hyundai,SUV,2018,116900.0,Auction,Manual,2.6,57
+JA21325,2025-04-04,Honda,Minivan,2020,41100.0,Auction,Manual,7.0,58
+JA21326,2026-01-17,Toyota,Hatchback,2015,138300.0,Auction,Manual,0.8,65
+JA21327,2025-02-04,Toyota,Minivan,2016,33000.0,Private purchase,Manual,0.9,65
+JA21328,2026-03-07,Ford,Truck,2018,20400.0,Auction,Manual,5.6,48
+JA21329,2025-09-09,Honda,Sedan,2013,107300.0,Private purchase,Manual,3.9,67
+JA21330,2025-09-03,Nissan,SUV,2016,112000.0,Trade-in,Digital tool,5.0,49
+JA21331,2025-04-26,Toyota,Hatchback,2019,99300.0,Private purchase,Manual,3.5,57
+JA21332,2025-07-12,Toyota,Sedan,2014,46500.0,Auction,Manual,5.0,79
+JA21333,2026-02-03,Kia,Sedan,2016,130500.0,Private purchase,Manual,0.0,48
+JA21334,2026-04-26,Honda,Truck,2024,36400.0,Trade-in,Digital tool,-4.0,30
+JA21335,2026-05-14,Ford,Truck,2023,76400.0,Auction,Manual,2.1,52
+JA21336,2025-12-02,Toyota,Truck,2015,63500.0,Private purchase,Manual,-8.1,46
+JA21337,2025-05-28,Toyota,Sedan,2021,79900.0,Auction,Manual,3.7,56
+JA21338,2025-02-11,Ford,Sedan,2020,129100.0,Trade-in,Manual,5.8,70
+JA21339,2025-11-06,Chevrolet,Truck,2021,69600.0,Trade-in,Digital tool,-0.1,36
+JA21340,2025-10-26,Toyota,Sedan,2015,117600.0,Private purchase,Manual,1.3,62
+JA21341,2025-10-01,Chevrolet,SUV,2023,122800.0,Auction,Manual,6.3,78
+JA21342,2025-10-11,Kia,Hatchback,2019,26600.0,Trade-in,Digital tool,-0.6,38
+JA21343,2025-02-10,Hyundai,Hatchback,2022,48300.0,Trade-in,Manual,5.9,69
+JA21344,2025-08-01,Honda,Truck,2022,79700.0,Auction,Manual,10.5,82
+JA21345,2025-03-09,Honda,SUV,2016,71300.0,Trade-in,Manual,4.9,52
+JA21346,2026-04-07,Toyota,SUV,2013,107300.0,Auction,Manual,5.7,77
+JA21347,2026-04-23,Honda,Minivan,2019,17700.0,Auction,Manual,4.0,54
+JA21348,2026-03-21,Chevrolet,Minivan,2017,123800.0,Trade-in,Digital tool,0.6,61
+JA21349,2025-09-14,Toyota,SUV,2016,124800.0,Trade-in,Digital tool,0.7,72
+JA21350,2026-03-10,Chevrolet,Sedan,2014,88300.0,Private purchase,Manual,2.4,62
+JA21351,2026-03-11,Hyundai,SUV,2015,39700.0,Trade-in,Digital tool,3.8,55
+JA21352,2025-07-08,Toyota,Sedan,2022,95200.0,Trade-in,Manual,-4.1,43
+JA21353,2025-02-05,Toyota,Truck,2015,73500.0,Auction,Manual,1.1,44
+JA21354,2026-04-01,Nissan,SUV,2022,117700.0,Auction,Manual,4.6,56
+JA21355,2025-11-18,Nissan,Hatchback,2014,91600.0,Auction,Manual,-1.1,54
+JA21356,2025-08-31,Honda,Hatchback,2023,124100.0,Private purchase,Manual,1.7,57
+JA21357,2026-04-13,BMW,SUV,2015,77700.0,Trade-in,Digital tool,-3.1,45
+JA21358,2026-05-29,Toyota,Truck,2022,152700.0,Trade-in,Digital tool,1.3,55
+JA21359,2026-04-14,Ford,SUV,2015,8000.0,Auction,Manual,5.4,50
+JA21360,2025-01-07,Toyota,SUV,2015,54400.0,Auction,Manual,7.7,59
+JA21361,2025-01-04,Hyundai,SUV,2021,114600.0,Trade-in,Manual,4.0,73
+JA21362,2025-09-21,Toyota,Sedan,2014,34600.0,Auction,Manual,-0.6,47
+JA21363,2025-10-09,Toyota,Hatchback,2016,124400.0,Trade-in,Digital tool,0.6,49
+JA21364,2025-05-07,Nissan,Truck,2020,46300.0,Trade-in,Manual,4.3,69
+JA21365,2025-07-19,Ford,SUV,2013,98700.0,Auction,Manual,7.5,61
+JA21366,2025-11-02,Hyundai,SUV,2016,58400.0,Auction,Manual,-6.1,54
+JA21367,2026-02-15,Nissan,Minivan,2018,77400.0,Trade-in,Digital tool,1.0,59
+JA21368,2026-02-13,Hyundai,Sedan,2020,102000.0,Trade-in,Digital tool,-7.4,45
+JA21369,2025-02-09,Toyota,Sedan,2015,90800.0,Trade-in,Manual,4.8,71
+JA21370,2025-07-26,Nissan,SUV,2019,79700.0,Trade-in,Manual,3.8,46
+JA21371,2025-05-24,Toyota,Hatchback,2021,181100.0,Auction,Manual,4.0,66
+JA21372,2025-06-06,Honda,Sedan,2017,95300.0,Auction,Manual,5.5,77
+JA21373,2026-03-15,Ford,Sedan,2015,56200.0,Auction,Manual,3.6,70
+JA21374,2025-08-20,Toyota,SUV,2016,132100.0,Private purchase,Manual,-0.4,49
+JA21375,2025-09-11,Toyota,Truck,2019,127800.0,Auction,Manual,3.4,58
+JA21376,2026-06-13,Hyundai,SUV,2013,143900.0,Auction,Manual,6.7,62
+JA21377,2025-09-02,Nissan,SUV,2015,166500.0,Auction,Manual,1.7,59
+JA21378,2026-02-10,Honda,Sedan,2014,57400.0,Auction,Manual,2.2,61
+JA21379,2026-06-08,Honda,Hatchback,2018,137400.0,Auction,Manual,-2.5,54
+JA21380,2026-06-12,Toyota,SUV,2022,140600.0,Private purchase,Manual,6.5,54
+JA21381,2025-06-22,Ford,SUV,2023,95000.0,Trade-in,Manual,0.2,59
+JA21382,2025-08-06,Hyundai,SUV,2020,104800.0,Auction,Manual,-0.7,51
+JA21383,2025-01-23,Mercedes-Benz,Sedan,2016,8000.0,Trade-in,Manual,0.4,57
+JA21384,2026-02-09,Toyota,Truck,2013,72000.0,Trade-in,Digital tool,-3.7,37
+JA21385,2025-07-31,BMW,SUV,2019,166500.0,Private purchase,Manual,1.1,73
+JA21386,2025-01-07,Kia,Sedan,2015,23500.0,Trade-in,Manual,7.0,64
+JA21387,2025-03-24,Honda,Sedan,2018,73600.0,Auction,Manual,5.1,61
+JA21388,2025-04-07,Nissan,SUV,2020,106500.0,Trade-in,Manual,7.5,55
+JA21389,2025-02-14,Chevrolet,Sedan,2013,118000.0,Auction,Manual,7.8,78
+JA21390,2025-02-07,Hyundai,SUV,2014,160300.0,Trade-in,Manual,-1.3,51
+JA21391,2025-11-03,Honda,SUV,2013,24500.0,Auction,Manual,3.9,60
+JA21392,2025-05-07,Hyundai,Minivan,2023,96700.0,Private purchase,Manual,7.8,70
+JA21393,2026-05-30,BMW,SUV,2023,129400.0,Auction,Manual,10.9,92
+JA21394,2025-11-05,Toyota,SUV,2015,42500.0,Auction,Manual,-3.3,45
+JA21395,2025-11-09,Ford,Sedan,2017,93400.0,Auction,Manual,-3.3,71
+JA21396,2025-10-10,Toyota,Sedan,2020,170400.0,Trade-in,Digital tool,1.4,53
+JA21397,2025-12-16,Chevrolet,SUV,2021,147700.0,Auction,Manual,0.8,53
+JA21398,2026-02-27,Chevrolet,Hatchback,2017,116600.0,Trade-in,Digital tool,-4.2,48
+JA21399,2025-06-24,Toyota,SUV,2017,8000.0,Trade-in,Manual,3.6,42

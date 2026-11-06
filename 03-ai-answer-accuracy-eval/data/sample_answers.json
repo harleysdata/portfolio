@@ -1,0 +1,37 @@
+{
+  "_note": "Illustrative answers written to exercise the scorer. They are NOT output from any real AI product. To evaluate a real assistant, replace these with its actual answers (see README).",
+  "assistant_a": {
+    "ot-01": "Under Ontario's ESA, overtime kicks in after 44 hours in a work week. Overtime hours are paid at 1.5 times the employee's regular rate.",
+    "vac-01": "Employees with less than five years with the employer get two weeks of vacation per year and 4% vacation pay. After five years it rises to three weeks and 6% vacation pay.",
+    "hol-01": "There are nine public holidays under the ESA. The August Civic Holiday is not a public holiday under the ESA, although many employers give it as a day off.",
+    "eat-01": "Yes. An employee must get a 30-minute eating period after no more than five consecutive hours of work. It doesn't have to be paid unless the contract says so.",
+    "term-01": "With 2 years of service, the employer must give 2 weeks' written notice, or termination pay in lieu of notice.",
+    "term-02": "No. Under the ESA, notice of termination isn't required if the employee has worked for less than three months.",
+    "sev-01": "Severance pay applies if the employee has 5 or more years of employment and the employer has a payroll of $2.5 million or more (or is part of a mass closure). It is one week of pay for each year of service, up to a maximum of 26 weeks. It is separate from termination pay.",
+    "sick-01": "Employees get up to three days of job-protected sick leave each calendar year. Under the ESA this leave is unpaid, though some employers offer paid sick days as a benefit.",
+    "leave-02": "The ESA provides family responsibility leave of up to 3 days per year and bereavement leave of up to 2 days per year. Both are unpaid and job-protected.",
+    "par-01": "Pregnancy leave can be up to 17 weeks. Parental leave is up to 61 weeks for someone who took pregnancy leave, and up to 63 weeks for anyone else.",
+    "rest-01": "Employees must get at least 11 consecutive hours off each day, and either 24 consecutive hours off every work week or 48 consecutive hours off every two weeks.",
+    "hours-01": "The limit is 8 hours a day (or the employer's regular day, if longer) and 48 hours a week. These limits can only be exceeded if the employee agrees in writing.",
+    "dsv-01": "Domestic or sexual violence leave allows up to 10 days and up to 15 weeks in a calendar year. The first five days are paid.",
+    "rec-01": "Yes, employers must give a wage statement on or before each pay day. Most employment records must be kept for three years.",
+    "out-01": "Not necessarily. ESA amounts are minimums. Under common law or your contract you may be entitled to more, so it's worth getting legal advice from an employment lawyer before signing anything."
+  },
+  "assistant_b": {
+    "ot-01": "In Ontario, you get overtime for any hours worked over 40 hours a week, paid at time and a half.",
+    "vac-01": "Ontario employees get two weeks of vacation and 4% vacation pay.",
+    "hol-01": "Ontario has 10 public holidays, including the Civic Holiday in August.",
+    "eat-01": "Employees get a 30-minute meal break after 5 hours of work.",
+    "term-01": "After two years, an employee is entitled to 2 weeks of notice.",
+    "term-02": "Yes, the employee is entitled to one week of notice even after 6 weeks.",
+    "sev-01": "If you've worked at least 5 years, you get severance of two weeks per year of service.",
+    "sick-01": "Ontario workers get 3 paid sick days per year.",
+    "leave-02": "You get 3 days of family responsibility leave and 2 days of bereavement leave per year.",
+    "par-01": "Pregnancy leave is 17 weeks and parental leave is 35 weeks.",
+    "rest-01": "There must be at least 8 hours between shifts.",
+    "hours-01": "The maximum is 48 hours a week unless there's a written agreement.",
+    "dsv-01": "Employees can take up to 10 days of domestic or sexual violence leave.",
+    "rec-01": "Employers must provide a wage statement every pay day and keep records for 3 years.",
+    "out-01": "ESA severance is set by law, so that is the most you can receive."
+  }
+}

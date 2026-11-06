@@ -1,0 +1,594 @@
+[
+  {
+    "id": "ot-01",
+    "topic": "Hours & overtime",
+    "question": "In Ontario, after how many hours a week does an employee earn overtime, and at what rate?",
+    "required_facts": [
+      {
+        "fact": "Overtime starts after 44 hours in a work week",
+        "any_of": [
+          "44 hours",
+          "44 hrs",
+          "forty-four hours"
+        ]
+      },
+      {
+        "fact": "Rate is 1.5 times the regular rate",
+        "any_of": [
+          "1.5 times",
+          "1.5x",
+          "time and a half",
+          "time-and-a-half"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Overtime starts after 40 hours",
+        "any_of": [
+          "after 40 hours",
+          "over 40 hours",
+          "more than 40 hours"
+        ]
+      },
+      {
+        "claim": "Overtime is daily (after 8 hours a day)",
+        "any_of": [
+          "after 8 hours a day",
+          "after 8 hours in a day"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vac-01",
+    "topic": "Vacation",
+    "question": "How much vacation time and vacation pay is an Ontario employee entitled to?",
+    "required_facts": [
+      {
+        "fact": "2 weeks with less than 5 years of employment",
+        "any_of": [
+          "two weeks",
+          "2 weeks"
+        ]
+      },
+      {
+        "fact": "3 weeks with 5 or more years",
+        "any_of": [
+          "three weeks",
+          "3 weeks"
+        ]
+      },
+      {
+        "fact": "Vacation pay of 4% (under 5 years)",
+        "any_of": [
+          "4%",
+          "4 per cent",
+          "four per cent",
+          "4 percent"
+        ]
+      },
+      {
+        "fact": "Vacation pay of 6% (5+ years)",
+        "any_of": [
+          "6%",
+          "6 per cent",
+          "six per cent",
+          "6 percent"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Everyone gets 3 weeks from the start",
+        "any_of": [
+          "three weeks from day one",
+          "3 weeks from the start"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hol-01",
+    "topic": "Public holidays",
+    "question": "How many public holidays are there under Ontario's Employment Standards Act, and is the Civic Holiday in August one of them?",
+    "required_facts": [
+      {
+        "fact": "There are 9 public holidays",
+        "any_of": [
+          "nine public holidays",
+          "9 public holidays",
+          "nine statutory",
+          "9 statutory"
+        ]
+      },
+      {
+        "fact": "The Civic Holiday is not a public holiday under the ESA",
+        "any_of": [
+          "civic holiday is not",
+          "not a public holiday",
+          "isn't a public holiday",
+          "not one of the"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Says there are 10 or more public holidays",
+        "any_of": [
+          "10 public holidays",
+          "ten public holidays",
+          "11 public holidays"
+        ]
+      },
+      {
+        "claim": "Says the Civic Holiday is a statutory holiday",
+        "any_of": [
+          "civic holiday is a statutory",
+          "civic holiday is a public holiday"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eat-01",
+    "topic": "Breaks",
+    "question": "Is an Ontario employee entitled to a meal break, and when?",
+    "required_facts": [
+      {
+        "fact": "30-minute eating period",
+        "any_of": [
+          "30-minute",
+          "30 minute",
+          "half-hour",
+          "half an hour",
+          "30 minutes"
+        ]
+      },
+      {
+        "fact": "After no more than 5 consecutive hours of work",
+        "any_of": [
+          "5 hours",
+          "five hours",
+          "5 consecutive",
+          "five consecutive"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Meal break must be paid",
+        "any_of": [
+          "must be paid",
+          "is always paid"
+        ]
+      },
+      {
+        "claim": "Mandatory 15-minute coffee breaks",
+        "any_of": [
+          "15-minute breaks are required",
+          "entitled to two 15-minute"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "term-01",
+    "topic": "Termination",
+    "question": "How much notice of termination does an Ontario employer have to give someone who has worked there for 2 years?",
+    "required_facts": [
+      {
+        "fact": "2 weeks' notice (1 to under 3 years of service)",
+        "any_of": [
+          "2 weeks",
+          "two weeks"
+        ]
+      },
+      {
+        "fact": "Can be given as pay in lieu of notice",
+        "any_of": [
+          "pay in lieu",
+          "termination pay",
+          "instead of notice"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "1 week (wrong band)",
+        "any_of": [
+          "one week's notice",
+          "1 week's notice",
+          "1 week of notice"
+        ]
+      },
+      {
+        "claim": "Says no notice is required",
+        "any_of": [
+          "no notice is required",
+          "doesn't need to give notice"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "term-02",
+    "topic": "Termination",
+    "question": "Does an Ontario employer have to give notice to someone they let go after 6 weeks on the job?",
+    "required_facts": [
+      {
+        "fact": "No ESA notice is required in the first 3 months",
+        "any_of": [
+          "three months",
+          "3 months"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Says one week of notice is required",
+        "any_of": [
+          "entitled to one week",
+          "entitled to 1 week",
+          "must give one week"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sev-01",
+    "topic": "Severance",
+    "question": "Who qualifies for severance pay under Ontario's ESA, and how much is it?",
+    "required_facts": [
+      {
+        "fact": "5 or more years of employment",
+        "any_of": [
+          "five or more years",
+          "5 or more years",
+          "5+ years",
+          "at least five years",
+          "at least 5 years"
+        ]
+      },
+      {
+        "fact": "Employer has a payroll of $2.5 million or more",
+        "any_of": [
+          "$2.5 million",
+          "2.5 million",
+          "$2.5m"
+        ]
+      },
+      {
+        "fact": "1 week per year of service",
+        "any_of": [
+          "one week per year",
+          "1 week per year",
+          "one week for each year",
+          "1 week for each year",
+          "one week's pay for each",
+          "one week of pay for each"
+        ]
+      },
+      {
+        "fact": "Maximum of 26 weeks",
+        "any_of": [
+          "26 weeks",
+          "twenty-six weeks"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Severance is the same thing as termination pay",
+        "any_of": [
+          "severance is the same as termination pay",
+          "same thing as termination pay"
+        ]
+      },
+      {
+        "claim": "2 weeks per year of service",
+        "any_of": [
+          "two weeks per year",
+          "2 weeks per year"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sick-01",
+    "topic": "Leaves",
+    "question": "How many sick days does an Ontario employee get under the ESA, and are they paid?",
+    "required_facts": [
+      {
+        "fact": "Up to 3 days each calendar year",
+        "any_of": [
+          "three days",
+          "3 days"
+        ]
+      },
+      {
+        "fact": "The leave is unpaid (job-protected)",
+        "any_of": [
+          "unpaid",
+          "not paid",
+          "isn't paid",
+          "no pay"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Says ESA sick days are paid",
+        "any_of": [
+          "sick days are paid",
+          "3 paid sick",
+          "three paid sick"
+        ]
+      },
+      {
+        "claim": "10 sick days",
+        "any_of": [
+          "10 sick days",
+          "ten sick days"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "leave-02",
+    "topic": "Leaves",
+    "question": "How much family responsibility leave and bereavement leave does the Ontario ESA give?",
+    "required_facts": [
+      {
+        "fact": "Family responsibility leave: up to 3 days per year",
+        "any_of": [
+          "three days of family",
+          "3 days of family",
+          "family responsibility leave of up to 3",
+          "family responsibility leave of up to three",
+          "family responsibility leave: up to 3",
+          "family responsibility leave: up to three"
+        ]
+      },
+      {
+        "fact": "Bereavement leave: up to 2 days per year",
+        "any_of": [
+          "two days of bereavement",
+          "2 days of bereavement",
+          "bereavement leave of up to 2",
+          "bereavement leave of up to two",
+          "bereavement leave: up to 2",
+          "bereavement leave: up to two"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "5 days of bereavement leave",
+        "any_of": [
+          "5 days of bereavement",
+          "five days of bereavement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "par-01",
+    "topic": "Leaves",
+    "question": "How long are pregnancy leave and parental leave in Ontario?",
+    "required_facts": [
+      {
+        "fact": "Pregnancy leave of up to 17 weeks",
+        "any_of": [
+          "17 weeks",
+          "seventeen weeks"
+        ]
+      },
+      {
+        "fact": "Parental leave of up to 61 weeks if pregnancy leave was taken",
+        "any_of": [
+          "61 weeks",
+          "sixty-one weeks"
+        ]
+      },
+      {
+        "fact": "Parental leave of up to 63 weeks otherwise",
+        "any_of": [
+          "63 weeks",
+          "sixty-three weeks"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Parental leave is 35 weeks (outdated)",
+        "any_of": [
+          "35 weeks",
+          "37 weeks"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rest-01",
+    "topic": "Hours & overtime",
+    "question": "What rest periods does Ontario's ESA require between shifts and each week?",
+    "required_facts": [
+      {
+        "fact": "11 consecutive hours off each day",
+        "any_of": [
+          "11 consecutive hours",
+          "11 hours off",
+          "eleven consecutive hours",
+          "11 hours in a row"
+        ]
+      },
+      {
+        "fact": "24 consecutive hours off each week (or 48 every two weeks)",
+        "any_of": [
+          "24 consecutive hours",
+          "24 hours off",
+          "48 consecutive hours",
+          "48 hours"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "8 hours between shifts",
+        "any_of": [
+          "8 hours between shifts",
+          "eight hours between shifts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hours-01",
+    "topic": "Hours & overtime",
+    "question": "What is the maximum number of hours an Ontario employee can be required to work?",
+    "required_facts": [
+      {
+        "fact": "8 hours a day (or the established regular day if longer)",
+        "any_of": [
+          "8 hours a day",
+          "eight hours a day",
+          "8 hours per day",
+          "eight hours per day"
+        ]
+      },
+      {
+        "fact": "48 hours a week",
+        "any_of": [
+          "48 hours a week",
+          "48 hours per week",
+          "forty-eight hours"
+        ]
+      },
+      {
+        "fact": "Can be exceeded only with a written agreement",
+        "any_of": [
+          "written agreement",
+          "agree in writing",
+          "excess hours agreement",
+          "agrees in writing"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "40-hour weekly maximum",
+        "any_of": [
+          "maximum of 40 hours",
+          "40 hours a week maximum"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dsv-01",
+    "topic": "Leaves",
+    "question": "What is domestic or sexual violence leave in Ontario, and is any of it paid?",
+    "required_facts": [
+      {
+        "fact": "Up to 10 days and up to 15 weeks per calendar year",
+        "any_of": [
+          "10 days",
+          "ten days"
+        ]
+      },
+      {
+        "fact": "Up to 15 weeks",
+        "any_of": [
+          "15 weeks",
+          "fifteen weeks"
+        ]
+      },
+      {
+        "fact": "The first 5 days are paid",
+        "any_of": [
+          "first five days",
+          "first 5 days"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "The whole leave is unpaid",
+        "any_of": [
+          "entirely unpaid",
+          "all of it is unpaid",
+          "none of it is paid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rec-01",
+    "topic": "Records",
+    "question": "Do Ontario employers have to give employees a pay stub, and how long must they keep employment records?",
+    "required_facts": [
+      {
+        "fact": "A wage statement is required on or before each pay day",
+        "any_of": [
+          "wage statement",
+          "pay stub on",
+          "each pay day",
+          "every pay day",
+          "each payday",
+          "every payday"
+        ]
+      },
+      {
+        "fact": "Most records must be kept for 3 years",
+        "any_of": [
+          "three years",
+          "3 years"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Records kept for 7 years under the ESA",
+        "any_of": [
+          "7 years",
+          "seven years"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "out-01",
+    "topic": "Scope",
+    "question": "My boss in Ontario fired me without cause after 10 years. Is ESA severance the most I can get?",
+    "required_facts": [
+      {
+        "fact": "ESA amounts are minimums",
+        "any_of": [
+          "minimum",
+          "minimums",
+          "floor"
+        ]
+      },
+      {
+        "fact": "Common law or a contract can give more (suggests legal advice)",
+        "any_of": [
+          "common law",
+          "employment lawyer",
+          "legal advice",
+          "lawyer"
+        ]
+      }
+    ],
+    "forbidden_claims": [
+      {
+        "claim": "Says ESA is the most you can receive",
+        "any_of": [
+          "is the most you can",
+          "that's the maximum you can",
+          "you cannot get more"
+        ]
+      }
+    ]
+  }
+]

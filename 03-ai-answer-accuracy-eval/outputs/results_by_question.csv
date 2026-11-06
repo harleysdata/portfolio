@@ -1,0 +1,31 @@
+assistant,id,topic,fact_recall,verdict,missed_facts,errors
+assistant_a,ot-01,Hours & overtime,1.0,Correct,,
+assistant_a,vac-01,Vacation,1.0,Correct,,
+assistant_a,hol-01,Public holidays,1.0,Correct,,
+assistant_a,eat-01,Breaks,1.0,Correct,,
+assistant_a,term-01,Termination,1.0,Correct,,
+assistant_a,term-02,Termination,1.0,Correct,,
+assistant_a,sev-01,Severance,1.0,Correct,,
+assistant_a,sick-01,Leaves,1.0,Correct,,
+assistant_a,leave-02,Leaves,1.0,Correct,,
+assistant_a,par-01,Leaves,1.0,Correct,,
+assistant_a,rest-01,Hours & overtime,1.0,Correct,,
+assistant_a,hours-01,Hours & overtime,1.0,Correct,,
+assistant_a,dsv-01,Leaves,1.0,Correct,,
+assistant_a,rec-01,Records,1.0,Correct,,
+assistant_a,out-01,Scope,1.0,Correct,,
+assistant_b,ot-01,Hours & overtime,0.5,Incorrect,Overtime starts after 44 hours in a work week,Overtime starts after 40 hours
+assistant_b,vac-01,Vacation,0.5,Partial,3 weeks with 5 or more years; Vacation pay of 6% (5+ years),
+assistant_b,hol-01,Public holidays,0.0,Incorrect,There are 9 public holidays; The Civic Holiday is not a public holiday under the ESA,Says there are 10 or more public holidays
+assistant_b,eat-01,Breaks,1.0,Correct,,
+assistant_b,term-01,Termination,0.5,Partial,Can be given as pay in lieu of notice,
+assistant_b,term-02,Termination,0.0,Incorrect,No ESA notice is required in the first 3 months,Says one week of notice is required
+assistant_b,sev-01,Severance,0.25,Incorrect,Employer has a payroll of $2.5 million or more; 1 week per year of service; Maximum of 26 weeks,2 weeks per year of service
+assistant_b,sick-01,Leaves,0.0,Incorrect,Up to 3 days each calendar year; The leave is unpaid (job-protected),Says ESA sick days are paid
+assistant_b,leave-02,Leaves,1.0,Correct,,
+assistant_b,par-01,Leaves,0.3333333333333333,Incorrect,Parental leave of up to 61 weeks if pregnancy leave was taken; Parental leave of up to 63 weeks otherwise,Parental leave is 35 weeks (outdated)
+assistant_b,rest-01,Hours & overtime,0.0,Incorrect,11 consecutive hours off each day; 24 consecutive hours off each week (or 48 every two weeks),8 hours between shifts
+assistant_b,hours-01,Hours & overtime,0.6666666666666666,Partial,8 hours a day (or the established regular day if longer),
+assistant_b,dsv-01,Leaves,0.3333333333333333,Partial,Up to 15 weeks; The first 5 days are paid,
+assistant_b,rec-01,Records,1.0,Correct,,
+assistant_b,out-01,Scope,0.0,Incorrect,ESA amounts are minimums; Common law or a contract can give more (suggests legal advice),Says ESA is the most you can receive
