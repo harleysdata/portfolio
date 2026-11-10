@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: masthead with three big day tabs; under it a vote card beside live group results; then the day's event ledger, colour-keyed like the spreadsheet. Stacks to one column on phones. */
+:root{
+  --bg:#F5F2F7; --surface:#FFFFFF; --sunk:#ECE7F0; --fg:#22192A; --muted:#675B71; --line:#DCD3E3;
+  --accent:#B9461A; --accent-ink:#FFFFFF; --accent-soft:#F7E2D6;
+  --yellow:#FFF1B8; --yellow-ink:#7A5A00; --red:#F7C9C6; --red-ink:#9B1F1A; --blue:#D3E3F5; --blue-ink:#1E4F86; --orange:#FBE3CF;
+  --ok:#2F7A3E; --warn:#A8261B;
+  --f-display:"Grenze Gotisch",Georgia,"Times New Roman",serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#16111B; --surface:#201927; --sunk:#2A2232; --fg:#EEE7F2; --muted:#A797B2; --line:#392F42;
+  --accent:#F08A4B; --accent-ink:#1A1016; --accent-soft:#3B261E;
+  --yellow:#3A3216; --yellow-ink:#F2D27A; --red:#43201F; --red-ink:#FF9C93; --blue:#1C2D42; --blue-ink:#9CC5F2; --orange:#3A2A1E;
+  --ok:#7BD08B; --warn:#FF8A7A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#16111B; --surface:#201927; --sunk:#2A2232; --fg:#EEE7F2; --muted:#A797B2; --line:#392F42;
+  --accent:#F08A4B; --accent-ink:#1A1016; --accent-soft:#3B261E;
+  --yellow:#3A3216; --yellow-ink:#F2D27A; --red:#43201F; --red-ink:#FF9C93; --blue:#1C2D42; --blue-ink:#9CC5F2; --orange:#3A2A1E;
+  --ok:#7BD08B; --warn:#FF8A7A; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.5}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+header .wrap{padding-block:28px 8px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(42px,7vw,72px);line-height:.92;margin:6px 0 0;text-wrap:balance}
+.lede{color:var(--muted);max-width:60ch;margin:12px 0 0}
+.steps{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 0;padding:0;list-style:none;font-size:13.5px}
+.steps li{display:flex;gap:8px;align-items:baseline}
+.steps b{font-family:var(--f-mono);font-size:12px;color:var(--accent)}
+.days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding-block:22px 6px}
+.day{text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:14px 16px;cursor:pointer;display:flex;flex-direction:column;gap:2px}
+.day:hover{border-color:var(--muted)}
+.day[aria-selected="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.day .dn{font-family:var(--f-display);font-size:30px;line-height:1}
+.day .dd{font-family:var(--f-mono);font-size:12px;opacity:.75}
+.day .dm{font-size:13px;margin-top:6px}
+@media (max-width:520px){.day{padding:10px 12px}.day .dn{font-size:24px}.day .dm{font-size:12px}}
+.top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;padding-block:14px 8px}
+@media (max-width:860px){.top{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.card h2{font-family:var(--f-display);font-weight:700;font-size:30px;line-height:1;margin:0}
+.card .sub{font-size:13px;color:var(--muted);margin:4px 0 0}
+.q{display:flex;flex-direction:column;gap:8px}
+.q .ql{font-weight:600;font-size:14px;display:flex;gap:8px;align-items:baseline}
+.q .ql .n{font-family:var(--f-mono);font-size:12px;color:var(--accent)}
+.q .hint{font-weight:400;font-size:12.5px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surface);padding:7px 13px;border-radius:999px;cursor:pointer;font-size:14px;font-weight:500;display:inline-flex;gap:6px;align-items:center}
+.chip:hover{border-color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip .c{font-family:var(--f-mono);font-size:11.5px;opacity:.7}
+.chip.pref{box-shadow:inset 0 0 0 1px var(--red-ink)}
+.chip:disabled{opacity:.45;cursor:not-allowed}
+.savebar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.savebar .st{display:flex;align-items:center;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.dot.ok{background:var(--ok)} .dot.busy{background:var(--accent)} .dot.err{background:var(--warn)}
+.big{display:flex;gap:22px;flex-wrap:wrap}
+.big div{font-size:13px;color:var(--muted)}
+.big b{display:block;font-family:var(--f-mono);font-weight:500;font-size:28px;color:var(--fg);font-variant-numeric:tabular-nums;line-height:1.1}
+.rh{font-weight:600;font-size:14px;margin:0 0 8px}
+.bars{display:flex;flex-direction:column;gap:7px;margin:0;padding:0;list-style:none}
+.bars li{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr) 28px;gap:10px;align-items:center;font-size:13.5px}
+.bars .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bars .tr{height:10px;background:var(--sunk);border-radius:5px;overflow:hidden}
+.bars .tr i{display:block;height:100%;background:var(--accent);border-radius:5px}
+.bars li.lead .lab{font-weight:600}
+.bars .v{font-family:var(--f-mono);font-size:12.5px;text-align:right;font-variant-numeric:tabular-nums}
+.faces{display:flex;flex-wrap:wrap;gap:6px}
+.face{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;background:var(--sunk);border-radius:999px;padding:2px 10px}
+.face .w{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.empty{color:var(--muted);font-size:13.5px}
+.verdict{background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:14px}
+.verdict b{font-weight:600}
+.evhead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;padding-block:26px 10px;border-bottom:1px solid var(--line)}
+.evhead h2{font-family:var(--f-display);font-weight:700;font-size:34px;margin:0;line-height:1}
+.key{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted)}
+.key span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:14px;height:14px;border-radius:3px;border:1px solid var(--line)}
+.filt{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-block:12px;font-size:13px}
+.filt select{font:14px var(--f-body);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:6px 8px;max-width:100%}
+.filt label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.filt .count{margin-left:auto;color:var(--muted)}
+.list{display:flex;flex-direction:column;gap:6px;padding-bottom:40px}
+.ev{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:4px 14px;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface)}
+.ev.y{background:var(--yellow);border-color:transparent}
+.ev.r{background:var(--red);border-color:transparent}
+.ev.b{background:var(--blue);border-color:transparent}
+.ev.o{background:var(--orange);border-color:transparent}
+.km{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.km b{display:block;font-size:17px;font-weight:500;color:var(--fg)}
+.ev h3{margin:0;font-size:15.5px;font-weight:600;line-height:1.3}
+.ev h3 a{text-decoration:none;border-bottom:1px solid currentColor}
+.ev h3 a:hover{color:var(--accent)}
+.meta{font-size:13px;color:var(--muted);margin-top:2px}
+.ev .no{font-size:13px;margin-top:4px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.03em;padding:2px 7px;border-radius:4px;background:var(--surface);color:var(--muted);border:1px solid var(--line)}
+.tag.y{color:var(--yellow-ink);border-color:var(--yellow-ink);font-weight:500}
+.tag.r{color:var(--red-ink);border-color:var(--red-ink);font-weight:500}
+.tag.b{color:var(--blue-ink);border-color:var(--blue-ink)}
+.tag.w{color:var(--warn);border-style:dashed;border-color:var(--warn)}
+.side{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.price{font-family:var(--f-mono);font-size:12.5px;text-align:right;max-width:130px}
+.heart{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:13px;padding:6px 11px;border-radius:8px;border:1px solid var(--accent);background:var(--surface);color:var(--accent);cursor:pointer;white-space:nowrap}
+.heart[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.heart:disabled{opacity:.45;cursor:not-allowed}
+.heart .c{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+@media (max-width:560px){.ev{grid-template-columns:44px minmax(0,1fr)}.side{grid-column:1/-1;flex-direction:row;justify-content:space-between;align-items:center}.price{text-align:left;max-width:none}}
+footer{font-size:12.5px;color:var(--muted);padding-block:0 32px}
+@media (prefers-reduced-motion:no-preference){.bars .tr i{transition:width .35s ease}}
+.who{display:flex;flex-direction:column;gap:6px}
+.who input{font:15px var(--f-body);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:9px 11px;width:100%}
+.savebtn{font-weight:600;font-size:15px;padding:10px 18px;border-radius:10px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.savebtn:disabled{opacity:.5;cursor:wait}
+.dayrow{display:flex;gap:8px;flex-wrap:wrap}
+.daybadge{font-family:var(--f-mono);font-size:11.5px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.daybadge.done{border-color:var(--ok);color:var(--ok)}
+.picked{font-size:13px;color:var(--muted)}
+.picked b{color:var(--fg);font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Ontario · Fri Oct 16 – Sun Oct 18, 2026</div>
+    <h1>Halloween Weekend Picker</h1>
+    <p class="lede">Tell us which days you're free, where you'd go and what you're in the mood for. Results update for everyone after each vote.</p>
+    <ol class="steps">
+      <li><b>01</b> Add your name</li>
+      <li><b>02</b> Pick a day and fill it in (do all three if you can)</li>
+      <li><b>03</b> Heart up to 3 events per day (optional)</li>
+      <li><b>04</b> Done. It saves by itself</li>
+    </ol>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="days" role="tablist" aria-label="Day" id="days"></div>
+
+  <div class="top">
+    <section class="card" aria-labelledby="voteTitle">
+      <div class="who">
+        <label for="name" style="font-weight:600;font-size:14px">Your name</label>
+        <input id="name" maxlength="40" autocomplete="nickname" placeholder="e.g. Hira">
+      </div>
+      <div>
+        <h2 id="voteTitle">Your vote</h2>
+        <p class="sub" id="voteSub"></p>
+      </div>
+      <div class="q">
+        <div class="ql"><span class="n">A</span> When are you free?</div>
+        <div class="chips" id="qAvail"></div>
+      </div>
+      <div class="q" id="qAreaWrap">
+        <div class="ql"><span class="n">B</span> Where would you go? <span class="hint">Pick any</span></div>
+        <div class="chips" id="qArea"></div>
+      </div>
+      <div class="q" id="qTypeWrap">
+        <div class="ql"><span class="n">C</span> What do you feel like? <span class="hint">Pick any</span></div>
+        <div class="chips" id="qType"></div>
+      </div>
+      <div class="picked" id="pickedLine"></div>
+      <div class="who">
+        <label for="comment" style="font-weight:600;font-size:14px">Anything else? <span class="hint" style="font-weight:400;color:var(--muted)">Optional</span></label>
+        <input id="comment" maxlength="300" placeholder="e.g. I can drive 3 people on Saturday">
+      </div>
+      <div class="dayrow" id="dayStatus"></div>
+      <div class="savebar">
+        <span class="st"><span class="dot" id="saveDot"></span><span id="saveText">Add your name and pick a day. Your vote saves by itself.</span></span>
+        <button class="savebtn" id="saveBtn" type="button">Save my vote</button>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="resTitle">
+      <div>
+        <h2 id="resTitle">Group results</h2>
+        <p class="sub" id="resSub">Refreshes every 20 seconds.</p>
+      </div>
+      <div id="results"><p class="empty">Loading votes…</p></div>
+    </section>
+  </div>
+
+  <div class="evhead">
+    <div>
+      <div class="eyebrow" id="evEyebrow"></div>
+      <h2 id="evTitle">Events</h2>
+    </div>
+    <div class="key">
+      <span><i class="sw" style="background:var(--yellow)"></i>Ends this weekend</span>
+      <span><i class="sw" style="background:var(--red)"></i>Scream park (top pick)</span>
+      <span><i class="sw" style="background:var(--orange)"></i>Party, 19+</span>
+      <span><i class="sw" style="background:var(--blue)"></i>Escape room (runs all year)</span>
+    </div>
+  </div>
+  <div class="filt">
+    <label for="fArea">Area</label>
+    <select id="fArea"></select>
+    <label for="fType">Kind</label>
+    <select id="fType"></select>
+    <label><input type="checkbox" id="fGroup"> Match the group's top picks</label>
+    <span class="count" id="evCount"></span>
+  </div>
+  <div class="list" id="list"></div>
+</main>
+<footer class="wrap">Ghost walks and tours are left out. Event details come from the Ontario Halloween Events 2026 list (checked Oct 10, 2026). Times and prices can change, so open the event link before you go. Distances are measured from Union Station.</footer>
+
+<script>
+// Fields: n name, u link, t type, g group key, l location, km distance from Union Station, a area key,
+// days, dt dates, p price, no note, sel select dates only, lc last chance (ends this weekend).
+const EVENTS = [
+{"id":"the-nightmare-before-christmas-in-concert","n":"The Nightmare Before Christmas in Concert","u":"https://www.todocanada.ca/city/toronto/event/disney-tim-burtons-the-nightmare-before-christmas-in-concert-live-to-film/","t":"Concert / Show","g":"show","l":"Roy Thomson Hall, 60 Simcoe St","km":0.5,"a":"dt","days":["sat","sun"],"dt":"Oct 17 - 18, 2026","p":"$40 - $169","no":"Live-to-film concert.","sel":false,"lc":true},
+{"id":"toronto-after-dark-film-festival","n":"Toronto After Dark Film Festival","u":"https://torontoafterdark.com/","t":"Film / Screening","g":"show","l":"Scotiabank Theatre, 259 Richmond St W","km":0.9,"a":"dt","days":["fri","sat","sun"],"dt":"Oct 14 - 18, 2026","p":"Passes on sale","no":"Horror & sci-fi film festival.","sel":false,"lc":true},
+{"id":"witches-in-the-woods-shadowpath","n":"Witches in the Woods (Shadowpath)","u":"https://www.todocanada.ca/city/toronto/event/witches-in-the-woods-presented-by-shadowpath/","t":"Haunted Trail / Forest","g":"trail","l":"Bruce's Mill CA, 3291 Stouffville Rd","km":33.4,"a":"gta","days":["sun"],"dt":"Oct 18, 2026","p":"Pay what you can","no":"","sel":false,"lc":true}
+// The live version had 77 curated events; three are kept here as examples.
+];
+const DAYS = [
+  {k:'fri', name:'Friday', short:'Fri', date:'Oct 16'},
+  {k:'sat', name:'Saturday', short:'Sat', date:'Oct 17'},
+  {k:'sun', name:'Sunday', short:'Sun', date:'Oct 18'}];
+const FREE = ['Daytime','Evening','Any time',"Can't make it"];
+const AREAS = [
+  {k:'dt', label:'Downtown Toronto', hint:'under 5 km'},
+  {k:'to', label:'Rest of Toronto', hint:'5–20 km'},
+  {k:'gta', label:'GTA', hint:'20–60 km'},
+  {k:'day', label:'Day trip', hint:'60–150 km'},
+  {k:'far', label:'Further afield', hint:'150 km+'}];
+const TYPES = [
+  {k:'scream', label:'Scream park'},
+  {k:'haunt', label:'Haunted house'},
+  {k:'trail', label:'Haunted trail'},
+  {k:'farm', label:'Farm, maze & pumpkins'},
+  {k:'show', label:'Show, film or museum'},
+  {k:'family', label:'Festival or market'},
+  {k:'party', label:'Party'},
+  {k:'escape', label:'Escape room'}];
+const areaLabel = k => (AREAS.find(a=>a.k===k)||{}).label;
+const typeLabel = k => (TYPES.find(a=>a.k===k)||{}).label;
+const MAX_HEARTS = 3;
+
+// No accounts: each device gets a random key, so a person can come back and edit their own vote.
+function store(k,v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v); }catch(e){ return null; } }
+let myKey = store('hwp-key');
+if(!myKey){ myKey = Array.from({length:24},()=>'abcdefghijklmnopqrstuvwxyz0123456789'[Math.floor(Math.random()*36)]).join(''); store('hwp-key',myKey); }
+let day = store('hwp-day'); if(!DAYS.some(d=>d.k===day)) day='sat';
+let votes = [];
+let mine = emptyMine();
+let dirty = false, saving = false, loadedMine = false;
+
+function emptyMine(){ const o={}; DAYS.forEach(d=>o[d.k]={free:'',areas:[],kinds:[],events:[]}); return o; }
+function el(tag, attrs={}, ...kids){ const n=document.createElement(tag); for(const [k,v] of Object.entries(attrs)){ if(k==='class') n.className=v; else if(k==='text') n.textContent=v; else if(k.startsWith('on')) n.addEventListener(k.slice(2),v); else if(v!==false&&v!=null) n.setAttribute(k,v===true?'':v);} kids.flat().forEach(c=>c!=null&&n.append(c)); return n; }
+function toggle(arr,k){ const i=arr.indexOf(k); if(i>=0) arr.splice(i,1); else arr.push(k); }
+
+function tally(k){
+  const res={free:[], cant:0, voters:0, areas:{}, types:{}, events:{}};
+  votes.forEach(v=>{
+    const d=(v.days&&v.days[k])||{};
+    if(!d.free && !(d.areas||[]).length && !(d.kinds||[]).length) return;
+    res.voters++;
+    if(d.free==="Can't make it"){ res.cant++; return; }
+    if(d.free) res.free.push({name:v.name, me:v.me, when:d.free});
+    (d.areas||[]).forEach(a=>res.areas[a]=(res.areas[a]||0)+1);
+    (d.kinds||[]).forEach(t=>res.types[t]=(res.types[t]||0)+1);
+    (d.events||[]).forEach(e=>res.events[e]=(res.events[e]||0)+1);
+  });
+  return res;
+}
+function topKeys(obj){ const m=Math.max(0,...Object.values(obj)); return m? Object.keys(obj).filter(k=>obj[k]===m):[]; }
+
+function renderDays(){
+  const box=document.getElementById('days'); box.replaceChildren();
+  DAYS.forEach(d=>{
+    const n=EVENTS.filter(e=>e.days.includes(d.k)).length, t=tally(d.k);
+    box.append(el('button',{class:'day',role:'tab','aria-selected':String(d.k===day),onclick:()=>{day=d.k; store('hwp-day',day); renderAll();}},
+      el('span',{class:'dn',text:d.name}), el('span',{class:'dd',text:d.date}),
+      el('span',{class:'dm',text:`${n} events · ${t.free.length} free`})));
+  });
+}
+function chips(id, opts, isOn, onTap){
+  const box=document.getElementById(id); box.replaceChildren();
+  opts.forEach(o=>{
+    const b=el('button',{class:'chip'+(o.label==='Scream park'?' pref':''),type:'button','aria-pressed':String(isOn(o.label)),onclick:()=>onTap(o.label)}, o.label);
+    if(o.hint) b.append(el('span',{class:'c',text:o.hint}));
+    box.append(b);
+  });
+}
+let autoTimer=null;
+function scheduleAuto(){ clearTimeout(autoTimer); if(document.getElementById('name').value.trim() && DAYS.some(d=>mine[d.k].free)) autoTimer=setTimeout(()=>save(true),1500); }
+function markDirty(){ dirty=true; setSave('busy','Saving shortly…'); renderAll(); scheduleAuto(); }
+
+function renderVote(){
+  const d=DAYS.find(x=>x.k===day), m=mine[day];
+  document.getElementById('voteTitle').textContent=`Your vote for ${d.name}`;
+  document.getElementById('voteSub').textContent=`${d.short} ${d.date}. Tap to choose, tap again to undo. Switch days with the tabs above.`;
+  chips('qAvail', FREE.map(f=>({label:f})), k=>m.free===k, k=>{ m.free = m.free===k?'':k; markDirty(); });
+  chips('qArea', AREAS, k=>m.areas.includes(k), k=>{ toggle(m.areas,k); markDirty(); });
+  chips('qType', TYPES, k=>m.kinds.includes(k), k=>{ toggle(m.kinds,k); markDirty(); });
+  const off = m.free==="Can't make it";
+  document.getElementById('qAreaWrap').style.opacity = off?'.4':'';
+  document.getElementById('qTypeWrap').style.opacity = off?'.4':'';
+  const pl=document.getElementById('pickedLine'); pl.replaceChildren();
+  pl.append(m.events.length ? el('span',{},'Your hearted events: ', el('b',{text:m.events.join(', ')})) : `No hearted events for ${d.name} yet. Use the ♡ Pick buttons in the list below.`);
+  const ds=document.getElementById('dayStatus'); ds.replaceChildren();
+  DAYS.forEach(x=>{ const done=!!mine[x.k].free; ds.append(el('span',{class:'daybadge'+(done?' done':''),text:`${x.short}: ${done?mine[x.k].free:'not filled in'}`})); });
+}
+
+function renderResults(){
+  const box=document.getElementById('results'); box.replaceChildren();
+  const d=DAYS.find(x=>x.k===day), t=tally(day);
+  document.getElementById('resTitle').textContent=`Group results for ${d.name}`;
+  box.append(el('div',{class:'big'},
+    el('div',{}, el('b',{text:String(t.free.length)}), 'free'),
+    el('div',{}, el('b',{text:String(t.cant)}), "can't make it"),
+    el('div',{}, el('b',{text:String(t.voters)}), 'voted')));
+  if(!t.voters){ box.append(el('p',{class:'empty',text:`No votes for ${d.name} yet. Yours will be the first.`})); return; }
+  // One-line verdict so organisers don't have to read the charts.
+  const tA=topKeys(t.areas), tT=topKeys(t.types);
+  if(tA.length||tT.length){
+    const ev=t.free.filter(f=>f.when==='Evening'||f.when==='Any time').length, dy=t.free.filter(f=>f.when==='Daytime'||f.when==='Any time').length;
+    const parts=[];
+    if(tA.length) parts.push('Most want ', el('b',{text:tA.join(' or ')}));
+    if(tT.length) parts.push(tA.length?', and ':'Most want ', el('b',{text:tT.join(' or ').toLowerCase()}));
+    parts.push(t.free.length?`. Best time: ${ev>=dy?'evening':'daytime'} (${Math.max(ev,dy)} of ${t.free.length} free).`:'.');
+    box.append(el('div',{class:'verdict'}, ...parts));
+  }
+  if(t.free.length){
+    const faces=el('div',{class:'faces'});
+    t.free.forEach(f=>faces.append(el('span',{class:'face'}, el('span',{text:f.me?`${f.name} (you)`:f.name}), el('span',{class:'w',text:f.when.toLowerCase()}))));
+    box.append(el('div',{}, el('p',{class:'rh',text:"Who's free"}), faces));
+  }
+  box.append(barBlock('Areas', AREAS.map(a=>a.label), t.areas));
+  box.append(barBlock('Kinds of events', TYPES.map(a=>a.label), t.types));
+  const evTop=Object.entries(t.events).sort((a,b)=>b[1]-a[1]).slice(0,5);
+  if(evTop.length) box.append(barBlock('Most-hearted events', evTop.map(e=>e[0]), t.events));
+  const notes=votes.filter(v=>v.comment);
+  if(notes.length){ const ul=el('ul',{class:'bars'}); notes.forEach(v=>ul.append(el('li',{style:'display:block'}, el('b',{text:v.name+': '}), v.comment))); box.append(el('div',{}, el('p',{class:'rh',text:'Comments'}), ul)); }
+}
+function barBlock(title, labels, counts){
+  const rows=labels.map(l=>[l,counts[l]||0]).filter(([,n])=>n>0).sort((a,b)=>b[1]-a[1]);
+  const div=el('div',{}, el('p',{class:'rh',text:title}));
+  if(!rows.length){ div.append(el('p',{class:'empty',text:'No picks yet.'})); return div; }
+  const max=rows[0][1], ul=el('ul',{class:'bars'});
+  rows.forEach(([l,n])=>ul.append(el('li',{class:n===max?'lead':''}, el('span',{class:'lab',text:l,title:l}), el('span',{class:'tr'}, el('i',{style:`width:${n/max*100}%`})), el('span',{class:'v',text:String(n)}))));
+  div.append(ul); return div;
+}
+
+function fillSelect(id, opts, all){ const s=document.getElementById(id); s.replaceChildren(el('option',{value:'',text:all}), ...opts.map(o=>el('option',{value:o.k,text:o.label}))); }
+function colorOf(e){ if(e.g==='escape') return 'b'; if(e.lc) return 'y'; if(e.g==='scream') return 'r'; if(e.g==='party') return 'o'; return ''; }
+function rankOf(e){ return e.g==='escape'?3 : e.lc?0 : e.g==='scream'?1 : 2; }
+
+function renderEvents(){
+  const d=DAYS.find(x=>x.k===day), t=tally(day);
+  document.getElementById('evEyebrow').textContent=`${d.name} ${d.date}`;
+  document.getElementById('evTitle').textContent=`What's on ${d.name}`;
+  const fA=document.getElementById('fArea').value, fT=document.getElementById('fType').value, fG=document.getElementById('fGroup').checked;
+  const gA=topKeys(t.areas), gT=topKeys(t.types);
+  let evs=EVENTS.filter(e=>e.days.includes(day));
+  if(fA) evs=evs.filter(e=>e.a===fA);
+  if(fT) evs=evs.filter(e=>e.g===fT);
+  if(fG){ if(gA.length) evs=evs.filter(e=>gA.includes(areaLabel(e.a))); if(gT.length) evs=evs.filter(e=>gT.includes(typeLabel(e.g))); }
+  evs.sort((a,b)=> rankOf(a)-rankOf(b) || (t.events[b.n]||0)-(t.events[a.n]||0) || a.km-b.km);
+  document.getElementById('evCount').textContent=`${evs.length} event${evs.length===1?'':'s'}`;
+  const list=document.getElementById('list'); list.replaceChildren();
+  if(!evs.length){ list.append(el('p',{class:'empty',text: fG && !(gA.length||gT.length) ? 'No group picks yet for this day. Untick "Match the group\'s top picks" to see everything.' : 'Nothing matches these filters. Try a wider area or another kind of event.'})); return; }
+  const myEv=mine[day].events, off=mine[day].free==="Can't make it";
+  evs.forEach(e=>{
+    const tags=[];
+    if(e.lc) tags.push(el('span',{class:'tag y',text:'Ends this weekend'}));
+    if(e.g==='scream') tags.push(el('span',{class:'tag r',text:'Scream park'}));
+    if(e.g==='escape') tags.push(el('span',{class:'tag b',text:'Escape room · runs all year'}));
+    if(e.sel) tags.push(el('span',{class:'tag w',text:'Select dates · check calendar'}));
+    tags.push(el('span',{class:'tag',text:typeLabel(e.g)}));
+    tags.push(el('span',{class:'tag',text:areaLabel(e.a)}));
+    tags.push(el('span',{class:'tag',text:e.days.map(k=>DAYS.find(x=>x.k===k).short).join(' · ')}));
+    const on=myEv.includes(e.n), n=t.events[e.n]||0, full=!on && myEv.length>=MAX_HEARTS;
+    const heart=el('button',{class:'heart',type:'button','aria-pressed':String(on),disabled:full||off,title: full?`You can heart up to ${MAX_HEARTS} events per day`:'',
+      onclick:()=>{ toggle(mine[day].events,e.n); markDirty(); }}, on?'♥ Picked':'♡ Pick', el('span',{class:'c',text:String(n)}));
+    const name = e.u ? el('a',{href:e.u,target:'_blank',rel:'noopener',text:e.n}) : document.createTextNode(e.n);
+    list.append(el('article',{class:'ev '+colorOf(e)},
+      el('div',{class:'km'}, el('b',{text:String(e.km)}), 'km'),
+      el('div',{style:'min-width:0'}, el('h3',{}, name), el('div',{class:'meta',text:`${e.l} · ${e.dt}`}), e.no? el('div',{class:'no',text:e.no}) : null, el('div',{class:'tags'}, tags)),
+      el('div',{class:'side'}, el('div',{class:'price',text:e.p}), heart)));
+  });
+}
+function renderAll(){ renderDays(); renderVote(); renderResults(); renderEvents(); }
+
+function setSave(state, text){ document.getElementById('saveDot').className='dot '+state; document.getElementById('saveText').textContent=text; }
+function gs(){ return (window.google && google.script && google.script.run) ? google.script.run : null; }
+
+function applyVotes(list){
+  votes = Array.isArray(list) ? list : [];
+  if(!loadedMine){
+    const me=votes.find(v=>v.me);
+    if(me){ DAYS.forEach(d=>{ const x=me.days[d.k]||{}; mine[d.k]={free:x.free||'',areas:[...(x.areas||[])],kinds:[...(x.kinds||[])],events:[...(x.events||[])]}; });
+      document.getElementById('name').value=me.name; document.getElementById('comment').value=me.comment||'';
+      setSave('ok','Your earlier vote is loaded. Change anything and press Save again.'); }
+    loadedMine=true;
+  }
+  renderAll();
+}
+function refresh(){
+  const run=gs(); if(!run||saving) return;
+  run.withSuccessHandler(applyVotes).withFailureHandler(()=>{}).getVotes(myKey);
+}
+document.getElementById('saveBtn').addEventListener('click',()=>save(false));
+let queued=false;
+function save(auto){
+  clearTimeout(autoTimer);
+  if(saving){ queued=true; return; }
+  const name=document.getElementById('name').value.trim();
+  if(!name){ setSave('err','Add your name at the top so we know who voted.'); if(!auto) document.getElementById('name').focus(); return; }
+  if(!DAYS.some(d=>mine[d.k].free)){ setSave(auto?'busy':'err','Pick when you\'re free for at least one day.'); return; }
+  const run=gs(); if(!run){ setSave('err','This page needs to be opened from its Google link to save.'); return; }
+  saving=true; const btn=document.getElementById('saveBtn'); btn.disabled=true; setSave('busy','Saving…');
+  run.withSuccessHandler(list=>{ saving=false; btn.disabled=false; dirty=false; setSave('ok','Saved automatically. You can change your answers any time on this device.'); applyVotes(list); if(queued){ queued=false; save(true); } })
+     .withFailureHandler(err=>{ saving=false; btn.disabled=false; queued=false; setSave('err',(err&&err.message)||"Couldn't save. Press Save my vote to try again."); })
+     .saveVote({name, key:myKey, comment:document.getElementById('comment').value, days:JSON.parse(JSON.stringify(mine))});
+}
+['name','comment'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{ dirty=true; setSave('busy','Saving shortly…'); scheduleAuto(); }));
+['fArea','fType','fGroup'].forEach(id=>document.getElementById(id).addEventListener('change',renderEvents));
+window.addEventListener('beforeunload',e=>{ if(dirty){ e.preventDefault(); e.returnValue=''; } });
+
+fillSelect('fArea', AREAS, 'All areas');
+fillSelect('fType', TYPES, 'All kinds');
+renderAll();
+refresh();
+setInterval(refresh, 20000);
+</script>
+</body>
+</html>

@@ -4,6 +4,8 @@ I'm a former Senior Analyst at Scotiabank, where I worked in SAP Fieldglass, SAP
 
 Projects 1 and 2 use **real, public enterprise data**: a ServiceNow incident audit log and an SAP purchase-to-pay event log of 1.6 million events. Project 3 designs the integration between the three systems I used. Project 4 turns the findings into a product plan. Project 5 applies the same "is this answer right?" thinking to AI.
 
+Projects 6 and 7 are **tools I built and run for communities I'm part of**: a women's group chat of about 1,000 members and a Discord server of about 1,200. They're smaller technically, but they were built for real groups, and I made the calls on privacy, safety and what to build, then shared and ran them with the people using them.
+
 🌐 **Portfolio site:** [harleysdata.github.io](https://harleysdata.github.io)
 
 📊 **Live dashboards:** [ServiceNow service desk](https://harleysdata.github.io/dashboards/service-desk.html) · [SAP procure-to-pay controls](https://harleysdata.github.io/dashboards/p2p-controls.html). Each one has a guided story, filters and cross-filtering, and computes everything live from the real data. Power BI versions (data, DAX, theme and build guide) are in each project's `powerbi/` folder.
@@ -19,6 +21,13 @@ Projects 1 and 2 use **real, public enterprise data**: a ServiceNow incident aud
 | 3 | [**Contingent Workforce Integration**](03-contingent-workforce-integration/) | Sample extracts with planted defects | Fieldglass → Employee Central → ServiceNow field mapping, sequence diagrams, controls matrix, and a three-way reconciliation that finds 591 of 591 planted defects |
 | 4 | [**Contractor Onboarding Hub: Product Case**](04-contractor-onboarding-product-case/) | Findings from Projects 1–3 | PRD, metrics tree, Jira-ready backlog, RICE with documented overrides, experiment sizing with clustering |
 | 5 | [**AI Answer Accuracy Evaluation**](05-ai-answer-accuracy-eval/) | 15 Ontario employment-law questions | Rubric-based eval of AI answers, with planted errors to prove the grader catches them |
+
+### Community tools
+
+| # | Project | Community | What it shows |
+|---|---|---|---|
+| 6 | [**GTA Women's Circle**](06-gta-womens-circle/) | Women's group chat, ~1,000 members | Member profiles, hobby-and-area matching, a GTA events board with RSVPs, and an admin flow for approvals and private reports. Privacy-first data collection for a women-only group |
+| 7 | [**Halloween Weekend Picker**](07-halloween-weekend-picker/) | Discord server, ~1,200 members | Two live voting pages to turn scattered Discord chatter into group plans: availability by day, area and vibe, 111 curated events, live results and an auto-totalling Sheets summary for organisers |
 
 ## How they connect
 
@@ -52,6 +61,8 @@ flowchart LR
 | **Jira / Agile** | Epics and user stories with acceptance criteria, CSV import format ([P4](04-contractor-onboarding-product-case/product/backlog.csv)) |
 | **Testing and data quality** | pytest checks in every analytics project; planted-defect validation ([P3](03-contingent-workforce-integration/tests/), [P5](05-ai-answer-accuracy-eval/)) |
 | **AI evaluation** | Rubrics, required facts vs. forbidden claims ([P5](05-ai-answer-accuracy-eval/)) |
+| **Google Apps Script / Sheets** | Web apps backed by Sheets, with input validation, locking and formula-built summary tabs ([P6](06-gta-womens-circle/app/Code.gs), [P7](07-halloween-weekend-picker/app/Code.gs)) |
+| **Community and stakeholder work** | Designing for real groups: privacy and safety decisions, admin approval and reporting flows, turning group input into plans ([P6](06-gta-womens-circle/), [P7](07-halloween-weekend-picker/)) |
 
 ## Run everything
 
@@ -66,7 +77,7 @@ python 05-ai-answer-accuracy-eval/evaluate.py
 pytest -q
 ```
 
-Everything runs on free tools: Python, SQLite and GitHub Pages.
+Everything runs on free tools: Python, SQLite and GitHub Pages. Projects 6 and 7 run on Google Apps Script; each folder's README has the setup steps.
 
 ## Data credits
 

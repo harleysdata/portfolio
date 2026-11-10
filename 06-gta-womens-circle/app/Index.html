@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<title>GTA Women's Circle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F5F2F7; --surface:#FFFFFF; --sunk:#EDE7F1; --line:#DDD3E4;
+  --ink:#2A1838; --muted:#6B5C77;
+  --accent:#A62A63; --accent-ink:#FFFFFF; --accent-soft:#F6DCE8;
+  --match:#1E6F68; --match-soft:#D9EFEC;
+  --warn:#8A5A00; --warn-soft:#FBEFD4; --danger:#B3261E;
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --r:10px; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#15101A; --surface:#201828; --sunk:#2A2133; --line:#3A2F45;
+  --ink:#F0E8F4; --muted:#B3A4BF;
+  --accent:#F07AAE; --accent-ink:#2A0E1C; --accent-soft:#4A1F33;
+  --match:#6CCBBF; --match-soft:#173A37;
+  --warn:#F2C46B; --warn-soft:#3A2D12; --danger:#FF8A80; color-scheme:dark;
+}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+[hidden]{display:none!important}
+.wrap{max-width:980px;margin:0 auto;padding-left:16px;padding-right:16px}
+header{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;padding-block:12px}
+.brand{font-family:var(--display);font-weight:700;font-size:1.25rem;display:flex;align-items:center;gap:10px}
+.brand .dot{width:22px;height:22px;border-radius:50%;background:conic-gradient(var(--accent) 0 60%,var(--match) 60% 100%)}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav a{padding:7px 12px;border-radius:999px;color:var(--muted);text-decoration:none;font-weight:500;font-size:.92rem;cursor:pointer}
+nav a[aria-current="page"]{background:var(--accent-soft);color:var(--ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main .wrap{padding-block:24px 64px;display:grid;gap:20px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-size:1.75rem}h2{font-size:1.2rem}h3{font-size:1rem}
+p{margin:0;max-width:65ch}.lede{color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:grid;gap:16px;min-width:0}
+.label{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.field{display:grid;gap:6px}.row{display:flex;flex-wrap:wrap;gap:12px}.row>.field{flex:1 1 200px}
+input[type=text],input[type=date],input[type=url],input[type=password],select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 11px;width:100%}
+textarea{min-height:70px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{position:relative;display:inline-flex}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.chip span{padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:var(--bg);font-size:.88rem;cursor:pointer;user-select:none}
+.chip input:checked+span{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}.check input{margin-top:3px;accent-color:var(--accent)}
+.hint{font-size:.82rem;color:var(--muted)}
+button,.btn{font:inherit;font-weight:600;font-size:.9rem;border-radius:8px;padding:9px 14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button.ghost{background:transparent}button.danger{color:var(--danger);border-color:var(--danger);background:transparent}
+button.on{background:var(--match);border-color:var(--match);color:var(--surface)}
+button:disabled{opacity:.5;cursor:wait}.small{padding:5px 10px;font-size:.82rem}
+.notice{padding:12px 14px;border-radius:8px;background:var(--sunk);font-size:.9rem}
+.notice.warn{background:var(--warn-soft)}.notice.ok{background:var(--match-soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:grid;gap:10px;align-content:start;min-width:0}
+.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.score{font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--match);font-variant-numeric:tabular-nums;line-height:1;text-align:right}
+.score small{display:block;font-family:var(--body);font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:.78rem;padding:3px 9px;border-radius:999px;background:var(--sunk);color:var(--muted);text-decoration:none}
+.tag.shared,.tag.free{background:var(--match-soft);color:var(--match);font-weight:600}
+.tag.paid{background:var(--accent-soft);color:var(--ink);font-weight:600}
+.tag.pend{background:var(--warn-soft);color:var(--warn);font-weight:600}
+.ig{color:var(--accent);font-weight:600;text-decoration:none;word-break:break-all}
+.meta{font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:end}.filters .field{flex:1 1 160px}
+.circles{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.circle{border:1px solid var(--line);border-radius:var(--r);padding:12px;background:var(--surface);display:grid;gap:2px;text-align:left}
+.circle b{font-family:var(--display);font-size:1.5rem;font-variant-numeric:tabular-nums}
+.date{font-family:var(--display);font-weight:700;color:var(--accent);font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+.going{font-size:.85rem;display:grid;gap:4px;border-top:1px dashed var(--line);padding-top:8px}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.scroll{overflow-x:auto}
+.empty{padding:28px 16px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:var(--r);display:grid;gap:8px;justify-items:center}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-weight:500;z-index:20;max-width:calc(100% - 32px)}
+.confirm{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px;border-radius:8px;background:var(--warn-soft)}
+code{font-size:.82rem;background:var(--sunk);padding:2px 6px;border-radius:4px;word-break:break-all}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><span class="dot" aria-hidden="true"></span>GTA Women's Circle</div>
+  <nav id="nav" aria-label="Sections">
+    <a data-v="profile">My profile</a><a data-v="matches">Matches</a><a data-v="events">Events</a><a data-v="admin" id="adminLink" hidden>Admin</a>
+  </nav>
+</div></header>
+<main><div class="wrap" id="app"><div class="panel"><h1>Loading the circle…</h1></div></div></main>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script>
+const IS_ADMIN_LINK = String(<?= isAdmin ?>) === "true";
+const INTERESTS=["Brunch & cafés","Book club","Hiking & walks","Fitness & yoga","Running","Pilates","Arts & crafts","Pottery","Paint & sip","Museums & galleries","Live music","Clubbing & nightlife","Comedy shows","Theatre","Movies","Gaming","Board games","Cooking & baking","Thrifting & markets","Photography","Travel","Volunteering","Career & networking","Tech","Wellness & self-care","Dance","Karaoke","Alt & goth scene","Fashion","Language exchange"];
+const EVENT_TYPES=["Community & free","Workshops & classes","Concerts","Festivals & markets","Nightlife","Outdoors","Food & drink","Arts & culture","Sports & fitness","Career & networking","Wellness","Holiday & seasonal"];
+const AREAS=["Toronto – Downtown","Toronto – East End","Toronto – West End","North York","Scarborough","Etobicoke","Mississauga","Brampton","Oakville / Burlington","Vaughan / Richmond Hill / Markham","Durham (Pickering–Oshawa)","Hamilton","Online"];
+const AVAIL=["Weekday evenings","Weekends daytime","Weekend evenings"];
+const BUDGET=[["free","Free only"],["low","Under $30"],["any","Any budget"]];
+const AGES=["","20s","30s","40s","50+"];
+const TK="gtacircle_token", AK="gtacircle_admin";
+
+const store={get(k,s){try{return (s?sessionStorage:localStorage).getItem(k)}catch(_){return null}},set(k,v,s){try{(s?sessionStorage:localStorage).setItem(k,v)}catch(_){}},del(k,s){try{(s?sessionStorage:localStorage).removeItem(k)}catch(_){}}};
+const S={token:store.get(TK),adminKey:store.get(AK,true),st:null,adm:null,view:"profile",f:{interest:"",area:"",etype:"",price:"",past:false},reportFor:null,confirmDelete:false,dirty:false,busy:false};
+
+const run=(fn,...a)=>new Promise((res,rej)=>google.script.run.withSuccessHandler(res).withFailureHandler(e=>rej(new Error((e&&e.message||"Something went wrong").replace(/^Error:\s*/,""))))[fn](...a));
+
+function h(t,p,...kids){const e=document.createElement(t);if(p)for(const k in p){const v=p[k];if(v==null||v===false)continue;if(k==="class")e.className=v;else if(k.startsWith("on"))e.addEventListener(k.slice(2),v);else if(k==="text")e.textContent=v;else if(k==="style")e.style.cssText=v;else if(k in e&&k!=="list"&&k!=="role")try{e[k]=v}catch(_){e.setAttribute(k,v)}else e.setAttribute(k,v===true?"":v)}for(const c of kids.flat()){if(c==null||c===false)continue;e.append(c.nodeType?c:document.createTextNode(String(c)))}return e}
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.hidden=false;clearTimeout(toast._t);toast._t=setTimeout(()=>t.hidden=true,3000)}
+const clean=s=>(s||"").trim();
+function fmtDate(d){if(!d)return"";const x=new Date(d+"T12:00:00");return isNaN(x)?d:x.toLocaleDateString("en-CA",{weekday:"short",month:"short",day:"numeric"})}
+const today=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const igLink=ig=>"https://instagram.com/"+encodeURIComponent(ig);
+
+async function act(fn,...a){if(S.busy)return null;S.busy=true;document.querySelectorAll("#app button").forEach(b=>b.disabled=true);try{return await run(fn,...a)}catch(e){toast(e.message);return null}finally{S.busy=false;document.querySelectorAll("#app button").forEach(b=>b.disabled=false)}}
+async function refresh(){try{S.st=await run("getState",S.token||"")}catch(e){S.st=S.st||{error:e.message}}if(S.view==="admin"&&S.adminKey)await loadAdmin();render()}
+async function loadAdmin(){try{S.adm=await run("adminState",S.adminKey)}catch(e){S.adm=null;S.adminKey=null;store.del(AK,true);toast(e.message)}}
+
+function score(a,b){
+  const si=a.interests.filter(x=>b.interests.includes(x)), se=a.eventTypes.filter(x=>b.eventTypes.includes(x));
+  const sa=a.availability.some(x=>b.availability.includes(x)), area=a.area&&a.area===b.area, bud=a.budget==="any"||b.budget==="any"||a.budget===b.budget;
+  return{total:si.length*2+se.length+(area?3:0)+(sa?1:0)+(bud?1:0),si,se};
+}
+const meApproved=()=>S.st&&S.st.me&&S.st.me.status==="approved";
+
+/* ---------- render ---------- */
+function render(){
+  const app=document.getElementById("app");
+  document.getElementById("adminLink").hidden=!(IS_ADMIN_LINK||S.adminKey);
+  document.querySelectorAll("#nav a").forEach(a=>a.setAttribute("aria-current",a.dataset.v===S.view?"page":"false"));
+  const y=window.scrollY,saved={},fid=document.activeElement&&app.contains(document.activeElement)?document.activeElement.id:null;
+  if(S.dirty)app.querySelectorAll("input[id],select[id],textarea[id]").forEach(el=>saved[el.id]=el.type==="checkbox"||el.type==="radio"?{c:el.checked}:{v:el.value});
+  app.replaceChildren(...view());
+  for(const id in saved){const el=document.getElementById(id);if(!el)continue;if("c" in saved[id])el.checked=saved[id].c;else el.value=saved[id].v}
+  if(fid){const el=document.getElementById(fid);if(el)try{el.focus({preventScroll:true})}catch(_){}}
+  window.scrollTo(0,y);
+}
+document.getElementById("app").addEventListener("input",e=>{if(e.target.closest("form"))S.dirty=true});
+document.getElementById("nav").addEventListener("click",e=>{const a=e.target.closest("a[data-v]");if(!a)return;S.view=a.dataset.v;S.reportFor=null;S.confirmDelete=false;S.dirty=false;if(S.view==="admin"&&S.adminKey){loadAdmin().then(render)}render();window.scrollTo(0,0)});
+
+function view(){
+  const st=S.st;
+  if(!st)return[h("div",{class:"panel"},h("h1",{text:"Loading the circle…"}))];
+  if(st.error)return[h("div",{class:"panel"},h("h1",{text:"Couldn't load the circle"}),h("p",{class:"lede",text:st.error}),h("div",{},h("button",{text:"Try again",onclick:refresh})))];
+  if(st.removed)return[h("div",{class:"panel"},h("h1",{text:"Your access was removed"}),h("p",{class:"lede",text:"An admin removed this profile. Message the group admin if you think this is a mistake."}))];
+  if(S.view==="admin")return adminView();
+  if(S.view==="matches")return matchesView();
+  if(S.view==="events")return eventsView();
+  return profileView();
+}
+function chipSet(name,list,sel){return h("div",{class:"chips"},list.map((x,i)=>h("label",{class:"chip"},h("input",{type:"checkbox",name,value:x,id:name+"-"+i,checked:(sel||[]).includes(x)}),h("span",{text:x}))))}
+
+function profileView(){
+  const p=S.st.me||{};
+  const status=!S.st.me?null:meApproved()?h("div",{class:"notice ok",text:"You're in. Your matches and events are ready."}):h("div",{class:"notice warn",text:"Profile saved. An admin will approve it soon, then you'll see matches and events."});
+  const form=h("form",{class:"panel",onsubmit:saveProfile},
+    !S.st.me?h("div",{class:"field"},h("label",{class:"label",for:"join",text:"Group join code"}),h("input",{type:"text",id:"join",required:true,maxLength:40,autocomplete:"off"}),h("span",{class:"hint",text:"It's pinned in the group chat."})):null,
+    h("div",{class:"row"},
+      h("div",{class:"field"},h("label",{class:"label",for:"nick",text:"First name or nickname"}),h("input",{type:"text",id:"nick",maxLength:40,required:true,value:p.nickname||""})),
+      h("div",{class:"field"},h("label",{class:"label",for:"ig",text:"Instagram handle"}),h("input",{type:"text",id:"ig",maxLength:31,placeholder:"yourhandle",value:p.ig||"",autocomplete:"off"}),h("span",{class:"hint",text:"Only saved if you tick 'Show my Instagram' below."}))),
+    h("div",{class:"row"},
+      h("div",{class:"field"},h("label",{class:"label",for:"area",text:"General area"}),h("select",{id:"area",required:true},h("option",{value:"",text:"Choose your area"}),AREAS.map(a=>h("option",{value:a,text:a,selected:p.area===a})))),
+      h("div",{class:"field"},h("label",{class:"label",for:"fsa",text:"First 3 of postal code (optional)"}),h("input",{type:"text",id:"fsa",maxLength:3,placeholder:"e.g. L5B",value:p.fsa||""}),h("span",{class:"hint",text:"Never your full postal code."})),
+      h("div",{class:"field"},h("label",{class:"label",for:"age",text:"Age range (optional)"}),h("select",{id:"age"},AGES.map(a=>h("option",{value:a,text:a||"Prefer not to say",selected:(p.age||"")===a}))))),
+    h("div",{class:"field"},h("span",{class:"label",text:"Hobbies you want to make plans around"}),chipSet("interests",INTERESTS,p.interests)),
+    h("div",{class:"field"},h("span",{class:"label",text:"Events you want to explore"}),chipSet("etypes",EVENT_TYPES,p.eventTypes)),
+    h("div",{class:"row"},
+      h("div",{class:"field"},h("span",{class:"label",text:"Usually free"}),chipSet("avail",AVAIL,p.availability)),
+      h("div",{class:"field"},h("span",{class:"label",text:"Budget per outing"}),h("div",{class:"chips"},BUDGET.map(([v,l])=>h("label",{class:"chip"},h("input",{type:"radio",name:"budget",value:v,id:"budget-"+v,checked:(p.budget||"low")===v}),h("span",{text:l})))))),
+    h("div",{class:"field"},
+      h("label",{class:"check"},h("input",{type:"checkbox",id:"showIg",checked:!!p.showIg}),h("span",{text:"Show my Instagram to approved members"})),
+      h("label",{class:"check"},h("input",{type:"checkbox",id:"visible",checked:p.visible!==false}),h("span",{text:"Show me in matches (untick to pause without deleting)"})),
+      h("label",{class:"check"},h("input",{type:"checkbox",id:"consent",required:true,checked:!!S.st.me}),h("span",{text:"I agree to the group rules: be kind, no harassment, no selling, meet in public first. Only my nickname, area, tags and (if shown) Instagram are visible to members, and I can delete my profile anytime."}))),
+    h("div",{class:"actions"},h("button",{class:"primary",type:"submit",text:S.st.me?"Save changes":"Join the circle"}),
+      S.st.me&&!S.confirmDelete?h("button",{type:"button",class:"danger",text:"Delete my profile",onclick:()=>{S.confirmDelete=true;render()}}):null),
+    S.confirmDelete?h("div",{class:"confirm"},h("span",{text:"Delete your profile and RSVPs? This can't be undone."}),h("button",{type:"button",class:"danger small",text:"Yes, delete",onclick:deleteProfile}),h("button",{type:"button",class:"ghost small",text:"Cancel",onclick:()=>{S.confirmDelete=false;render()}})):null);
+  const out=[h("div",{class:"panel"},h("h1",{text:S.st.me?"Your profile":"Find your people in the GTA"}),h("p",{class:"lede",text:"Pick the hobbies you actually want to do with someone this month. We'll match you with members nearby who picked the same."}),status),form];
+  out.push(S.st.me?recoveryPanel():restorePanel());
+  return out;
+}
+function recoveryPanel(){
+  return h("div",{class:"panel"},h("h2",{text:"Your recovery code"}),
+    h("p",{class:"hint",text:"This device remembers you. To use the circle on another phone or browser, paste this code there. Keep it private: anyone with it can edit your profile."}),
+    h("code",{id:"rcode",text:S.token}),
+    h("div",{},h("button",{class:"small",type:"button",text:"Copy code",onclick:()=>{const t=S.token;try{navigator.clipboard.writeText(t).then(()=>toast("Copied"),()=>sel())}catch(_){sel()}function sel(){const r=document.createRange();r.selectNodeContents(document.getElementById("rcode"));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Code selected. Copy it now.")}}})));
+}
+function restorePanel(){
+  return h("form",{class:"panel",onsubmit:async e=>{e.preventDefault();const c=clean(e.target.querySelector("#restore").value);if(!c)return;const st=await act("getState",c);if(st&&st.me){S.token=c;store.set(TK,c);S.st=st;S.dirty=false;toast("Welcome back");render()}else if(st)toast("That code doesn't match a profile.")}},
+    h("h2",{text:"Already joined on another device?"}),h("div",{class:"field"},h("label",{class:"label",for:"restore",text:"Recovery code"}),h("input",{type:"text",id:"restore",autocomplete:"off"})),h("div",{},h("button",{type:"submit",text:"Restore my profile"})));
+}
+async function saveProfile(e){
+  e.preventDefault();const f=e.target,get=n=>[...f.querySelectorAll(`input[name="${n}"]:checked`)].map(x=>x.value);
+  const interests=get("interests");if(!interests.length)return toast("Pick at least one hobby to get matches.");
+  const p={nickname:clean(f.querySelector("#nick").value),ig:clean(f.querySelector("#ig").value),showIg:f.querySelector("#showIg").checked,area:f.querySelector("#area").value,fsa:clean(f.querySelector("#fsa").value),age:f.querySelector("#age").value,interests,eventTypes:get("etypes"),availability:get("avail"),budget:(f.querySelector('input[name="budget"]:checked')||{}).value||"low",visible:f.querySelector("#visible").checked,consent:f.querySelector("#consent").checked};
+  const join=f.querySelector("#join");const first=!S.st.me;
+  const r=await act("saveProfile",S.token||"",join?clean(join.value):"",p);if(!r)return;
+  S.token=r.token;store.set(TK,r.token);S.dirty=false;toast(first?"Welcome! Waiting for admin approval":"Profile saved");await refresh();
+}
+async function deleteProfile(){const r=await act("deleteProfile",S.token);if(!r)return;store.del(TK);S.token=null;S.confirmDelete=false;toast("Profile deleted");await refresh()}
+
+function locked(title){return[h("div",{class:"panel"},h("h1",{text:title}),h("p",{class:"lede",text:S.st.me?"Your profile is waiting for admin approval. You'll see this once you're approved.":"Create your profile first. Matches and events open once an admin approves you."}),h("div",{},h("button",{type:"button",text:S.st.me?"View my profile":"Create my profile",onclick:()=>{S.view="profile";render()}})))]}
+
+function matchesView(){
+  if(!meApproved())return locked("Matches");
+  const mine=S.st.me,f=S.f,all=S.st.members;
+  let list=all.map(m=>({m,s:score(mine,m)}));
+  if(f.interest)list=list.filter(x=>x.m.interests.includes(f.interest));
+  if(f.area)list=list.filter(x=>x.m.area===f.area);
+  if(f.etype)list=list.filter(x=>x.m.eventTypes.includes(f.etype));
+  list.sort((a,b)=>b.s.total-a.s.total);
+  const circles=mine.interests.map(i=>{const w=all.filter(m=>m.interests.includes(i));return{i,n:w.length,near:w.filter(m=>m.area===mine.area).length}}).sort((a,b)=>b.n-a.n);
+  const sel=(id,label,opts,key)=>h("div",{class:"field"},h("label",{class:"label",for:id,text:label}),h("select",{id,onchange:e=>{S.f[key]=e.target.value;render()}},h("option",{value:"",text:"All"}),opts.map(o=>h("option",{value:o,text:o,selected:f[key]===o}))));
+  return[
+    h("div",{class:"panel"},h("h1",{text:"Your matches"}),h("p",{class:"lede",text:`Ranked by shared hobbies (×2), shared event types, same area (+3), overlapping free time and budget. ${all.length} member${all.length===1?"":"s"} visible.`})),
+    circles.length?h("section",{class:"panel"},h("h2",{text:"Your interest circles"}),h("p",{class:"hint",text:"Members who share each of your hobbies, and how many are in "+mine.area+". Tap one to filter."}),
+      h("div",{class:"circles"},circles.map(c=>h("button",{class:"circle",type:"button",onclick:()=>{S.f.interest=c.i;render()}},h("span",{class:"label",text:c.i}),h("b",{text:c.n}),h("span",{class:"hint",text:c.near+" near you"}))))):null,
+    h("div",{class:"filters"},sel("fi","Hobby",INTERESTS,"interest"),sel("fa","Area",AREAS,"area"),sel("fe","Event type",EVENT_TYPES,"etype"),(f.interest||f.area||f.etype)?h("button",{class:"ghost",type:"button",text:"Clear filters",onclick:()=>{f.interest=f.area=f.etype="";render()}}):null),
+    list.length?h("div",{class:"grid"},list.map(memberCard)):h("div",{class:"empty"},h("strong",{text:all.length?"No one matches these filters":"You're one of the first members"}),h("span",{text:all.length?"Try clearing a filter.":"Share the link in the group chat. Matches appear as members get approved."}))];
+}
+function memberCard({m,s}){
+  const mine=S.st.me;
+  return h("article",{class:"card"},
+    h("div",{class:"top"},h("div",{},h("h3",{text:m.nickname}),h("div",{class:"meta"},h("span",{text:m.area+(m.fsa?" · "+m.fsa:"")}),m.age?h("span",{text:m.age}):null)),h("div",{class:"score"},String(s.total),h("small",{text:"match"}))),
+    h("div",{class:"tags"},m.interests.map(t=>h("span",{class:"tag"+(mine.interests.includes(t)?" shared":""),text:t}))),
+    s.se.length?h("div",{class:"hint",text:"Also into: "+s.se.join(", ")}):null,
+    h("div",{class:"actions",style:"justify-content:space-between;align-items:center"},
+      m.ig?h("a",{class:"ig",href:igLink(m.ig),target:"_blank",rel:"noopener",text:"@"+m.ig}):h("span",{class:"hint",text:"Instagram hidden"}),
+      h("button",{class:"ghost small",type:"button",text:"Report",onclick:()=>{S.reportFor=S.reportFor===m.id?null:m.id;render()}})),
+    S.reportFor===m.id?h("form",{class:"confirm",onsubmit:async e=>{e.preventDefault();const r=await act("report",S.token,m.id,e.target.querySelector("select").value,clean(e.target.querySelector("input").value));if(r){S.reportFor=null;S.dirty=false;toast("Report sent to the admin privately");render()}}},
+      h("span",{text:"Report "+m.nickname+" privately:"}),h("select",{id:"rep-reason"},["Made me uncomfortable","Harassment","Spam or selling","Fake profile","Other"].map(r=>h("option",{value:r,text:r}))),
+      h("input",{type:"text",id:"rep-note",placeholder:"Optional details",maxLength:300,style:"flex:1 1 180px;width:auto"}),h("button",{class:"danger small",type:"submit",text:"Send report"})):null);
+}
+
+function eventsView(){
+  if(!meApproved())return locked("Events");
+  const f=S.f,t=today(),byId={};S.st.members.forEach(m=>byId[m.id]=m);
+  let list=S.st.events.slice();
+  if(!f.past)list=list.filter(e=>(e.endDate||e.date||"")>=t);
+  if(f.etype)list=list.filter(e=>e.type===f.etype);
+  if(f.price)list=list.filter(e=>e.price===f.price);
+  if(f.area)list=list.filter(e=>e.area===f.area);
+  list.sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+  const sel=(id,label,opts,key)=>h("div",{class:"field"},h("label",{class:"label",for:id,text:label}),h("select",{id,onchange:e=>{S.f[key]=e.target.value;render()}},h("option",{value:"",text:"All"}),opts.map(o=>Array.isArray(o)?h("option",{value:o[0],text:o[1],selected:f[key]===o[0]}):h("option",{value:o,text:o,selected:f[key]===o}))));
+  return[
+    h("div",{class:"panel"},h("h1",{text:"GTA events"}),h("p",{class:"lede",text:"Free and paid things to do. Tap Interested or Going, then see which members are in and message them on Instagram."}),
+      h("div",{class:"notice",text:"Safety first: meet new people in public, go in a group the first time, and tell a friend where you'll be."})),
+    h("div",{class:"filters"},sel("ee","Type",EVENT_TYPES,"etype"),sel("ep","Price",[["free","Free"],["paid","Paid"]],"price"),sel("ea","Area",AREAS,"area"),
+      h("label",{class:"check",style:"padding-bottom:8px"},h("input",{type:"checkbox",id:"showPast",checked:f.past,onchange:e=>{f.past=e.target.checked;render()}}),h("span",{text:"Show past"}))),
+    list.length?h("div",{class:"grid"},list.map(e=>{
+      const mine=S.st.myRsvps[e.id],att=(S.st.rsvps[e.id]||[]).filter(a=>byId[a.memberId]);
+      return h("article",{class:"card"},
+        h("div",{class:"date",text:fmtDate(e.date)+(e.endDate&&e.endDate!==e.date?" – "+fmtDate(e.endDate):"")+(e.time?" · "+e.time:"")}),
+        h("h3",{text:e.title}),h("div",{class:"meta"},h("span",{text:e.venue}),h("span",{text:e.area})),
+        h("div",{class:"tags"},h("span",{class:"tag "+(e.price==="free"?"free":"paid"),text:e.price==="free"?"Free":"Paid"}),e.type?h("span",{class:"tag",text:e.type}):null),
+        e.priceNote?h("p",{class:"hint",text:e.priceNote}):null,e.notes?h("p",{style:"font-size:.9rem",text:e.notes}):null,
+        h("div",{class:"actions"},
+          ["interested","going"].map(stt=>h("button",{type:"button",class:"small"+(mine===stt?" on":""),"aria-pressed":String(mine===stt),text:stt==="going"?"Going":"Interested",onclick:async()=>{if(await act("rsvp",S.token,e.id,stt))refresh()}})),
+          e.link&&/^https?:\/\//.test(e.link)?h("a",{class:"btn small",href:e.link,target:"_blank",rel:"noopener",text:"Details ↗"}):null),
+        h("div",{class:"going"},att.length?[h("span",{class:"label",text:att.length+" member"+(att.length===1?"":"s")+" in"}),
+          h("div",{class:"tags"},att.map(a=>{const m=byId[a.memberId],lbl=m.nickname+(m.ig?" @"+m.ig:"")+(a.status==="going"?" · going":"");return m.ig?h("a",{class:"tag shared",href:igLink(m.ig),target:"_blank",rel:"noopener",text:lbl}):h("span",{class:"tag",text:lbl})}))]
+          :h("span",{class:"hint",text:"No other members yet. Be the first and post it in the chat."})));
+    })):h("div",{class:"empty"},h("strong",{text:S.st.events.length?"No events match these filters":"No events yet"}),h("span",{text:"Suggest one below. The admin approves suggestions before they show here."})),
+    eventForm(false)];
+}
+function eventForm(isAdmin){
+  const pend=isAdmin?[]:(S.st.mySubs||[]);
+  return h("form",{class:"panel",onsubmit:async e=>{e.preventDefault();const f=e.target,v=id=>clean(f.querySelector("#"+id).value);
+      const ev={title:v("ev-title"),date:v("ev-date"),endDate:v("ev-end"),time:v("ev-time"),venue:v("ev-venue"),area:v("ev-area"),type:v("ev-type"),price:v("ev-price"),priceNote:v("ev-pnote"),link:v("ev-link"),notes:v("ev-notes")};
+      const r=isAdmin?await act("adminAction",S.adminKey,"addEvent",ev):await act("submitEvent",S.token,ev);
+      if(r){f.reset();S.dirty=false;toast(isAdmin?"Event published":"Sent. The admin will review it.");if(isAdmin)await loadAdmin();await refresh()}}},
+    h("h2",{text:isAdmin?"Add an event":"Suggest an event"}),h("p",{class:"hint",text:isAdmin?"Admin events go live right away.":"The admin checks each suggestion before it goes live."}),
+    h("div",{class:"field"},h("label",{class:"label",for:"ev-title",text:"Event name"}),h("input",{type:"text",id:"ev-title",required:true,maxLength:100})),
+    h("div",{class:"row"},h("div",{class:"field"},h("label",{class:"label",for:"ev-date",text:"Date"}),h("input",{type:"date",id:"ev-date",required:true})),
+      h("div",{class:"field"},h("label",{class:"label",for:"ev-end",text:"End date (if multi-day)"}),h("input",{type:"date",id:"ev-end"})),
+      h("div",{class:"field"},h("label",{class:"label",for:"ev-time",text:"Time (optional)"}),h("input",{type:"text",id:"ev-time",maxLength:30,placeholder:"7 pm"}))),
+    h("div",{class:"row"},h("div",{class:"field"},h("label",{class:"label",for:"ev-venue",text:"Venue"}),h("input",{type:"text",id:"ev-venue",maxLength:100})),
+      h("div",{class:"field"},h("label",{class:"label",for:"ev-area",text:"Area"}),h("select",{id:"ev-area",required:true},h("option",{value:"",text:"Choose"}),AREAS.map(a=>h("option",{value:a,text:a}))))),
+    h("div",{class:"row"},h("div",{class:"field"},h("label",{class:"label",for:"ev-type",text:"Type"}),h("select",{id:"ev-type",required:true},h("option",{value:"",text:"Choose"}),EVENT_TYPES.map(a=>h("option",{value:a,text:a})))),
+      h("div",{class:"field"},h("label",{class:"label",for:"ev-price",text:"Price"}),h("select",{id:"ev-price"},h("option",{value:"free",text:"Free"}),h("option",{value:"paid",text:"Paid"}))),
+      h("div",{class:"field"},h("label",{class:"label",for:"ev-pnote",text:"Price details (optional)"}),h("input",{type:"text",id:"ev-pnote",maxLength:120,placeholder:"$25, free before 4 pm…"}))),
+    h("div",{class:"field"},h("label",{class:"label",for:"ev-link",text:"Link (Eventbrite, Instagram post, venue page)"}),h("input",{type:"url",id:"ev-link",placeholder:"https://"})),
+    h("div",{class:"field"},h("label",{class:"label",for:"ev-notes",text:"Notes for the group (optional)"}),h("textarea",{id:"ev-notes",maxLength:400})),
+    h("div",{class:"actions"},h("button",{class:"primary",type:"submit",text:isAdmin?"Publish event":"Send for approval"})),
+    pend.length?h("div",{class:"field"},h("span",{class:"label",text:"Your suggestions waiting for approval"}),h("div",{class:"tags"},pend.map(it=>h("span",{class:"tag pend",text:it.title+" · "+fmtDate(it.date)})))):null);
+}
+
+/* ---------- admin ---------- */
+async function admin(action,arg,msg){if(await act("adminAction",S.adminKey,action,arg)){toast(msg);await loadAdmin();await refresh()}}
+function adminView(){
+  if(!S.adminKey)return[h("form",{class:"panel",onsubmit:async e=>{e.preventDefault();const k=clean(e.target.querySelector("#akey").value);S.adminKey=k;const r=await act("adminState",k);if(r){S.adm=r;store.set(AK,k,true);S.dirty=false;render()}else{S.adminKey=null}}},
+    h("h1",{text:"Admin sign-in"}),h("div",{class:"field"},h("label",{class:"label",for:"akey",text:"Admin key"}),h("input",{type:"password",id:"akey",required:true,autocomplete:"off"})),h("div",{},h("button",{class:"primary",type:"submit",text:"Open admin"})))];
+  const a=S.adm;if(!a)return[h("div",{class:"panel"},h("h1",{text:"Loading admin…"}))];
+  const pend=a.members.filter(m=>m.status==="pending"),appr=a.members.filter(m=>m.status==="approved"),open=a.reports.filter(r=>!r.resolved);
+  const tbl=(heads,rows)=>h("div",{class:"scroll"},h("table",{},h("thead",{},h("tr",{},heads.map(x=>h("th",{text:x})))),h("tbody",{},rows)));
+  const memRows=(list,isPend)=>list.map(m=>h("tr",{},h("td",{},h("strong",{text:m.nickname}),m.ig?h("div",{},h("a",{class:"ig",href:igLink(m.ig),target:"_blank",rel:"noopener",text:"@"+m.ig})):null),
+    h("td",{text:m.area+(m.fsa?" · "+m.fsa:"")}),h("td",{text:m.interests.slice(0,4).join(", ")+(m.interests.length>4?"…":"")}),h("td",{text:(m.joinedAt||"").slice(0,10)}),
+    h("td",{},h("div",{class:"actions"},isPend?h("button",{class:"primary small",type:"button",text:"Approve",onclick:()=>admin("approve",m.id,"Member approved")}):null,h("button",{class:"danger small",type:"button",text:"Remove",onclick:()=>admin("remove",m.id,"Member removed and details wiped")})))));
+  return[
+    h("div",{class:"panel"},h("h1",{text:"Admin"}),h("p",{class:"lede",text:`${appr.length} approved · ${pend.length} waiting · ${a.events.length} events · ${open.length} open reports`}),h("p",{class:"hint",text:"All data is in your Google Sheet. Use the Sheet itself for exports and backups."})),
+    h("section",{class:"panel"},h("h2",{text:"Waiting for approval"}),h("p",{class:"hint",text:"Check each person is in the group chat before approving."}),pend.length?tbl(["Member","Area","Hobbies","Joined",""],memRows(pend,true)):h("p",{class:"hint",text:"No one is waiting."})),
+    h("section",{class:"panel"},h("h2",{text:"Event suggestions"}),a.submissions.length?h("div",{class:"grid"},a.submissions.map(s=>h("div",{class:"card"},h("div",{class:"date",text:fmtDate(s.date)}),h("h3",{text:s.title}),h("div",{class:"meta"},h("span",{text:s.venue}),h("span",{text:s.area}),h("span",{text:s.price})),h("div",{class:"hint",text:"From "+s.from}),
+      s.link?h("a",{class:"ig",href:s.link,target:"_blank",rel:"noopener",text:s.link}):null,
+      h("div",{class:"actions"},h("button",{class:"primary small",type:"button",text:"Approve",onclick:()=>admin("approveSub",s.id,"Event approved")}),h("button",{class:"danger small",type:"button",text:"Reject",onclick:()=>admin("rejectSub",s.id,"Suggestion rejected")}))))):h("p",{class:"hint",text:"No suggestions waiting."})),
+    h("section",{class:"panel"},h("h2",{text:"Reports"}),a.reports.length?tbl(["About","Reason","Details","From","Status",""],a.reports.map(r=>h("tr",{},h("td",{text:r.about}),h("td",{text:r.reason}),h("td",{text:r.note||"—"}),h("td",{text:r.from}),h("td",{},h("span",{class:"tag"+(r.resolved?"":" pend"),text:r.resolved?"Resolved":"Open"})),
+      h("td",{},h("div",{class:"actions"},!r.resolved?h("button",{class:"small",type:"button",text:"Mark resolved",onclick:()=>admin("resolveReport",r.id,"Report resolved")}):null,a.members.some(m=>m.id===r.aboutId)?h("button",{class:"danger small",type:"button",text:"Remove member",onclick:()=>admin("remove",r.aboutId,"Member removed")}):null))))):h("p",{class:"hint",text:"No reports. Members can report privately from any match card."})),
+    eventForm(true),
+    h("section",{class:"panel"},h("h2",{text:"Live events"}),a.events.length?tbl(["Date","Event","Area","Price","RSVPs",""],a.events.slice().sort((x,y)=>(x.date||"").localeCompare(y.date||"")).map(e=>h("tr",{},h("td",{text:fmtDate(e.date)}),h("td",{text:e.title}),h("td",{text:e.area}),h("td",{text:e.price}),h("td",{text:String(e.count)}),h("td",{},h("button",{class:"danger small",type:"button",text:"Delete",onclick:()=>admin("deleteEvent",e.id,"Event deleted")}))))):h("p",{class:"hint",text:"No events yet."})),
+    h("section",{class:"panel"},h("h2",{text:"Approved members"}),appr.length?tbl(["Member","Area","Hobbies","Joined",""],memRows(appr,false)):h("p",{class:"hint",text:"No approved members yet."}))];
+}
+
+if(IS_ADMIN_LINK)S.view="admin";
+refresh();
+setInterval(()=>{if(!document.hidden&&!S.dirty&&!S.busy)refresh()},60000);
+</script>
+</body>
+</html>

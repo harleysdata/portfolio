@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long page. Header + server-party banner + name, then two stacked night sections (Fri, Sat), each with its questions, its event list and its own group results. Sticky save bar at the bottom.
+   The live page also had an animated "spooky" theme (moon, bats, fog); that decorative layer is left out of the repo. */
+:root{
+  --bg:#F5F2F7; --surface:#FFFFFF; --sunk:#ECE7F0; --fg:#22192A; --muted:#675B71; --line:#DCD3E3;
+  --accent:#B9461A; --accent-ink:#FFFFFF; --accent-soft:#F7E2D6;
+  --goth:#E6DDF3; --goth-ink:#4A2C7A; --alt:#D9F0E8; --alt-ink:#0E5A45; --main:#FBEED6; --main-ink:#6E4A07;
+  --queer:#F9E0EC; --queer-ink:#8A2456; --star:#FFF1B8; --star-ink:#6B4E00;
+  --ok:#2F7A3E; --warn:#A8261B;
+  --f-display:"Grenze Gotisch",Georgia,"Times New Roman",serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#16111B; --surface:#201927; --sunk:#2A2232; --fg:#EEE7F2; --muted:#A797B2; --line:#392F42;
+  --accent:#F08A4B; --accent-ink:#1A1016; --accent-soft:#3B261E;
+  --goth:#2E2342; --goth-ink:#CDB8F2; --alt:#16332B; --alt-ink:#8EE0C3; --main:#3A2E16; --main-ink:#F2D27A;
+  --queer:#3D1E2E; --queer-ink:#F6A8CB; --star:#3A3216; --star-ink:#F2D27A;
+  --ok:#7BD08B; --warn:#FF8A7A; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.5;padding-bottom:84px}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+header .wrap{padding-block:28px 6px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(42px,8vw,70px);line-height:.92;margin:6px 0 0}
+.lede{color:var(--muted);margin:12px 0 0;max-width:60ch}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.steps li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13.5px}
+.steps b{display:block;font-family:var(--f-mono);font-size:12px;color:var(--accent);font-weight:500}
+@media (max-width:560px){.steps{grid-template-columns:minmax(0,1fr)}}
+.star{display:flex;gap:12px;align-items:flex-start;background:var(--star);color:var(--star-ink);border-radius:12px;padding:14px 16px;margin-top:16px}
+.star .ic{font-size:22px;line-height:1}
+.star b{font-size:16px}
+.star p{margin:2px 0 0;font-size:13.5px}
+.namebox{margin-top:18px;display:flex;flex-direction:column;gap:6px}
+.namebox label{font-weight:600}
+input[type=text]{font:16px var(--f-body);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:11px 13px;width:100%}
+input.need{border-color:var(--warn)}
+.namebox .need-msg{display:none;color:var(--warn);font-size:13.5px}
+.namebox.need .need-msg{display:block}
+.jump{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.jump a{flex:1;min-width:140px;text-decoration:none;text-align:center;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px;font-weight:600}
+.jump a .st{display:block;font-family:var(--f-mono);font-size:11.5px;font-weight:400;color:var(--muted)}
+.jump a.done .st{color:var(--ok)}
+.night{margin-top:28px;border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden;scroll-margin-top:12px}
+.nhead{padding:18px 20px;background:var(--fg);color:var(--bg)}
+.nhead h2{font-family:var(--f-display);font-weight:700;font-size:clamp(34px,6vw,48px);line-height:1;margin:0}
+.nhead p{margin:6px 0 0;font-size:13.5px;opacity:.85}
+.nbody{padding:20px;display:flex;flex-direction:column;gap:22px}
+.q .ql{font-weight:600;font-size:15px;display:flex;gap:8px;align-items:baseline;margin-bottom:8px}
+.q .n{font-family:var(--f-mono);font-size:12px;color:var(--accent)}
+.q .hint{font-weight:400;font-size:12.5px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--surface);padding:8px 14px;border-radius:999px;cursor:pointer;font-size:14px;font-weight:500;display:inline-flex;gap:6px;align-items:center}
+.chip:hover{border-color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip small{font-family:var(--f-mono);font-size:11.5px;opacity:.75;font-weight:400}
+.chip.no[aria-pressed="true"]{background:var(--sunk);color:var(--fg);border-color:var(--muted)}
+.chip.maybe[aria-pressed="true"]{background:var(--star);color:var(--star-ink);border-color:var(--star-ink)}
+.who-out{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.who-out span{font-size:12.5px;background:var(--sunk);border-radius:999px;padding:3px 10px}
+.who-out span.mb{background:var(--star);color:var(--star-ink)}
+.off{opacity:.4;pointer-events:none}
+.legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12.5px;color:var(--muted);margin:-2px 0 10px}
+.list{display:flex;flex-direction:column;gap:8px}
+.ev{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 14px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface)}
+.ev.feat{background:var(--star);border-color:transparent}
+.ev.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.ev h3{margin:0;font-size:15.5px;font-weight:600;line-height:1.3}
+.ev h3 a{text-decoration:none;border-bottom:1px solid currentColor}
+.ev .meta{font-size:13px;color:var(--muted);margin-top:2px}
+.ev .when{font-family:var(--f-mono);font-size:12.5px;color:var(--fg)}
+.ev .no{font-size:13px;margin-top:4px}
+.ev .who{font-size:12.5px;color:var(--muted);margin-top:4px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{font-size:12px;padding:2px 8px;border-radius:6px;font-weight:500}
+.t-goth{background:var(--goth);color:var(--goth-ink)} .t-alt{background:var(--alt);color:var(--alt-ink)} .t-main{background:var(--main);color:var(--main-ink)}
+.t-queer{background:var(--queer);color:var(--queer-ink)} .t-server{background:var(--fg);color:var(--bg)}
+.t-fit{background:var(--sunk);color:var(--fg);font-family:var(--f-mono);font-weight:400}
+.in{align-self:center;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:9px 14px;border-radius:10px;border:1px solid var(--accent);background:var(--surface);color:var(--accent);cursor:pointer;white-space:nowrap}
+.in[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.in .c{font-family:var(--f-mono);font-size:12.5px;font-variant-numeric:tabular-nums;opacity:.85}
+@media (max-width:560px){.ev{grid-template-columns:minmax(0,1fr)}.in{justify-self:start}}
+.divider{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:10px 0 2px}
+.more{background:none;border:1px dashed var(--line);border-radius:10px;padding:10px;cursor:pointer;color:var(--muted);font-size:14px}
+.res{border-top:1px solid var(--line);padding-top:18px}
+.res h3{font-family:var(--f-display);font-weight:700;font-size:28px;margin:0 0 10px;line-height:1}
+.big{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:12px}
+.big div{font-size:13px;color:var(--muted)}
+.big b{display:block;font-family:var(--f-mono);font-weight:500;font-size:28px;color:var(--fg);line-height:1.1;font-variant-numeric:tabular-nums}
+.rgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 28px}
+@media (max-width:640px){.rgrid{grid-template-columns:minmax(0,1fr)}}
+.rh{font-weight:600;font-size:14px;margin:18px 0 10px}
+.bars{display:flex;flex-direction:column;gap:7px;margin:0;padding:0;list-style:none}
+.bars li{display:grid;grid-template-columns:minmax(0,140px) minmax(0,1fr) 26px;gap:10px;align-items:center;font-size:13.5px}
+.bars .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bars .tr{height:10px;background:var(--sunk);border-radius:5px;overflow:hidden}
+.bars .tr i{display:block;height:100%;background:var(--accent);border-radius:5px}
+.bars .v{font-family:var(--f-mono);font-size:12.5px;text-align:right}
+.toplist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.toplist li{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.toplist .nm{font-weight:600}
+.toplist .pp{color:var(--muted);font-size:12.5px}
+.empty{color:var(--muted);font-size:13.5px;margin:0}
+.verdict{background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:14px;margin:6px 0 16px}
+.savebar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));z-index:5}
+.savebar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0}
+.st2{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);min-width:0}
+.dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--muted)}
+.dot.ok{background:var(--ok)} .dot.busy{background:var(--accent)} .dot.err{background:var(--warn)}
+.savebtn{flex:none;font-weight:600;font-size:15px;padding:10px 18px;border-radius:10px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.savebtn:disabled{opacity:.5;cursor:wait}
+.cmt{margin-top:28px;display:flex;flex-direction:column;gap:6px}
+.cmt label{font-weight:600}
+footer{font-size:12.5px;color:var(--muted);padding-block:22px 10px}
+@media (prefers-reduced-motion:no-preference){.bars .tr i{transition:width .35s ease}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">🕯️ Toronto · Devil's Night + Halloween · Fri Oct 30 + Sat Oct 31</div>
+    <h1>Halloween Night Picker</h1>
+    <p class="lede">Two nights. Two short sections. Tell the coven if you're coming out, when, where you'd haunt, your vibe, and every event you're up for. Everyone sees the results live.</p>
+    <ol class="steps">
+      <li><b>01 🦇</b>Type your name</li>
+      <li><b>02 🕸️</b>Fill in Friday, then Saturday. Yes, Maybe or No for each night</li>
+      <li><b>03 💀</b>Tick every event you'd go to. It saves by itself</li>
+    </ol>
+    <div class="star"><span class="ic">🎃</span><div><b>Server party · Sat Oct 31, 8 PM – 1 AM</b><p>Location shared privately in the Discord · BYOD / BYOF potluck · costumes encouraged</p></div></div>
+    <div class="namebox"><label for="name">Your name</label><input type="text" id="name" maxlength="40" autocomplete="nickname" placeholder="e.g. Hira"><span class="need-msg">⚠️ Type your name here first, or your picks can't save.</span></div>
+    <nav class="jump" id="jump"></nav>
+  </div>
+</header>
+
+<main class="wrap" id="nights"></main>
+
+<div class="wrap">
+  <div class="cmt"><label for="comment">Anything else? <span style="font-weight:400;color:var(--muted)">Optional</span></label><input type="text" id="comment" maxlength="300" placeholder="e.g. I can drive 3 people on Saturday"></div>
+  <footer>Events come from the Ontario Halloween Events 2026 list, Resident Advisor, GetOnTheList, blogTO, NOW and Streets of Toronto (checked Oct 15, 2026). 🏳️‍🌈 marks events or venues that are confirmed LGBTQ+; others may be welcoming too. Times and prices change, so open the event link before buying. Clocks go back at 2 AM on Nov 1.</footer>
+</div>
+
+<div class="savebar"><div class="wrap">
+  <span class="st2"><span class="dot" id="saveDot"></span><span id="saveText">Type your name and start with Friday. Your picks save by themselves.</span></span>
+  <button class="savebtn" id="saveBtn" type="button">Save</button>
+</div></div>
+
+<script>
+// Fields: d night, n name (must match N_EVENTS in Code.gs), w where, t time, s time slots, p price,
+// v vibe (goth/alt/main/server), q confirmed queer-friendly, f featured, a area, u link, no note.
+const EVENTS = [
+{"d":"fri","n":"Goth Zombie Prom: Devil's Night","w":"Ground Control, 1279 Queen St W","t":"9 PM – 2:30 AM","s":["prime","late"],"p":"$17","v":"goth","a":"to","u":"https://www.blogto.com/events/goth-zombie-prom-devils-night-dance-party-dj-lazarus-fri-oct-30-toronto/","no":"Goth, darkwave and post-punk video dance party with DJ Lazarus."},
+{"d":"fri","n":"The Black Parade: Halloween Emo Night","w":"Sneaky Dee's, 431 College St","t":"Night (time TBC)","s":["prime","late"],"p":"See listing","v":"alt","a":"dt","u":"https://nowtoronto.com/event/the-black-parade-halloween-emo-night-toronto-at-sneaky-dees-oct-30-2026/","no":"Emo night, Halloween edition."},
+{"d":"fri","n":"Rocky Horror Picture Show (live shadowcast)","w":"Hot Docs Ted Rogers Cinema, 506 Bloor St W","t":"Evening","s":["early","prime"],"p":"See listing","v":"alt","a":"dt","u":"https://streetsoftoronto.com/toronto-culture/42-unmissable-halloween-events-pop-ups-and-screenings-taking-over-toronto-in-2026/","no":"Cult screening with a live shadow cast. Also on Saturday."}
+// The live version had 34 curated events across both nights; three are kept here as examples.
+];
+const NIGHTS = [
+  {k:'fri', name:'Friday, Oct 30', short:'Fri Oct 30', emoji:'🎃', note:'Devil\'s Night. Goth prom, emo night, raves and boat parties.'},
+  {k:'sat', name:'Saturday, Oct 31', short:'Sat Oct 31', emoji:'👻', note:'Halloween night, plus our server party. Clocks go back at 2 AM, so you get an extra hour.'}];
+const TIMES = [
+  {k:'early', label:'Early evening', hint:'6–9 PM'},
+  {k:'prime', label:'Prime time', hint:'9 PM–12'},
+  {k:'late', label:'Late night', hint:'12–2 AM'},
+  {k:'after', label:'After hours', hint:'2 AM+'}];
+const CANT = "Can't make it";
+const GOING = "Going", MAYBE = "Maybe";
+const STATUS = [{label:GOING, show:"Yes 🎃"}, {label:MAYBE, show:"Maybe 🤔", cls:"maybe"}, {label:CANT, show:"No", cls:"no"}];
+const statusOf = m => m.times.includes(CANT)?CANT : m.times.includes(MAYBE)?MAYBE : m.times.includes(GOING)?GOING : "";
+const AREAS = [{label:'Downtown'},{label:'Rest of Toronto'},{label:'Happy to travel'}];
+const VIBES = [
+  {k:'goth', label:'Goth', icon:'🖤'}, {k:'alt', label:'Alt', icon:'⚡'},
+  {k:'main', label:'Mainstream', icon:'✨'}, {k:'queer', label:'Queer-friendly', icon:'🏳️‍🌈'}];
+const VIBE_TAG = {goth:['🖤 Goth','t-goth'], alt:['⚡ Alt','t-alt'], main:['✨ Mainstream','t-main'], server:['⭐ Our server','t-server']};
+const TIME_LABEL = Object.fromEntries(TIMES.map(t=>[t.k,t.label]));
+
+function store(k,v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v); }catch(e){ return null; } }
+let myKey = store('hwn-key');
+if(!myKey){ myKey = Array.from({length:24},()=>'abcdefghijklmnopqrstuvwxyz0123456789'[Math.floor(Math.random()*36)]).join(''); store('hwn-key',myKey); }
+let votes = [];
+let mine = {}; NIGHTS.forEach(n=>mine[n.k]={times:[],areas:[],vibes:[],events:[]});
+let showAll = {fri:false, sat:false};
+let dirty=false, saving=false, queued=false, loadedMine=false, autoTimer=null;
+
+function el(tag, attrs={}, ...kids){ const n=document.createElement(tag); for(const [k,v] of Object.entries(attrs)){ if(k==='class') n.className=v; else if(k==='text') n.textContent=v; else if(k.startsWith('on')) n.addEventListener(k.slice(2),v); else if(v!==false&&v!=null) n.setAttribute(k,v===true?'':v);} kids.flat().forEach(c=>c!=null&&n.append(c)); return n; }
+function toggle(arr,k){ const i=arr.indexOf(k); if(i>=0) arr.splice(i,1); else arr.push(k); }
+const filled = m => m.times.length>0;
+
+function tally(k){
+  const r={voters:0,out:[],maybe:[],cant:0,times:{},areas:{},vibes:{},events:{}};
+  votes.forEach(v=>{
+    const d=(v.nights&&v.nights[k])||{}; const t=d.times||[];
+    if(!t.length) return;
+    r.voters++;
+    if(t.includes(CANT)){ r.cant++; return; }
+    const nm=v.me?`${v.name} (you)`:v.name;
+    if(t.includes(MAYBE)) r.maybe.push(nm); else r.out.push(nm);
+    t.filter(x=>x!==GOING&&x!==MAYBE).forEach(x=>r.times[x]=(r.times[x]||0)+1);
+    (d.areas||[]).forEach(x=>r.areas[x]=(r.areas[x]||0)+1);
+    (d.vibes||[]).forEach(x=>r.vibes[x]=(r.vibes[x]||0)+1);
+    (d.events||[]).forEach(x=>{ (r.events[x]=r.events[x]||[]).push(v.me?'you':v.name); });
+  });
+  return r;
+}
+
+function chipRow(opts, isOn, onTap){
+  return el('div',{class:'chips'}, opts.map(o=>{
+    const b=el('button',{class:'chip'+(o.cls?' '+o.cls:''),type:'button','aria-pressed':String(isOn(o.label)),onclick:()=>onTap(o.label)}, (o.icon?o.icon+' ':'')+o.label);
+    if(o.hint) b.append(el('small',{text:o.hint}));
+    return b;
+  }));
+}
+
+// Events matching your chosen vibes float to the top; the rest sit behind a "show more" button.
+function eventRank(e, m){
+  if(e.f) return 0;
+  const vibeKeys = VIBES.filter(v=>m.vibes.includes(v.label)).map(v=>v.k);
+  if(!vibeKeys.length) return e.v==='goth'?1:e.v==='alt'?2:3;
+  const match = vibeKeys.includes(e.v) || (vibeKeys.includes('queer') && e.q);
+  return match ? 1 : 4;
+}
+
+function eventRow(e, k, t){
+  const m=mine[k], on=m.events.includes(e.n), people=t.events[e.n]||[];
+  const tags=[];
+  const vt=VIBE_TAG[e.v]; if(vt) tags.push(el('span',{class:'tag '+vt[1],text:vt[0]}));
+  if(e.q) tags.push(el('span',{class:'tag t-queer',text:'🏳️‍🌈 Queer-friendly'}));
+  const myTimes=m.times.filter(x=>x!==CANT);
+  if(myTimes.length){ const fit=e.s.some(s=>myTimes.includes(TIME_LABEL[s])); if(fit) tags.push(el('span',{class:'tag t-fit',text:'✓ fits your time'})); }
+  const name = e.u ? el('a',{href:e.u,target:'_blank',rel:'noopener',text:e.n}) : document.createTextNode(e.n);
+  const btn=el('button',{class:'in',type:'button','aria-pressed':String(on),onclick:()=>{ toggle(m.events,e.n); markDirty(); }}, on?'☑ I\'m in':'☐ I\'m in', el('span',{class:'c',text:String(people.length)}));
+  return el('article',{class:'ev'+(e.f?' feat':'')+(on?' on':'')},
+    el('div',{style:'min-width:0'},
+      el('h3',{},name),
+      el('div',{class:'meta'}, el('span',{class:'when',text:e.t}), ` · ${e.w} · ${e.p}`),
+      e.no? el('div',{class:'no',text:e.no}) : null,
+      el('div',{class:'tags'},tags),
+      people.length? el('div',{class:'who',text:'Going: '+people.join(', ')}) : null),
+    btn);
+}
+
+function bars(title, labels, counts){
+  const rows=labels.map(l=>[l,counts[l]||0]).filter(r=>r[1]>0).sort((a,b)=>b[1]-a[1]);
+  const div=el('div',{}, el('p',{class:'rh',text:title}));
+  if(!rows.length){ div.append(el('p',{class:'empty',text:'No picks yet.'})); return div; }
+  const max=rows[0][1];
+  div.append(el('ul',{class:'bars'}, rows.map(([l,n])=>el('li',{}, el('span',{class:'lab',text:l,title:l}), el('span',{class:'tr'},el('i',{style:`width:${n/max*100}%`})), el('span',{class:'v',text:String(n)})))));
+  return div;
+}
+
+function results(k,t){
+  const box=el('section',{class:'res'}, el('h3',{text:'The group so far'}));
+  box.append(el('div',{class:'big'},
+    el('div',{}, el('b',{text:String(t.out.length)}), 'going'),
+    el('div',{}, el('b',{text:String(t.maybe.length)}), 'maybe'),
+    el('div',{}, el('b',{text:String(t.cant)}), "can't make it"),
+    el('div',{}, el('b',{text:String(t.voters)}), 'answered')));
+  if(!t.voters){ box.append(el('p',{class:'empty',text:'Nobody has answered for this night yet.'})); return box; }
+  const ev=Object.entries(t.events).sort((a,b)=>b[1].length-a[1].length);
+  if(ev.length){
+    const topN=ev[0][1].length;
+    const leaders=ev.filter(x=>x[1].length===topN).map(x=>x[0]);
+    const tt=Object.entries(t.times).sort((a,b)=>b[1]-a[1])[0];
+    box.append(el('div',{class:'verdict'}, 'Leading: ', el('b',{text:leaders.join(' or ')}), ` (${topN} in)`, tt?`. Most people are out for ${tt[0].toLowerCase()}.`:'.'));
+  }
+  if(t.out.length||t.maybe.length){ box.append(el('p',{class:'rh',text:"Who's coming"})); box.append(el('div',{class:'who-out'}, t.out.map(n=>el('span',{text:n})), t.maybe.map(n=>el('span',{class:'mb',text:n+' · maybe'})))); }
+  const g=el('div',{class:'rgrid'});
+  g.append(bars('When', TIMES.map(x=>x.label), t.times));
+  g.append(bars('Vibe', VIBES.map(x=>x.label), t.vibes));
+  g.append(bars('Where', AREAS.map(x=>x.label), t.areas));
+  const tl=el('div',{}, el('p',{class:'rh',text:'Most picked events'}));
+  if(!ev.length) tl.append(el('p',{class:'empty',text:'No events picked yet.'}));
+  else tl.append(el('ul',{class:'toplist'}, ev.slice(0,8).map(([n,p])=>el('li',{}, el('span',{}, el('span',{class:'nm',text:n}), el('br'), el('span',{class:'pp',text:p.join(', ')})), el('b',{text:String(p.length)})))));
+  g.append(tl);
+  box.append(g);
+  return box;
+}
+
+function renderNight(n){
+  const k=n.k, m=mine[k], t=tally(k), cant=m.times.includes(CANT), st=statusOf(m), day=n.short.split(' ')[0];
+  const sec=el('section',{class:'night',id:'night-'+k,'aria-labelledby':'h-'+k},
+    el('div',{class:'nhead'}, el('h2',{id:'h-'+k,text:`${n.emoji} ${n.name}`}), el('p',{text:n.note})));
+  const body=el('div',{class:'nbody'});
+  const statusRow=el('div',{class:'chips'}, STATUS.map(o=>el('button',{class:'chip'+(o.cls?' '+o.cls:''),type:'button','aria-pressed':String(st===o.label),onclick:()=>{
+      const slots=m.times.filter(x=>x!==GOING&&x!==MAYBE&&x!==CANT);
+      if(st===o.label) m.times=[]; else if(o.label===CANT) m.times=[CANT]; else m.times=[o.label,...slots];
+      markDirty(); }}, o.show)));
+  body.append(el('div',{class:'q'}, el('div',{class:'ql'}, el('span',{class:'n',text:'1'}), `Are you coming out on ${day}?`), statusRow));
+  const rest=el('div',{class:(cant||!st)?'off':'',style:'display:flex;flex-direction:column;gap:22px'});
+  rest.append(el('div',{class:'q'}, el('div',{class:'ql'}, el('span',{class:'n',text:'2'}), 'What time?', el('span',{class:'hint',text:'Pick any'})),
+    chipRow(TIMES, x=>m.times.includes(x), x=>{ toggle(m.times,x); markDirty(); })));
+  rest.append(el('div',{class:'q'}, el('div',{class:'ql'}, el('span',{class:'n',text:'3'}), 'Where would you go?', el('span',{class:'hint',text:'Pick any'})),
+    chipRow(AREAS, x=>m.areas.includes(x), x=>{ toggle(m.areas,x); markDirty(); })));
+  rest.append(el('div',{class:'q'}, el('div',{class:'ql'}, el('span',{class:'n',text:'4'}), "What's your vibe?", el('span',{class:'hint',text:'Pick any. Your vibes go to the top of the list'})),
+    chipRow(VIBES, x=>m.vibes.includes(x), x=>{ toggle(m.vibes,x); markDirty(); })));
+  const evs=EVENTS.filter(e=>e.d===k).map(e=>({e, r:eventRank(e,m)})).sort((a,b)=>a.r-b.r);
+  const top=evs.filter(x=>x.r<4), others=evs.filter(x=>x.r>=4);
+  const listQ=el('div',{class:'q'},
+    el('div',{class:'ql'}, el('span',{class:'n',text:'5'}), 'Which events are you in for?', el('span',{class:'hint',text:'Tick as many as you like'})),
+    el('div',{class:'legend'}, el('span',{text:'🖤 Goth'}), el('span',{text:'⚡ Alt'}), el('span',{text:'✨ Mainstream'}), el('span',{text:'🏳️‍🌈 Confirmed queer-friendly'})));
+  const list=el('div',{class:'list'});
+  top.forEach(x=>list.append(eventRow(x.e,k,t)));
+  if(others.length){
+    const pickedHidden = others.filter(x=>m.events.includes(x.e.n)).length;
+    if(showAll[k] || pickedHidden){
+      list.append(el('div',{class:'divider',text:'Other vibes'}));
+      others.forEach(x=>list.append(eventRow(x.e,k,t)));
+    } else {
+      list.append(el('button',{class:'more',type:'button',onclick:()=>{showAll[k]=true; renderAll();}}, `Show ${others.length} more events in other vibes ▾`));
+    }
+  }
+  listQ.append(list); rest.append(listQ);
+  body.append(rest);
+  body.append(results(k,t));
+  sec.append(body);
+  return sec;
+}
+
+function renderJump(){
+  const j=document.getElementById('jump'); j.replaceChildren();
+  NIGHTS.forEach(n=>{ const m=mine[n.k]; const s=statusOf(m); const st=!filled(m)?'Not filled in':s===CANT?"Can't make it":`${s===MAYBE?'Maybe · ':''}${m.events.length} event${m.events.length===1?'':'s'} picked`;
+    j.append(el('a',{href:'#night-'+n.k,class:filled(m)?'done':'',target:'_self'}, `${n.emoji} ${n.short}`, el('span',{class:'st',text:(filled(m)?'✓ ':'')+st}))); });
+}
+function renderAll(){
+  const y=window.scrollY;
+  document.getElementById('nights').replaceChildren(...NIGHTS.map(renderNight));
+  renderJump();
+  window.scrollTo(0,y);
+}
+
+/* saving */
+function setSave(s,t){ document.getElementById('saveDot').className='dot '+s; document.getElementById('saveText').textContent=t; }
+function gs(){ return (window.google&&google.script&&google.script.run)?google.script.run:null; }
+function scheduleAuto(){ clearTimeout(autoTimer); if(document.getElementById('name').value.trim() && NIGHTS.some(n=>filled(mine[n.k]))) autoTimer=setTimeout(()=>save(true),1500); }
+function needName(on){ document.getElementById('name').classList.toggle('need',on); document.querySelector('.namebox').classList.toggle('need',on); }
+function markDirty(){ dirty=true; needName(!document.getElementById('name').value.trim()); setSave('busy', document.getElementById('name').value.trim()?'Saving shortly…':'Add your name at the top so your picks can save.'); renderAll(); scheduleAuto(); }
+function applyVotes(list){
+  votes=Array.isArray(list)?list:[];
+  if(!loadedMine){
+    const me=votes.find(v=>v.me);
+    if(me){ NIGHTS.forEach(n=>{ const x=me.nights[n.k]||{}; mine[n.k]={times:[...(x.times||[])],areas:[...(x.areas||[])],vibes:[...(x.vibes||[])],events:[...(x.events||[])]}; });
+      document.getElementById('name').value=me.name; document.getElementById('comment').value=me.comment||'';
+      setSave('ok','Your earlier picks are loaded. Change anything and it saves again.'); }
+    loadedMine=true;
+  }
+  renderAll();
+}
+function refresh(){ const run=gs(); if(!run||saving||dirty) return; run.withSuccessHandler(applyVotes).withFailureHandler(()=>{}).getNightVotes(myKey); }
+function save(auto){
+  clearTimeout(autoTimer);
+  if(saving){ queued=true; return; }
+  const name=document.getElementById('name').value.trim();
+  if(!name){ setSave('err','Add your name at the top so your picks can save.'); if(!auto) document.getElementById('name').focus(); return; }
+  if(!NIGHTS.some(n=>filled(mine[n.k]))){ setSave(auto?'busy':'err','Pick when you\'re out for at least one night.'); return; }
+  const run=gs(); if(!run){ setSave('err','Open this page from its Google link to save.'); return; }
+  saving=true; const btn=document.getElementById('saveBtn'); btn.disabled=true; setSave('busy','Saving…');
+  run.withSuccessHandler(list=>{ saving=false; btn.disabled=false; dirty=false; setSave('ok','Saved. Everyone can see your picks.'); applyVotes(list); if(queued){ queued=false; save(true); } })
+     .withFailureHandler(err=>{ saving=false; btn.disabled=false; queued=false; setSave('err',(err&&err.message)||"Couldn't save. Press Save to try again."); })
+     .saveNightVote({name, key:myKey, comment:document.getElementById('comment').value, nights:JSON.parse(JSON.stringify(mine))});
+}
+document.getElementById('saveBtn').addEventListener('click',()=>save(false));
+['name','comment'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{ dirty=true; if(document.getElementById('name').value.trim()) needName(false); setSave('busy','Saving shortly…'); scheduleAuto(); }));
+// Phones often close tabs without warning, so flush unsaved picks when the page is hidden.
+function flush(){ if(dirty && !saving && document.getElementById('name').value.trim() && NIGHTS.some(n=>filled(mine[n.k]))) save(true); }
+document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='hidden') flush(); });
+window.addEventListener('pagehide',flush);
+window.addEventListener('beforeunload',e=>{ if(dirty){ e.preventDefault(); e.returnValue=''; } });
+
+renderAll();
+refresh();
+setInterval(refresh, 20000);
+</script>
+</body>
+</html>
