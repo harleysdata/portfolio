@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // The quiz owner: the one Google account allowed to read, edit and delete responses.
+    function isOwner() {
+      return request.auth != null
+        && request.auth.token.email == "OWNER_EMAIL"
+        && request.auth.token.email_verified == true;
+    }
+
+    match /responses/{responseId} {
+      allow read, update, delete: if isOwner();
+
+      // Anyone can submit a finished quiz; only the owner can import answer codes.
+      allow create: if request.resource.data.keys().hasOnly(['v','n','into','me','w','p','at','type','heart','algo','source'])
+        && request.resource.data.w is list && request.resource.data.w.size() == 12
+        && request.resource.data.p is map && request.resource.data.p.size() <= 40
+        && request.resource.data.me is map
+        && (!('n' in request.resource.data) || (request.resource.data.n is string && request.resource.data.n.size() <= 40))
+        && (request.resource.data.source == 'quiz' || isOwner());
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -19,7 +19,7 @@ Projects 1 and 2 use **real, public enterprise data**: a ServiceNow incident aud
 | 3 | [**Contingent Workforce Integration**](03-contingent-workforce-integration/) | Sample extracts with planted defects | Fieldglass → Employee Central → ServiceNow field mapping, sequence diagrams, controls matrix, and a three-way reconciliation that finds 591 of 591 planted defects |
 | 4 | [**Contractor Onboarding Hub: Product Case**](04-contractor-onboarding-product-case/) | Findings from Projects 1–3 | PRD, metrics tree, Jira-ready backlog, RICE with documented overrides, experiment sizing with clustering |
 | 5 | [**AI Answer Accuracy Evaluation**](05-ai-answer-accuracy-eval/) | 15 Ontario employment-law questions | Rubric-based eval of AI answers, with planted errors to prove the grader catches them |
-| 6 | [**The Dating Matrix**](06-dating-matrix/) | Quiz responses collected in a Google Sheet; 119 designed personas | Community quiz web app on Google Apps Script: weighted compatibility scoring, a "reality check" on stated vs. revealed preferences, and an owner dashboard with PDF reports and CSV export |
+| 6 | [**The Dating Matrix**](06-dating-matrix/) | Quiz responses collected in Firestore; 119 designed personas | [Live](https://harleysdata.github.io/dating-matrix/) community quiz web app on GitHub Pages and Firebase: weighted compatibility scoring, a "reality check" on stated vs. revealed preferences, and an owner dashboard with PDF reports and CSV export |
 
 ## How they connect
 

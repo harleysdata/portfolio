@@ -2,8 +2,8 @@
 
 **A dating-standards reality check.** People set their standards, swipe on 119 GTA personas, and see who they would realistically end up with, where their standards contradict their swipes, and who would actually swipe back.
 
-🔗 **Live app:** LIVE_URL
-📁 **Code:** [`apps-script/`](apps-script/) · **Persona data:** [`data/personas.json`](data/personas.json)
+🔗 **Live app:** [harleysdata.github.io/dating-matrix](https://harleysdata.github.io/dating-matrix/)
+📁 **Code:** [`firebase/`](firebase/) (live version) · [`apps-script/`](apps-script/) (Google Apps Script alternative) · **Persona data:** [`data/personas.json`](data/personas.json)
 
 ![Persona card](screenshots/03-persona-card.png)
 
@@ -11,7 +11,7 @@
 
 Dating "standards" are usually a wish list that nobody tests against reality. People say they want someone drama-free, then swipe right on chaos. They want a provider, but so does everyone else they like. I wanted a tool that turns stated preferences into data and then shows people, kindly but honestly, where those preferences and their real choices disagree.
 
-I shared it with my community and collected responses in a Google Sheet, so the same data also tells me what people in the group value most.
+I shared it with my community and collected the responses in a database, so the same data also tells me what people in the group value most.
 
 ## What it does
 
@@ -29,7 +29,7 @@ I shared it with my community and collected responses in a Google Sheet, so the 
 
 ## Owner dashboard
 
-Only the owner sees it (checked server-side with `Session.getActiveUser()`):
+Only the owner sees it. Firestore security rules allow reads only for the owner's verified Google account, so the check is enforced on the server, not just hidden in the page.
 
 - KPIs, who people were into, who got the most yeses, dating types, top interests, and the average weight of each priority
 - A table of every response, with **View** and **PDF** buttons for each person's full report
@@ -40,20 +40,35 @@ Only the owner sees it (checked server-side with `Session.getActiveUser()`):
 
 ```mermaid
 flowchart LR
-  U["Quiz taker<br/>(any device, no login)"] -->|google.script.run| GAS["Apps Script web app<br/>Code.gs"]
-  GAS -->|upsert row| SH[("Google Sheet<br/>Dating Matrix Responses")]
-  O["Owner"] -->|same URL, signed in| GAS
-  GAS -->|listResponses, owner only| D["Dashboard<br/>View · PDF · CSV"]
+  U["Quiz taker<br/>(any device, no login)"] -->|"create only"| FS[("Cloud Firestore<br/>responses")]
+  P["GitHub Pages<br/>static quiz page"] --> U
+  O["Owner<br/>Google sign-in"] -->|"read, live updates"| FS
+  FS --> D["Dashboard<br/>View · PDF · CSV"]
+  R["Security rules"] -. "guard" .- FS
 ```
 
 | Layer | Detail |
 |---|---|
 | Front end | One HTML file: vanilla JavaScript, CSS and SVG. Cartoon avatars are generated procedurally; the result card is drawn on a canvas; PDF reports use jsPDF. |
-| Back end | Google Apps Script (`Code.gs`): `saveResponse` upserts by response id under a script lock; `listResponses` is owner-only; formula injection is neutralised before writing cells. |
-| Storage | A Google Sheet, created automatically on first run. One row per response, with the full answers kept as JSON. |
+| Hosting | GitHub Pages: a static page with no server to run or pay for. |
+| Database | Cloud Firestore. Each finished quiz is one document. The dashboard listens live, so new responses appear without refreshing. |
+| Security | [`firestore.rules`](firebase/firestore.rules): anyone can create a response, but only with the expected fields and sizes. Only the owner's verified Google account can read, edit or delete. Answer codes can be imported by the owner only. |
+| Auth | Firebase Authentication with Google sign-in, used only by the owner. Quiz takers never sign in. |
 | Scoring | Compatibility = 70% weighted standards + 30% fit (what you are looking for, kids, age, chaos, spice, sex drive, love languages, money dynamic, politics, income, hustle, faith, drinking, exclusivity, personality, vibe and shared interests). Multi-select answers match on whichever pick fits each persona best. |
 
-## Deploy your own copy (about 5 minutes)
+## Deploy your own copy
+
+### Firebase + GitHub Pages (the live version)
+
+1. In the [Firebase console](https://console.firebase.google.com), create a project and register a web app.
+2. Paste its `firebaseConfig` into [`firebase/firebase-config.js`](firebase/firebase-config.js).
+3. Create a Firestore database in production mode, and paste [`firebase/firestore.rules`](firebase/firestore.rules) into the **Rules** tab, with your own Google email in place of `OWNER_EMAIL`.
+4. Turn on **Authentication → Google**, and add your site's domain under **Authorized domains**.
+5. Publish `firebase/index.html` and `firebase-config.js` on any static host, such as GitHub Pages.
+6. Open the page with `?admin` at the end, sign in with Google, and **View responses** appears for you only.
+
+### Google Apps Script + Google Sheets (alternative)
+
 
 1. Go to [script.google.com](https://script.google.com) → **New project**, and name it *Dating Matrix*.
 2. Replace `Code.gs` with [`apps-script/Code.gs`](apps-script/Code.gs).
@@ -72,4 +87,4 @@ With [clasp](https://github.com/google/clasp) instead: `clasp create --type weba
 
 ## Skills shown
 
-Product thinking (turning a fuzzy social question into a measurable model), survey and scoring design, data collection pipeline (web app → Sheet → CSV), dashboarding, inclusive persona design, and a full-stack build on free Google tools.
+Product thinking (turning a fuzzy social question into a measurable model), survey and scoring design, a data collection pipeline (web app → Firestore → CSV), database security rules, dashboarding, inclusive persona design, and a full-stack build on free tools (GitHub Pages and Firebase).
