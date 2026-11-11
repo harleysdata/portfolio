@@ -2,7 +2,7 @@
 
 I'm a former Senior Analyst at Scotiabank, where I worked in SAP Fieldglass, SAP SuccessFactors / Employee Central and ServiceNow. These projects show how I work: take messy operational data from those kinds of systems, find what's actually going wrong, and turn it into changes a team can ship and measure.
 
-Projects 1 and 2 use **real, public enterprise data**: a ServiceNow incident audit log and an SAP purchase-to-pay event log of 1.6 million events. Project 3 designs the integration between the three systems I used. Project 4 turns the findings into a product plan. Project 5 applies the same "is this answer right?" thinking to AI.
+Projects 1 and 2 use **real, public enterprise data**: a ServiceNow incident audit log and an SAP purchase-to-pay event log of 1.6 million events. Project 3 designs the integration between the three systems I used. Project 4 turns the findings into a product plan. Project 5 applies the same "is this answer right?" thinking to AI. Project 6 is a community product I built and shared: a quiz web app that collects real responses.
 
 🌐 **Portfolio site:** [harleysdata.github.io](https://harleysdata.github.io)
 
@@ -19,6 +19,7 @@ Projects 1 and 2 use **real, public enterprise data**: a ServiceNow incident aud
 | 3 | [**Contingent Workforce Integration**](03-contingent-workforce-integration/) | Sample extracts with planted defects | Fieldglass → Employee Central → ServiceNow field mapping, sequence diagrams, controls matrix, and a three-way reconciliation that finds 591 of 591 planted defects |
 | 4 | [**Contractor Onboarding Hub: Product Case**](04-contractor-onboarding-product-case/) | Findings from Projects 1–3 | PRD, metrics tree, Jira-ready backlog, RICE with documented overrides, experiment sizing with clustering |
 | 5 | [**AI Answer Accuracy Evaluation**](05-ai-answer-accuracy-eval/) | 15 Ontario employment-law questions | Rubric-based eval of AI answers, with planted errors to prove the grader catches them |
+| 6 | [**The Dating Matrix**](06-dating-matrix/) | Quiz responses collected in a Google Sheet; 119 designed personas | Community quiz web app on Google Apps Script: weighted compatibility scoring, a "reality check" on stated vs. revealed preferences, and an owner dashboard with PDF reports and CSV export |
 
 ## How they connect
 
