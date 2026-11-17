@@ -20,6 +20,16 @@ Projects 1 and 2 use **real, public enterprise data**: a ServiceNow incident aud
 | 4 | [**Contractor Onboarding Hub: Product Case**](04-contractor-onboarding-product-case/) | Findings from Projects 1–3 | PRD, metrics tree, Jira-ready backlog, RICE with documented overrides, experiment sizing with clustering |
 | 5 | [**AI Answer Accuracy Evaluation**](05-ai-answer-accuracy-eval/) | 15 Ontario employment-law questions | Rubric-based eval of AI answers, with planted errors to prove the grader catches them |
 
+## Community builds
+
+Small tools I built for groups I'm part of. They show the other half of how I work: designing for real people and running something live.
+
+| Build | For | Link |
+|---|---|---|
+| **GTA Girl Lounge** (GTA Women's Circle) | A ~1,000-member GTA women's group: profiles, hobby matching, a local events board, and admin approval for members and events | [Enter the lounge](https://claude.ai/artifact/S7MUrjeW5odriifVmCcsn6) |
+| **Halloween Weekend Picker** | A ~1,200-member Discord server choosing its Halloween plans, with live group totals | [Open the picker](https://claude.ai/artifact/BxSRTN1epEjuABfeDg1m4w) · [How it worked](https://harleysdata.github.io/halloween-picker/) |
+| **The Dating Matrix** | A compatibility quiz: set your standards, swipe on 119 GTA personas, get a reality check | [Take the quiz](https://harleysdata.github.io/dating-matrix/) |
+
 ## How they connect
 
 ```mermaid
