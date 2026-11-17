@@ -26,7 +26,7 @@ Small tools I built for groups I'm part of. They show the other half of how I wo
 
 | Build | For | Link |
 |---|---|---|
-| **GTA Girl Lounge** (GTA Women's Circle) | A ~1,000-member GTA women's group: profiles, hobby matching, a local events board, and admin approval for members and events | [Enter the lounge](https://claude.ai/artifact/S7MUrjeW5odriifVmCcsn6) |
+| **GTA Girl Lounge** (GTA Women's Circle) | A ~1,000-member GTA women's group: profiles, hobby matching, a local events board, and admin approval for members and events | [Enter the lounge](https://script.google.com/macros/s/AKfycbyrLcEUurC-bQ3iQx0F28X1GrxWeDZGrSJQuqkykU0vbdspG8E0l7QHlSeo6zKUq26f/exec) |
 | **Halloween Weekend Picker** | A ~1,200-member Discord server choosing its Halloween plans, with live group totals | [Open the picker](https://claude.ai/artifact/BxSRTN1epEjuABfeDg1m4w) · [How it worked](https://harleysdata.github.io/halloween-picker/) |
 | **The Dating Matrix** | A compatibility quiz: set your standards, swipe on 119 GTA personas, get a reality check | [Take the quiz](https://harleysdata.github.io/dating-matrix/) |
 
